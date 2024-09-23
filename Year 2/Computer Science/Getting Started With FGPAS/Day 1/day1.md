@@ -135,4 +135,3 @@ It delays the input a little bit (as it is related to the clock cycle).
 - cars move horizontally
 
 We will use Verilog, which is similar to C. It is a Hardware Description Language, created especially for FGPA development.
-*∫***
