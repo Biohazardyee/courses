@@ -121,3 +121,16 @@ Multiple LUTs can be cascaded to make much more complicated operations.
 Second critical FPGA component, it stores state. Flip-Flops have memory.
 Knowing passage of time would be impossible without flip-flops.
 
+## Example of a flip-flop
+
+<img title="a title" alt="Alt text" src="https://github.com/Biohazardyee/algosup_courses/blob/main/Year%202/Computer%20Science/Getting%20Started%20With%20FGPAS/Images/flip-flop.png>
+
+It delays the input a little bit (as it is related to the clock cycle).
+
+
+### Frogger project  
+
+- The user control the frog's movement
+- Buttons on the go board are used to direct the frog 
+- cars move horizontally 
+
