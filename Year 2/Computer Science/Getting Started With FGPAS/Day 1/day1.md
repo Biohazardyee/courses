@@ -86,7 +86,7 @@ One of the 2 most critcal components in an FGPA, it allows us to do boolean alge
 | 1   | 1   | 0     |
 
 **A*B+A'**
-![alt text](image-2.png)
+<img title="a title" alt="Alt text" src="https://github.com/Biohazardyee/algosup_courses/blob/main/Year%202/Computer%20Science/Getting%20Started%20With%20FGPAS/Images/image.png">
 
 | A   | B   | A'  | A * B | A * B + A' |
 | --- | --- | --- | ----- | ---------- |
@@ -96,7 +96,10 @@ One of the 2 most critcal components in an FGPA, it allows us to do boolean alge
 | 1   | 1   | 0   | 1     | 1          |
 
 **A+(C*B')**
-![alt text](image.png)
+
+<img title="a title" alt="Alt text" src="https://github.com/Biohazardyee/algosup_courses/blob/main/Year%202/Computer%20Science/Getting%20Started%20With%20FGPAS/Images/image-2.png">
+
+
 
 | A   | B   | B'  | C   | C * B' | A + (C * B') |
 | --- | --- | --- | --- | ------ | ------------ |
@@ -114,6 +117,7 @@ Multiple LUTs can be cascaded to make much more complicated operations.
 ## The Flip-Flop
 
 **Not this...**
+
 <img title="a title" alt="Alt text" src="https://github.com/Biohazardyee/algosup_courses/blob/main/Year%202/Computer%20Science/Getting%20Started%20With%20FGPAS/Images/image-1.png">
 
 Second critical FPGA component, it stores state. Flip-Flops have memory.
