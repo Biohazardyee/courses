@@ -99,8 +99,6 @@ One of the 2 most critcal components in an FGPA, it allows us to do boolean alge
 
 <img title="a title" alt="Alt text" src="https://github.com/Biohazardyee/algosup_courses/blob/main/Year%202/Computer%20Science/Getting%20Started%20With%20FGPAS/Images/image-2.png">
 
-
-
 | A   | B   | B'  | C   | C * B' | A + (C * B') |
 | --- | --- | --- | --- | ------ | ------------ |
 | 0   | 0   | 1   | 0   | 0      | 0            |
@@ -122,3 +120,4 @@ Multiple LUTs can be cascaded to make much more complicated operations.
 
 Second critical FPGA component, it stores state. Flip-Flops have memory.
 Knowing passage of time would be impossible without flip-flops.
+
