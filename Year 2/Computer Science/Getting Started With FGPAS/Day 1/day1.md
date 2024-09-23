@@ -1,4 +1,4 @@
-# Getting Started With FGPAS
+# Getting Started With FPGAS
 
 ## Day 1
 
