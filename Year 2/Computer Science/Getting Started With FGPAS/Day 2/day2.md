@@ -119,3 +119,55 @@ begin
         end
 end
 ```
+
+```Verilog
+module flip_flops(
+    input CLK,
+    input SW1, 
+    output LED1
+);
+
+    reg r_LED1;
+    reg r_Switch1;
+
+    always @(posedge CLK) 
+    begin
+        r_Switch1 <= SW1;
+        if (r_Switch1 == 1 && SW1 == 0)
+            begin 
+                r_LED1 <= ~r_LED1;
+            end 
+    end 
+    
+    assign LED1 = r_LED1;
+
+endmodule
+
+```
+
+### Combninational logic
+
+logic for which the outputs are determined from present inputs with no memory of the previous state
+
+### Sequential logic
+
+logic for which the outouts are detemined from both present inputs and previous outpouts, also called Synchronous.
+
+We want to avoid Combitional always block
+
+```Verilog
+always @(input_1 or input_2)
+    begin 
+    and_gate <= input_1 & input_2
+    end
+```
+
+We want to use **Sequential always blocks** (with a clock).
+
+### Simulation
+
+The best way to find bugs is to simulate, to see what's happening inside of the FPGA.
+
+#### Testbench
+
+Is to exercise our Unit Under Test, it is a way to wrap our UUT.
