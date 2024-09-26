@@ -233,3 +233,32 @@ Common problems:
 
 Means the design might not work as intended.
 Might work fine on you desk, but not in real environment.
+
+### How they occur
+
+When requested Clock freq > actual clock freq
+
+will produce routes with neggative slack = timing error
+
+Clock period calculated by steuo time + propagation delay
+
+tclk(min) = tsu + tp
+
+tsu = setup time
+tp = propagation delay
+
+## Setup and hold time
+
+Flips-flops arent instant, they need time for a stable state.
+
+Setup time is the amount of time required for the input of a flip-flop to be stable before a clock edge
+Hold time is the amount of time required for the input of a flip-flop to be stable after a clock edge
+
+Violating these causes bad things
+
+### Propagation delay
+
+Amount of time for a signal to travel from source to destination
+The voltage do not travel instantly , electricity travel at a meter/ns
+
+In Timing errors the setup time is fixed, and the clock frequency i susually chosen and advance and do not change, the propagation delay is the only knob we can turn in order to prevent a timing error.
