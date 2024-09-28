@@ -92,6 +92,7 @@ endmodule
 ```
 
 Implemented into a project
+
 ```Verilog
 module LED_Toggle_Project
  (input  CLK,
@@ -129,3 +130,6 @@ module LED_Toggle_Project
 endmodule
 
 ```
+
+# Amphitheatre 26/09/24
+
