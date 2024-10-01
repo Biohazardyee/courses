@@ -38,7 +38,7 @@ https://www.tomorrow.io/blog/using-weather-ai-to-improve-operations-in-aviation/
 - Year3: Implemet test and release v1, find first users
 - RNCP6 exam
 - Year4: run beta program, promote solution, observe users
-- Year5: integrate users' feedbakc, release v2
+- Year5: integrate users' feedback, release v2
 - RNCP7 exam
 
 ## Do not underestimate the task
