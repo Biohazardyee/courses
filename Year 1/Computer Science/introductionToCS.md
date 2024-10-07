@@ -116,7 +116,6 @@
 		- [Bicubic Interpolation](#bicubic-interpolation)
 		- [AI-Enhanced Upscaling](#ai-enhanced-upscaling)
 
-
 ## What are computers for?
 
 - Do things for humans faster and more efficiently.
@@ -600,7 +599,7 @@ Why do we need data compression? To reduce file size.
 - **I/O:** Handles communication between a computer and external devices
 - **HDD (Hard Disk Drive):** Magnetic storage device for digital data with moving parts
 - **SSD (Solid-State Drive):** Fast, durable storage device for digital data, without moving parts
-           
+
 ## Solution#1: Increase the CPU’s clock speed
 
 **Examples:**
