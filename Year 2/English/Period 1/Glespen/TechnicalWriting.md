@@ -33,4 +33,4 @@ You now know how to wash your dishes safely, you can now repeat the whole proces
 - avoid passive voice,
 - don’t be too redundant
 - dont be too overkill
-- 
+- KISS method, keep it sweet and simple
