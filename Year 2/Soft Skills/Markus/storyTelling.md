@@ -54,6 +54,13 @@ Three art structure:
 - setup
 - confrontation
 - resolution
+  
+## Day 2
 
-### Moonshot story telling 
+### Set up
 
+- introduce characters (main)
+- pracosoms rules / environment
+- trope
+  - introduce plot
+- Inciting incident
