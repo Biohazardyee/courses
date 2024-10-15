@@ -10,16 +10,18 @@
     - [Examples](#examples)
     - [What do you need?](#what-do-you-need)
     - [Method](#method)
+    - [Task Analysis](#task-analysis)
+    - [How to make information task oriented](#how-to-make-information-task-oriented)
 
 ## Write a procedure for washing dishes
 
-You’re eating your favorite meal but just found out you need to do the dishes later? Don’t worry we got you. 
+You’re eating your favorite meal but just found out you need to do the dishes later? Don’t worry we got you.
 
 1. Finish enjoying your meal
 2. Once done, gather all the dishes together
-3. Throw the left-overs in the bin, or give it to the nearest homeless person 
+3. Throw the left-overs in the bin, or give it to the nearest homeless person
 4. Fill in the sink with warm water and some soap, until it bubbles
-5. Put in your dishes 
+5. Put in your dishes
 6. Grab a sponge, wet it and soap it
 7. With the sponge, scrub the dish thoroughly, until it shines
 8. Repeat step 7 for all of your dishes
@@ -48,17 +50,17 @@ You now know how to wash your dishes safely, you can now repeat the whole proces
 
 ### Examples of Good and Bad Tech Documents
 
-bad technical document: https://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/conref.html
+bad technical document: <https://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/conref.html>
 
-good technical document (in my opinion): https://youtu.be/58PuGTecJUU?si=kPQtnITGwgRu8zaS
+good technical document (in my opinion): <https://youtu.be/58PuGTecJUU?si=kPQtnITGwgRu8zaS>
 
-real good technical document: https://youtu.be/m3dYOsXbWII?si=RKsQ4_-SsqRpgGna
+real good technical document: <https://youtu.be/m3dYOsXbWII?si=RKsQ4_-SsqRpgGna>
 
 ## Advantages of good user documentation
 
 - Enable efficient product usage
 - Reduces customer support costs
-- Improves customer satisafaaction & retention
+- Improves customer satisafaction & retention
 - Aids in marketing & sales
 - Ensures compliance & safety
 - Helps in product feedback & improvement
@@ -76,7 +78,7 @@ real good technical document: https://youtu.be/m3dYOsXbWII?si=RKsQ4_-SsqRpgGna
 - Quick Start Guide
 - Knowledge Base Help Centers
 
-## What is quality tech information 
+## What is quality tech information
 
 - Accurate: Free from mistakes or errors; adheres to facts or truth
 - Clear: Free from ambiguity or obscurity
@@ -119,3 +121,26 @@ Before you begin writing the procedure:
 - Use actions verbs, put them at the beginning of the step
 - Put each step on a separate line and number each
 - Add any tips advice or safety warnings
+
+### Task Analysis
+
+A task analysis can help you understand:
+
+- Which tasks are the most important to users
+- Which tasks they spend most time on
+- Which tasks are more tedious or most trivial
+- What type of organization is appropriate
+- How much detail to include
+- What kinds of examples to use
+=> Defines the "WHY?"
+Watch the user
+
+### How to make information task oriented
+
+To make information task oriented follow these guidelines:
+
+- Write for the intended audience.
+- Present information from the user's point of view.
+- Focus on real tasks, not product functions.
+- Indicate a practical reason for information.
+- Use titles and heading that reveal the tasks.
