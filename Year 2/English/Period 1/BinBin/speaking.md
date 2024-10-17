@@ -80,21 +80,21 @@ everyone is shocked
 The first video takes place at TechCrunch Disrupt SF, an event organised each year, where new technology startups attend to launch their products and services.
 3 friends from Pied Piper are presenting their data compression solution. Their initial presentation is cringy, not well prepared, not at ease at speaking. To show how unprepared they are, one of the guys takes the paper hand off his colleague.
 
-They deal with the Shannon encoding which is a lossless data compression technique and how David Huffman came along and made it up to the bottom. Even they have no clue why they are talking about it,as they use other compression principles. 
+They deal with the Shannon encoding which is a lossless data compression technique and how David Huffman came along and made it up to the bottom. Even they have no clue why they are talking about it,as they use other compression principles.
 
-The judges to test their techniques hand them over a 132GB 3D video file, needing to be compressed. 
-At first, the compression doesn’t seem to work, it gets hung. They are unsure whether it will handle it. 
+The judges to test their techniques hand them over a 132GB 3D video file, needing to be compressed.
+At first, the compression doesn’t seem to work, it gets hung. They are unsure whether it will handle it.
 
-The spokesperson tells them they have 2 minutes remaining. Magically, it unstuck and finishes the compression. 
+The spokesperson tells them they have 2 minutes remaining. Magically, it unstuck and finishes the compression.
 
-However, the compression is not as big as they thought, the final file size is 24GB. Which is ¼ of the initial file size. 
-The judges ask them to run a test to know what went wrong. Fortunately, everything went well. They have no loss of data nor data corrupted. 
+However, the compression is not as big as they thought, the final file size is 24GB. Which is ¼ of the initial file size.
+The judges ask them to run a test to know what went wrong. Fortunately, everything went well. They have no loss of data nor data corrupted.
 They end up with a 5.2 score and a whole file compressed, doubling the previous highest recorded score.
 
 Note: It is in front of investors to launch their startup
 
 ### video 2
 
-The second video takes place at the place of one of the developers, they play the famous game amongst developers “Always Blue” 
+The second video takes place at the place of one of the developers, they play the famous game amongst developers “Always Blue”
 
 The “Always Blue” game comes from the TV show Silicon Valley and features a ball known as the Hoberman Switch Pitch ball. When being thrown in the air, the ball has a 50% chance to turn either blue or yellow. The aim of the game is to have the longest streak of blue colours. This is a great distraction for developers after their tech challenges.
