@@ -98,3 +98,20 @@ Note: It is in front of investors to launch their startup
 The second video takes place at the place of one of the developers, they play the famous game amongst developers “Always Blue”
 
 The “Always Blue” game comes from the TV show Silicon Valley and features a ball known as the Hoberman Switch Pitch ball. When being thrown in the air, the ball has a 50% chance to turn either blue or yellow. The aim of the game is to have the longest streak of blue colours. This is a great distraction for developers after their tech challenges.
+
+how could it kill humans?
+manipulate figure out a way kill humans
+
+"this stuff will get smarter than us and take over" says Hinton. 
+
+
+do you wish u had stood behind these whistleblowers more?
+for raising concerns about AI, was dropped off by Google. warning about the danger of AI
+
+what should the regulations about AI look like?
+
+Does there need to be a metting for all tech groupa, and government, and set of rules created, how do we protect from bad actors?nation from harvesting AIs.
+
+Do u think that tech companies will be the solution or are they so invested, in this, financialy and in term of power.
+
+are they neither our saviors nor our adversaries, will we able to take actions?
