@@ -102,8 +102,7 @@ The “Always Blue” game comes from the TV show Silicon Valley and features a 
 how could it kill humans?
 manipulate figure out a way kill humans
 
-"this stuff will get smarter than us and take over" says Hinton. 
-
+"this stuff will get smarter than us and take over" says Hinton.
 
 do you wish u had stood behind these whistleblowers more?
 for raising concerns about AI, was dropped off by Google. warning about the danger of AI
