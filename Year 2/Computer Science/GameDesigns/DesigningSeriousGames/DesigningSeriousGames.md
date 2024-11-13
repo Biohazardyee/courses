@@ -1,25 +1,99 @@
 # Design Serious Games
 
+<details>
+
+<summary>Table Of Content</summary>
+
 - [Design Serious Games](#design-serious-games)
   - [Introduction to Game Development](#introduction-to-game-development)
     - [Theme: Climate Change](#theme-climate-change)
+  - [Lesson 1: Introduction to Game Development](#lesson-1-introduction-to-game-development)
+    - [Instructor](#instructor)
+    - [Course Outline](#course-outline)
+    - [Game Development Pipeline](#game-development-pipeline)
+    - [Game Design Basics](#game-design-basics)
+    - [Roles in Game Development](#roles-in-game-development)
+    - [Types and Genres of Games](#types-and-genres-of-games)
+    - [Essential Skills for Game Designers](#essential-skills-for-game-designers)
+    - [Game Development Stages](#game-development-stages)
+    - [Key Takeaways](#key-takeaways)
+  - [Lesson 2: Serious Games, Game Design Theory](#lesson-2-serious-games-game-design-theory)
+    - [What is a Serious Game?](#what-is-a-serious-game)
+    - [Theory of Fun in Game Design](#theory-of-fun-in-game-design)
+    - [Game Analysis and Design](#game-analysis-and-design)
+    - [The Three Cs of Game Design](#the-three-cs-of-game-design)
+    - [Core Game Loops](#core-game-loops)
+    - [Emotional Triggers and Immersion](#emotional-triggers-and-immersion)
+    - [Game Experience and Player Emotions](#game-experience-and-player-emotions)
+    - [Game Feel and Atmosphere](#game-feel-and-atmosphere)
+    - [Goals, Decisions, and Interactivity](#goals-decisions-and-interactivity)
+    - [Interface and Information](#interface-and-information)
+    - [Summary](#summary)
+    - [Resources for Further Study](#resources-for-further-study)
+  - [Lesson 3: From Idea to Concept](#lesson-3-from-idea-to-concept)
+    - [Discussing Climate Change](#discussing-climate-change)
+    - [Serious Game Ideas on Climate Change](#serious-game-ideas-on-climate-change)
+    - [Game Themes and Thematic Axis](#game-themes-and-thematic-axis)
+    - [Game Design Documents \& Tools](#game-design-documents--tools)
+    - [Key Elements of the One-Sheet Document](#key-elements-of-the-one-sheet-document)
+    - [Ten-Page Design Document Structure](#ten-page-design-document-structure)
+    - [The High-Level Design Document](#the-high-level-design-document)
+    - [The Beat Chart](#the-beat-chart)
+    - [The Full Game Design Document (GDD)](#the-full-game-design-document-gdd)
+    - [Content Documents](#content-documents)
+    - [Tools for Game Design](#tools-for-game-design)
+    - [Developing a Game Concept](#developing-a-game-concept)
+    - [The Pitch Deck](#the-pitch-deck)
+    - [Player Types and Demographics](#player-types-and-demographics)
+    - [Resources](#resources)
+    - [Game Brainstorming Workshop](#game-brainstorming-workshop)
+  - [Lesson 4: Mechanics, Verbs, Systems](#lesson-4-mechanics-verbs-systems)
+    - [Game Mechanics](#game-mechanics)
+    - [Key Aspects of Mechanics](#key-aspects-of-mechanics)
+    - [Core Mechanics in Game Genres](#core-mechanics-in-game-genres)
+    - [Verbs in Games](#verbs-in-games)
+    - [MDA Framework: Mechanics, Dynamics, Aesthetics](#mda-framework-mechanics-dynamics-aesthetics)
+    - [Feedback Loops](#feedback-loops)
+    - [Emergence in Gameplay](#emergence-in-gameplay)
+    - [Prototyping and Testing](#prototyping-and-testing)
+    - [Resources](#resources-1)
+  - [Lesson 5: Pitch Your Game Workshop (and more)](#lesson-5-pitch-your-game-workshop-and-more)
+    - [Pitch Your Game Workshop](#pitch-your-game-workshop)
+    - [Game Development as an Iterative Process](#game-development-as-an-iterative-process)
+    - [Game Usability Testing \& Playtesting](#game-usability-testing--playtesting)
+    - [Heuristic Evaluation](#heuristic-evaluation)
+    - [Expert Reviews](#expert-reviews)
+    - [Eye Tracking Testing](#eye-tracking-testing)
+    - [AI Testing \& Game Analytics](#ai-testing--game-analytics)
+    - [Usability Labs](#usability-labs)
+    - [Playtesting Primer](#playtesting-primer)
+    - [A Brief History of Sound in Video Games](#a-brief-history-of-sound-in-video-games)
+    - [The Role of Audio in Game Design](#the-role-of-audio-in-game-design)
+    - [Game Soundscapes](#game-soundscapes)
+    - [The Role of Music in Video Games](#the-role-of-music-in-video-games)
+    - [Dynamic Music and Ambient Sound](#dynamic-music-and-ambient-sound)
+    - [Audio Prioritization and Sound Quality](#audio-prioritization-and-sound-quality)
+    - [The Developer / Musician Relationship](#the-developer--musician-relationship)
+    - [Key Musical Terminology](#key-musical-terminology)
+    - [Additional Resources](#additional-resources)
   - [Lesson 6: Level Design](#lesson-6-level-design)
-    - [Level Designer](#level-designer)
-    - [Practical Rules](#practical-rules)
-    - [Flow \& Difficulty](#flow--difficulty)
-      - [Doom example](#doom-example)
-    - [Types of level design](#types-of-level-design)
-    - [Teaching, testing, Rewarding](#teaching-testing-rewarding)
-      - [Teaching](#teaching)
-        - [Designing Tutorial Level](#designing-tutorial-level)
-      - [Testing](#testing)
-      - [Rewarding](#rewarding)
-    - [The Visuals of Game Design](#the-visuals-of-game-design)
+    - [Overview](#overview)
+    - [Role of the Level Designer](#role-of-the-level-designer)
+    - [Goals of Good Level Design](#goals-of-good-level-design)
+    - [Practical Rules for Level Design](#practical-rules-for-level-design)
+    - [Flow and Difficulty](#flow-and-difficulty)
+      - [Example: Mario’s Level 1-1](#example-marios-level-1-1)
+      - [Example: Doom's Design Elements](#example-dooms-design-elements)
+    - [Types of Level Design](#types-of-level-design)
+    - [Teaching, Testing, and Rewarding in Level Design](#teaching-testing-and-rewarding-in-level-design)
+    - [Visuals in Game Design](#visuals-in-game-design)
     - [Visual Composition](#visual-composition)
     - [Traditional Level Design Pipeline](#traditional-level-design-pipeline)
-    - [3D level design considerations](#3d-level-design-considerations)
-    - [A brand new level](#a-brand-new-level)
+    - [3D Level Design Considerations](#3d-level-design-considerations)
+    - [Starting a New Level](#starting-a-new-level)
     - [Level Characteristics](#level-characteristics)
+
+</details>
 
 ## Introduction to Game Development
 
@@ -35,238 +109,686 @@ The deliverable has to be a pleasing serious game, and be as bug free and as fea
 
 subject nuclear power, effects of the raise of the ocean atmospheric temperature, mobility options, wildfires
 
+## Lesson 1: Introduction to Game Development
+
+### Instructor
+
+- **Konstantinos Dimopoulos**: Game designer, urbanist, author, and educator with experience in urban planning and game design.
+  - **Published Works**: *Virtual Cities*, contributions to *Game Writing 2nd Edition*, *Virtual Interiorities*, and *The Architectronics of Game Spaces*.
+  - **Games Worked On**: *ARMA Reforger*, *The Sinking City*, *Crime Boss: Rockay City*, *Lake*, *A Place for the Unwilling*, *Seed*, *Dream City Knights*, *Droidscape: Basilica*, and *Ex Novo*.
+
+### Course Outline
+
+- **Weekly Schedule**:
+  - **Week 1**:
+    - **Monday**: Introduction to Game Development, GODOT 4.3 Workshop.
+    - **Tuesday**: Game Design Theory and Serious Games.
+    - **Wednesday**: From Idea to Concept, Brainstorming Workshop.
+    - **Thursday**: Mechanics, Verbs, Systems, Prototype Workshop.
+    - **Friday**: Game Music, Game Testing, and Pitch Your Game Presentation.
+    - **End of Week Deliverable**: A pitch deck.
+  - **Week 2**:
+    - **Tuesday**: Level Design with Mari0 Workshop.
+    - **Wednesday**: Interactive Narrative & Storytelling, Twine Workshop.
+    - **Thursday**: Gamification, Analysis and Design Workshops.
+    - **Friday**: UI, UX, Game Economies Workshop.
+  - **Final Weeks**: Remote meetings, project work, and final game delivery in Week 7.
+- **Final Project**: Develop a serious game using the GODOT 4.3 engine with a **theme of climate change**.
+  - Teams can choose specific topics like nuclear power, rising temperatures, mobility, or wildfires, and genres such as strategy, trivia, or platformer.
+
+### Game Development Pipeline
+
+- **Stages of Development**:
+  1. **Game Idea**: Initial brainstorming of concepts.
+  2. **Game Concept**: Develop ideas into concrete concepts with initial documentation.
+  3. **Prototype**: Early development for testing core mechanics and gameplay.
+  4. **Pitch**: Present the concept to gain feedback and iterate.
+  5. **Demo or Vertical Slice**: A sample of polished gameplay for further testing.
+  6. **Testing & Iterating**: Continuous testing to refine features and fix bugs.
+  7. **Final Game**: Complete, polished, feature-complete, and bug-free version.
+
+### Game Design Basics
+
+- **Defining a Game**:
+  - **"A game is an artificial system for generating experiences"** - Tynan Sylvester, *RimWorld*.
+  - **"Games are a series of interesting decisions"** - Sid Meier, *Civilization*.
+  - **Core Elements**: Fiction (framing, plot, setting) and Mechanics (rules, systems).
+  - **Goal of Design**: Achieve harmony between fiction and mechanics to elicit player emotions and engagement.
+  
+- **Game Engines**:
+  - **GODOT 4.3**:
+    - Open-source, lightweight, and supports both 2D and 3D game development.
+    - Platform Compatibility: Deploy to mobile, web, personal computers, and consoles.
+    - **GDScript**: A Python-like language optimized for GODOT, ideal for quick development.
+    - **Community**: Large support base with rich documentation and resources.
+
+### Roles in Game Development
+
+- **Game Designer**: Defines mechanics, systems, game structure, and player experience.
+- **Types of Designers**:
+  - **Content Designer**: Creates plot points, worlds, characters, and lore.
+  - **Level Designer**: Designs spaces and levels; organizes game flow and structure.
+  - **Systems Designer**: Balances systems and mechanics, including stats and economies.
+  - **Experience Designer**: Focuses on audiovisual feedback and feel of the game.
+  - **Narrative Designer**: Integrates storytelling with gameplay mechanics.
+- **Other Roles**: Includes generalist programmers, AI and graphics specialists, audio engineers, QA, UI/UX designers, marketers, and producers.
+
+### Types and Genres of Games
+
+- **Game Genres**: Platformers, RPGs, simulators, puzzle games, real-time strategy, horror, immersive sims, etc.
+- **Story Genres**: Includes themes like crime, fantasy, sci-fi, historical drama, horror, and romance.
+- **Game Types**: Differentiate based on gameplay mechanics and player experience, such as narrative-driven, open-world, sandbox, or puzzle.
+
+### Essential Skills for Game Designers
+
+- **Communication**: Vital for collaborating across teams.
+- **Adaptability**: Must learn new tools, understand project needs, and embrace feedback.
+- **Tolerance for Feedback**: Willingness to accept criticism and adapt accordingly.
+- **Learning Skills**: Ability to quickly acquire new knowledge is crucial for ongoing improvement.
+- **Setting Realistic Goals**: Knowing when to cut content or features to meet project goals.
+
+### Game Development Stages
+
+1. **Pre-Production**:
+   - Define the scope, concept, platform, budget, timeline, and core mechanics.
+   - **Game Design Document**: Formal documentation of game vision, systems, and objectives.
+   - Develop initial prototypes and conduct technical tests.
+2. **Production**:
+   - **Programming**: Implement core mechanics and systems.
+   - **Asset Creation**: Develop graphics, audio, and other assets.
+   - **Content Creation**: Create levels, narrative elements, and in-game assets.
+   - **Testing and Iteration**: Regular testing to improve and refine gameplay.
+3. **Post-Production**:
+   - **Updates & Patches**: Fix bugs and add enhancements.
+   - **DLC and Expansions**: Add new content to extend the game's lifecycle.
+   - **Postmortem**: Review project successes and areas for improvement.
+
+### Key Takeaways
+
+- **Game Development is Collaborative**: Requires diverse skills and teamwork from all project members.
+- **Iterative Process**: Continuous testing and feedback loops are essential for a polished final product.
+- **Player-Centered Design**: The ultimate aim is to craft a cohesive experience that engages and immerses players.
+
+---
+
+## Lesson 2: Serious Games, Game Design Theory
+
+### What is a Serious Game?
+
+- **Definition**: A serious game is designed for purposes beyond entertainment, used in education, healthcare, city planning, emergency management, and more.
+- **Key Elements**:
+  - **Purpose**: Each game has a clear, serious purpose, such as education or training.
+  - **Engagement**: Must be enjoyable to play, even as it serves a real-world function.
+  - **Historical Example**: *The Landlord’s Game* (early form of Monopoly) is an example of an early serious game focused on economic and social issues.
+
+### Theory of Fun in Game Design
+
+- **Pattern Recognition**: Games engage the brain by offering patterns to recognize and master.
+- **Adaptation and Boredom**: Games become boring when players master patterns and no new challenges remain.
+- **Brain Exercise**: Games are powerful tools for improving skills like problem-solving, strategy, and hand-eye coordination.
+
+### Game Analysis and Design
+
+- **Analyzing Games**:
+  - **Playability**: Is the game approachable and easy to understand? Are controls intuitive?
+  - **Core Gameplay Loop**: Identifies the main actions that players repeat. Examples include "run, jump, avoid" for *Super Mario Bros.*
+  - **Aesthetics**: The visual and auditory appeal of a game and its alignment with themes.
+  - **Longevity**: Does the game maintain interest over time? Is it replayable?
+
+- **Mechanics vs. Fiction**:
+  - Games require a balance of mechanics (rules, actions) and fiction (story, setting).
+  - Mechanics can drive engagement and immersion, while fiction adds context and meaning.
+  - Examples include the layered systems in *Bioshock* and immersive storytelling in *Half-Life 2*.
+
+### The Three Cs of Game Design
+
+1. **Character**: Defines who the player embodies in the game.
+2. **Camera**: Dictates the player’s visual perspective, e.g., first-person, third-person.
+3. **Control**: Describes how the player interacts with the game, focusing on responsiveness and relevance to the game’s theme.
+
+### Core Game Loops
+
+- **Definition**: The main actions repeated throughout the game, essential to structure and pacing.
+- **Examples**:
+  - *Battlefield*: Target, aim, shoot, seek new enemies.
+  - *Pac-Man*: Navigate maze, avoid ghosts, collect dots.
+- **Rewards**: Immediate feedback, often through action and reaction, satisfies player engagement.
+
+### Emotional Triggers and Immersion
+
+- **Emotional Triggers**: Actions or visuals that invoke emotions, such as challenges, rewards, or changes in state.
+- **Suspension of Disbelief**: A state where players willingly accept the game world as real, enhancing immersion.
+- **Immersion**: Games create immersive experiences through cohesive world-building, responsive interactions, and the alignment of player goals with in-game actions.
+
+### Game Experience and Player Emotions
+
+- **Experience Construction**: Every element in a game should contribute to a cohesive experience that aligns player actions, emotions, and character motivations.
+- **Emotions in Gameplay**:
+  - **Agency**: Players feel a sense of control and impact within the game world.
+  - **Challenge and Mastery**: Overcoming difficult obstacles provides a sense of achievement.
+- **Balancing Emotions**: Different types of games may evoke varied emotions, from tension and excitement to calmness and introspection.
+
+### Game Feel and Atmosphere
+
+- **Game Feel**: The immediate feedback of actions, like the impact of jumps, attacks, or collisions. Examples include screen shake effects and responsive controls.
+- **Atmosphere**: Encompasses the emotional tone of a game, created through visuals, sound, and interactive elements.
+- **Juxtaposition**: The blending of contrasting emotions, e.g., dark, intense settings with moments of calm.
+
+### Goals, Decisions, and Interactivity
+
+- **Game Goals**: Organized as primary/secondary, mandatory/optional, or progression-based.
+- **Decision-Making**:
+  - Players continuously make decisions, from trivial to complex, which influence their game path and outcomes.
+  - Interesting decisions have a balance of risk, reward, and information.
+- **Meaningful Interactivity**: Ensures decisions feel impactful and significant, enhancing player engagement and satisfaction.
+
+### Interface and Information
+
+- **Information Management**: A well-designed interface gives players the necessary information for decision-making without overwhelming them.
+- **Diegetic Interfaces**: Interface elements integrated within the game world itself, enhancing immersion.
+
+### Summary
+
+This lesson emphasizes that effective game design balances fiction with mechanics, engages players through meaningful decisions, and creates immersive experiences. Each design choice, from interface to core mechanics, shapes the player’s journey and emotional connection with the game.
+
+---
+
+### Resources for Further Study
+
+- **Books**: *Designing Games* by Tynan Sylvester, *A Theory of Fun for Game Design* by Raph Koster, *The Art of Game Design* by Jesse Schell.
+- **Online Resources**: *Extra Credits* (YouTube), *Game Maker’s Toolkit*, and *GDC Vault*.
+
+---
+
+## Lesson 3: From Idea to Concept
+
+### Discussing Climate Change
+
+- **Definition**: Long-term changes in temperatures and weather patterns. Historically natural, but since the 19th century, human activities—primarily fossil fuel burning—are the main cause.
+- **Key Greenhouse Gases**: Carbon dioxide and methane.
+- **Current Focus Areas**: Preservation of forests and sustainable energy production.
+  
+### Serious Game Ideas on Climate Change
+
+- **Examples of Climate-Related Serious Games**:
+  - *Fate of the World*: Simulation game focused on managing global resources.
+  - *SimCity Edu: Pollution Challenge*: Teaches about pollution.
+  - *EcoQuest: The Search for Cetus*: Environmental adventure game.
+  - *Working With Water*: Educational game on water management.
+- **Reminder**: Serious games should focus on game mechanics, not just storytelling.
+
+### Game Themes and Thematic Axis
+
+- **Game Theme**: The core idea or "axis" of the game (e.g., heroism, exploration, mystery, nature).
+- **Influence**: The theme should affect every part of the game, including mechanics, visuals, music, UI, and narrative.
+
+### Game Design Documents & Tools
+
+- **Purpose of Game Design Documents (GDD)**:
+  - **Memory**: Document key ideas.
+  - **Communication**: Share concepts with the team.
+  - **Creativity Structure**: Provide a framework for development.
+- **Types of Game Design Documents**:
+  - **One-Sheet**: Brief, single-page document outlining core game concept.
+  - **Ten-Page Document**: A more detailed overview with a breakdown of story, gameplay, characters, and controls.
+  - **High-Level Design Document**: Outlines game concept, mechanics, core gameplay, and key features.
+  - **Full Game Design Document (GDD)**: Comprehensive description of all aspects of the game, including narrative, controls, UI, characters, levels, and monetization.
+
+### Key Elements of the One-Sheet Document
+
+- **Title**: Temporary or code name.
+- **Platforms**: Intended launch platforms.
+- **Monetization**: Revenue strategies (e.g., app stores, in-app purchases).
+- **Target Audience**: Demographics and age rating.
+- **Game Summary**: Brief plot, setting, and player role.
+- **Game Outline**: Genre, key gameplay mechanics, goals, and challenges.
+- **Unique Selling Points (USP)**: 5-7 points highlighting what makes the game unique.
+- **Similar Games**: List of competitive or similar games.
+- **Early Concept Art**: Visual sketches or logo ideas.
+
+### Ten-Page Design Document Structure
+
+1. **Cover Page**: Include graphic/logo, target platform, audience, shipping date.
+2. **Story/Game Summary**: Outline main characters and setting.
+3. **Characters and Controls**: Control map and protagonist details.
+4. **Gameplay Overview**: Genre, core actions, flow, and mechanics.
+5. **Gameplay Experience**: Desired player emotions and moods.
+6. **Mechanics and Modes**: Detailed look at core mechanics.
+7. **Enemies and Challenges**: Types of enemies and puzzles.
+8. **Bonus Material**: Possible downloadable content.
+9. **Monetization Strategy**: Revenue plans.
+
+### The High-Level Design Document
+
+- **Core Sections**:
+  - **Product Overview**
+  - **Core Concept**
+  - **Story and Setting**
+  - **Gameplay Description**
+  - **Interface & Controls**
+  - **Level Walkthroughs**
+  - **Art, Sound, and Music Overview**
+  - **Budget and Timeframe**
+
+### The Beat Chart
+
+- **Purpose**: Maps game structure to track patterns, color schemes, and gameplay progression.
+- **Example**: Used in games like *Maximo: Ghosts to Glory*.
+
+### The Full Game Design Document (GDD)
+
+- **Content**: A GDD can include game summary, story, controls, camera details, metrics, core gameplay loop, character design, mechanics, rewards, progression, level design, monetization, etc.
+- **Format**: Often a wiki or living document that allows for changes as the game evolves.
+
+### Content Documents
+
+- **Purpose**: Describe game content like missions, weapons, monsters, quests, etc.
+- **Format**: Often spreadsheets with item statistics.
+
+### Tools for Game Design
+
+- **Design Document Sharing**: ClickUp, Google Drive, Microsoft Teams.
+- **Art and Concept Tools**: Miro, Canva, Photoshop.
+- **Moodboard Tools**: GIMP, Miro.
+
+### Developing a Game Concept
+
+- **Components of a Game Concept**:
+  - **Core Idea**: A unique, engaging idea.
+  - **Player Experience**: Desired player emotions and gameplay feel.
+  - **Mechanics**: Actions, verbs, core gameplay loop.
+  - **Goals and Challenges**: What players will strive to achieve.
+  - **Progression and Variety**: Engaging and varied gameplay.
+  - **Narrative**: Basic setting, plot, and characters.
+  - **Art Style and Music**: Define the aesthetic and tone.
+  - **Unique Selling Point (USP)**: What makes the game stand out.
+  - **Monetization**: Revenue strategy.
+  - **Target Audience**: Age, demographics, and gaming preferences.
+  - **Production Constraints**: Time, budget, and platform limitations.
+
+### The Pitch Deck
+
+- **Content**:
+  - **Introduction**: Brief game overview.
+  - **Plot & Narrative**: Story highlights.
+  - **Gameplay Showcase**: Core gameplay mechanics.
+  - **Unique Selling Points**: Key elements that make the game unique.
+  - **Team**: Backgrounds and roles.
+  - **Budget & Timeline**: Financial and timeline considerations.
+  - **Audience**: Target demographics.
+  - **Visual Appeal**: Exciting visuals to engage investors or publishers.
+
+### Player Types and Demographics
+
+- **Richard Bartle’s Player Types**:
+  - Useful for understanding player motivations, especially in MMOs.
+- **Audience Characteristics**:
+  - **Age**: 38% of gamers are 18-34, and 20% are under 18.
+  - **Gender**: In the U.S., 45% of gamers are women.
+  - **Global Trends**: Countries like China and Vietnam have high player engagement.
+  
+### Resources
+
+- **Books**:
+  - *Designing Games* by Tynan Sylvester.
+- **Useful Links**:
+  - Game ideas: [Reddit Game Ideas](https://www.reddit.com/r/gameideas/)
+  - Core loop design: [GameAnalytics Blog](https://gameanalytics.com/blog/how-to-perfect-your-games-core-loop/)
+
+### Game Brainstorming Workshop
+
+1. **Phase 1**: Free association to explore initial ideas.
+2. **Phase 2**: Narrow down ideas, focus on a clear concept.
+3. **Phase 3**: Create a pitch deck presentation.
+
+---
+
+## Lesson 4: Mechanics, Verbs, Systems
+
+### Game Mechanics
+
+- **Core Mechanics**: The essential, repeated actions that define player behavior in a game (Salen & Zimmerman).
+- **Definitions**:
+  - **Robin Hunicke, Marc LeBlanc, Robert Zubek (MDA Framework)**: Mechanics are the actions, behaviors, and controls available to the player.
+  - **Jesse Schell**: Mechanics define a game’s rules, player objectives, and interactions.
+- **Examples**:
+  - In *Monopoly*, players can buy unowned properties.
+  - In *Command & Conquer*, players can select multiple units by dragging.
+  - In *VVVVVV*, pressing X inverts gravity.
+
+### Key Aspects of Mechanics
+
+- **Questions Mechanics Answer**:
+  - **How do I play?**
+  - **What can I do in the game?**
+- **Mechanics vs. Systems**:
+  - **Mechanics**: Actions players can perform (e.g., jump).
+  - **Systems**: How the game responds to mechanics (e.g., gravity, trampolines).
+- **Elegance in Mechanics**: Efficient mechanics minimize player effort and maximize gameplay depth. Examples include the simplicity and depth of *Chess* and *Sensible Soccer*.
+
+### Core Mechanics in Game Genres
+
+- Core mechanics are fundamental to each genre:
+  - *Shooting games*: Shooting.
+  - *Adventure games*: Picking up and using items.
+  - *Fighting games*: Attacking opponents.
+  - *Match-3 games*: Matching tiles.
+
+### Verbs in Games
+
+- **Definition**: Verbs are the actions players can perform in a game, defining how they interact with the game world.
+- **Examples**:
+  - *DOOM*: Move, shoot, change weapon.
+  - *Monkey Island*: Open, close, push, pull, talk to, pick up, etc.
+  - *Text Adventures* (e.g., *Zork*): Offer a wide range of potential actions, creating an "analog" world illusion.
+
+---
+
+### MDA Framework: Mechanics, Dynamics, Aesthetics
+
+- **Purpose**: Developed by Hunicke, LeBlanc, and Zubek to structure game analysis and design.
+  - **Mechanics**: Game rules and actions players can take.
+  - **Dynamics**: The flow and strategies emerging from mechanics.
+  - **Aesthetics**: The player’s emotional response and experience.
+
+- **8 Kinds of Fun (MDA)**:
+  1. **Sensation** - Sensory pleasure.
+  2. **Fantasy** - Make-believe experiences.
+  3. **Narrative** - Story and drama.
+  4. **Challenge** - Overcoming obstacles.
+  5. **Fellowship** - Social interaction.
+  6. **Discovery** - Exploration.
+  7. **Expression** - Self-discovery.
+  8. **Submission** - Immersive pastime.
+
+### Feedback Loops
+
+- **Positive Feedback Loops**: Reinforce success (e.g., more power-ups for high scores). May destabilize the game by widening player advantage.
+- **Negative Feedback Loops**: Help balance gameplay by aiding players who fall behind (e.g., *Mario Kart*’s rubber-banding mechanics).
+- **Usefulness**: Positive loops can end games quickly, while negative loops allow fair competition across skill levels.
+
+### Emergence in Gameplay
+
+- **Emergent Gameplay**: Complex situations arise from simple mechanics. Allows players to set unique goals and solve challenges creatively.
+  - **Example**: *Speedrunning* as an emergent gameplay style.
+
+### Prototyping and Testing
+
+- **Purpose**: Prototypes help determine if a game concept is feasible and worth developing.
+  - Focus on core mechanics and ignore aesthetics during initial prototyping.
+  - **Paper Prototypes**: Quick, analog versions to test mechanics and iterate on design.
+
+---
+
+### Resources
+
+- **Books**: *Rules of Play* by Tekinbas & Zimmerman, *The Art of Game Design* by Jesse Schell.
+- **Further Reading**:
+  - MDA Framework: [Read here](https://users.cs.northwestern.edu/~hunicke/MDA.pdf)
+  - Emergent gameplay and mechanics development: *How Game Designers Create Meaningful Mechanics* on YouTube.
+  - **Feedback Loops in Games**: Analyzing how positive and negative feedback loops affect gameplay in *Monopoly* and *Mario Kart*.
+
+## Lesson 5: Pitch Your Game Workshop (and more)
+
+### Pitch Your Game Workshop
+
+- **Pitch Deck Requirements**:
+  - **Introduction**
+  - **Product Overview**
+  - **Plot & Narrative**
+  - **Gameplay Showcase**
+  - **Unique Selling Points**
+  - **Pithy Description**
+  - **The Team**
+  - **Budget & Timeline**
+  - **Audience**
+  - **Exciting Visuals**
+- **Presentation Preparation**: Prepare a 5-10 minute presentation, ensuring all aspects are complete and visually appealing.
+
+### Game Development as an Iterative Process
+
+- **Game Testing / Playtesting**:
+  - Essential for quality control and ensuring the mechanics, rules, and systems are understandable, engaging, and support the desired player experience.
+  - **Types of Game Testing**:
+    - Functional, Compatibility, Performance, Localization, Accessibility, Multiplayer/Singleplayer, Narrative, Stress, Alpha/Beta testing, QA, and many more.
+
+### Game Usability Testing & Playtesting
+
+- **Importance**: Usability testing and playtesting improve the game experience by providing real player feedback on prototypes and demos.
+- **Key Elements to Observe**:
+  - Player enjoyment, game progression, rhythm/flow, fairness, ease of learning, accessibility, and UI intuitiveness.
+  
+### Heuristic Evaluation
+
+- **Purpose**: Experts use guidelines to identify design issues and improve player experience.
+  - **Evaluation Criteria**:
+    - Fun factor, game flow, fairness, learning curve, clarity of objectives, intuitive UI, minimalism, sound usage, and consistency in UI elements.
+
+### Expert Reviews
+
+- **Method**: Specialists (UI designers, game designers, etc.) play through the game to spot problems and recommend improvements.
+
+### Eye Tracking Testing
+
+- **Purpose**: Tracks where players focus, helping designers understand how players perceive the environment, notice objects, and interact with the UI.
+
+### AI Testing & Game Analytics
+
+- **AI Testing**: AI-driven testing solutions for detecting bugs and optimizing gameplay.
+  - Example: [modl.ai](https://modl.ai/)
+- **Game Analytics**: Tools to analyze player behavior.
+  - Example: [GameAnalytics](https://gameanalytics.com/)
+
+### Usability Labs
+
+- **Description**: A controlled environment where users are observed interacting with a game. Observers track actions and gather insights on usability.
+
+### Playtesting Primer
+
+- **Playtesting Goals**:
+  - Detect bugs, improve core gameplay, showcase dynamics, test interface, and refine player experience.
+- **Guidelines for Effective Playtesting**:
+  - Observe players’ behavior, listen to feedback without influencing responses, and focus on experiences over suggestions.
+
+---
+
+### A Brief History of Sound in Video Games
+
+- Key titles and technologies that have shaped game audio:
+  - **Pong (1972)** - Basic sound generator.
+  - **Space Invaders (1978)** - Custom analog sound chip.
+  - **Super Mario Bros. (1983)** - 8-bit NES sound chip.
+  - **Ori and the Blind Forest (2015)** - Adaptive PCM sound.
+
+### The Role of Audio in Game Design
+
+- **Audio Cues**: Essential for feedback and enhancing game feel.
+- **Types of Audio**:
+  - **Level Soundtracks**: Dedicated themes for immersion.
+  - **Dynamic Music**: Adapts to gameplay in real-time.
+  - **Ambient Sounds**: Background noise to establish setting.
+  - **SFX (Sound Effects)**: Impacts, interactions, movement sounds.
+  - **Incidental Sounds**: Played during specific actions or events.
+  
+### Game Soundscapes
+
+- **Definition**: All sounds in a game, including music, effects, and environmental sounds, creating the audible experience of gameplay.
+- **Dynamic Music**: Changes based on game events (e.g., calm to combat music).
+- **Categories of Sound Effects**:
+  - **Local Sounds**: Play when close to the source.
+  - **Distant Sounds**: Heard from afar, like explosions.
+  - **Priority Sounds**: Play regardless of player location (e.g., health loss).
+
+### The Role of Music in Video Games
+
+- **Functions of Music**:
+  - **Setting the Theme**: Establishes the game’s mood.
+  - **Narration**: Enhances storytelling (e.g., *Journey*).
+  - **Worldbuilding**: Defines game atmosphere (e.g., *GTA V*).
+  - **Feedback**: Signals player progress and game events.
+  - **Rhythm**: Guides pacing, especially in rhythm-based games like *Crypt of the Necrodancer*.
+  
+### Dynamic Music and Ambient Sound
+
+- **Dynamic Score**: Music that adapts to gameplay moments (e.g., *Wing Commander*).
+- **Ambient Sound**: Background sounds that enhance immersion and create a sense of place.
+
+### Audio Prioritization and Sound Quality
+
+- **Audio Hierarchy**: Not too many sounds at once; prioritize based on relevance to gameplay.
+- **Bad Sound**: Disruptive or low-quality audio can significantly detract from the experience.
+
+### The Developer / Musician Relationship
+
+- **Collaboration Tips**:
+  - Establish a temporary soundtrack, define the game’s mood and style, communicate needs clearly, and set realistic deadlines.
+
+### Key Musical Terminology
+
+- **Accent**: Emphasis on a beat.
+- **Beat**: The pulse of the music.
+- **Leitmotif**: A theme associated with specific characters or situations.
+
+### Additional Resources
+
+- **AI Tools for Sound Creation**: [SUNO AI](https://suno.com/create)
+  
+This lesson emphasizes the importance of a polished pitch deck, iterative testing, and the role of sound and music in creating a memorable gaming experience.
+
 ## Lesson 6: Level Design
 
-Level Design is applied and specialized game design. It turns abstract rules of the game into specific playable experiences by unifying gameplay. It comes with its own methodologies and goals. \
-Level design is what creates the environment and spaces of the game, players will explore, traverse, and play.
+### Overview
 
-Level design is hiding and fixing technical and design problems. Camera flipping for example, when the camera bounces between two objects. Decorations around corners can easily fix this issue.
+Level design is the applied and specialized branch of game design that translates abstract game rules into specific, playable experiences. It creates the environment and spaces that players explore, traverse, and play within. Effective level design integrates gameplay, environment, and storytelling while resolving technical issues (e.g., camera flipping) by using decorations or adjustments to improve player experience.
 
-The term level can be both specific and vague, depending on the game. In certain cases level can mean anything from mission and area to world and quest. It can also refer to an environment where play happens.
+The term "level" can vary in scope, meaning anything from a mission or area to a world or quest, essentially describing the space where gameplay occurs.
 
-### Level Designer
+### Role of the Level Designer
 
-A level designer acts as an architect of virtual worlds. The express game design both through and in virtual space, and ensure that players are provided with challenges, puzzles and opportunities to play.
+A level designer acts as an architect of virtual worlds, expressing game design within virtual space. They ensure players encounter challenges, puzzles, and opportunities, and are guided through the game’s narrative and key moments.
 
-the level designer has to guide player movement, highlights narrative beats, set up engaging combat scenarios and create puzzles.
+Level designers combine and arrange the work of the entire team, including textures, geometries, sprites, mechanics, music, sounds, enemies, hazards, and spawn points, to create a cohesive experience. Their responsibilities include:
 
-The level designer will combine and arrange the work of the whole team in a cohesive functioning whole. They will combine textures, geometries, sprites and mechanics, musics, ambient sounds, place enemies, hazards, spawn points.
+- Placing and expressing:
+  - Lighting
+  - Characters
+  - Enemies
+  - Story elements
+  - World-building elements
+  - Core mechanics
+- Ensuring the game vision becomes a playable reality.
 
-The level designer is responsible for making the vision of the game design become a reality.
+### Goals of Good Level Design
 
-The level design team is responsible for placing and expressing the following:
+Good level design should:
 
-- lighting
-- characters
-- enemies
-- information
-- story
-- world building
-- game design
-- core mechanics
+- Teach players the game’s mechanics
+- Provide an entertaining experience
+- Set appropriate difficulty and flow
+- Reward or punish players as needed
+- Enhance player immersion
+- Offer variety and reward exploration
+- Provide an engaging audiovisual experience
+- Support and fulfill game design goals
 
-The fundamental, general goals of good level design has to:
+### Practical Rules for Level Design
 
-- teach how the game is played, and what its mechanics are,
-- make the game entertaining,
-- correctly define and gauge the difficulty & flow of the game,
-- appropriately reward or even punish players,
-- contribute to player immersion,
-- be varied and reward exploration or experimentation.
-- provide the required audiovisual experience, and offer quality visual composition
-- support and realize the goals of game design.
+- **Form follows function**: Design elements should support functionality and usability.
+- **Experience is key**: Design for emotional responses like delight, horror, and excitement.
+- **Metrics matter**: Keep track of design measurements to maintain consistency.
+- **Playtesting is mandatory**: Level design should be an iterative process.
+- **Consider the player’s perspective**: Understand how players will see and experience the level.
+- **Rhythm**: Create a balanced progression of challenge and rest.
+- **Gradual introduction**: Introduce game elements and difficulty gradually.
+- **Challenge and engagement**: Make spaces interesting and challenging.
+- **References**: Gather inspiration from geology, urbanism, and architecture.
 
-### Practical Rules
+### Flow and Difficulty
 
-Form follows function (functional requirements, usability, etc...) \
-Experience is key (delight, horror, elation, etc...) \
-Metrics are important \
-Play testing is mandatory, All games and level design should be iterative \
-Always ask ourselves who is the level intended for. How do players actually see a level \
-Rhythm \
-Gradual introduction of game elements and difficulty \
-Spaces must be interesting and provide challenges \
-Gather references (geology, urbanism, and architecture), information
+Flow is the foundation of a successful gaming experience and applies to all genres. Breaks in flow can disrupt the player’s experience.
 
-### Flow & Difficulty
+- **Goldilocks Zone of Flow**: The ideal flow state differs for each player and should match their skill level.
+- **Elastic Challenges**: Provide different levels of success or failure (e.g., barely missing a jump but grabbing an edge).
+- **Difficulty Options**: Dynamic difficulty adjustments can help match the challenge to player skill.
 
-Flow is the foundation of every successful video games experience. It applies to effectively all genres \
-"if flow is broken, the other parts of the game experience fall apart"
+#### Example: Mario’s Level 1-1
 
-The goldilocks zone of flow is different for every player. It needs to be designed for a specific skill level. \
-In several cases elastic challenges are provided. Those are challenges that provide different levels of success (and failure).
+The introductory level in *Super Mario Bros.* teaches:
 
-Multiple degrees of failure; barely miss a jump and die, be forced to retry, or simply grab the edge and pull up (continue) \
-Difficulty options are another solution. As they are dynamic difficulty adjustments.
+- Breakable bricks
+- Screen scrolling
+- Power-ups (mushrooms)
+- Enemy mechanics
+- Basic controls and jumping
 
-The three levels of Virtua Racing offer different difficulty settings, starting locations, and overall driving / gaming experiences \
-Track width and competing for race position versus road space. \
-Elastic challenge is provided for expert players, by using manual gear shifting to maximize their advantage.
+#### Example: Doom's Design Elements
 
-MARIO'S 1-1 LEVEL teaches us that certain bricks are breakable, how the screen scrolls, what mushrooms do, how enemies are killed, how jumping works, etc...
+- **Core gameplay elements**: FPS action, health and armor, weapons, monsters, and bonuses.
+- **John Romero's Design Rules**:
+  - Change floor height with texture changes
+  - Use border textures between different wall segments
+  - Align textures precisely
+  - Use contrast in light and space
+  - Ensure players can access visible areas
+  - Include secret areas
+  - Guide players through revisiting areas
+  - Create recognizable landmarks for navigation
 
-#### Doom example
+### Types of Level Design
 
-what does game design define:
+- Varies by game genre, camera perspective, level size, game structure, and specific level purpose.
+- Digital vs. analog level design.
 
-- FPS
-- Frantic action
-- Armor, HP
-- Weapons variety
-- Single & Multiplayer
-- Bonuses
-- Monsters variety
+### Teaching, Testing, and Rewarding in Level Design
 
-John Romero's level design rules:
+- **Teaching**: Games must teach their rules and mechanics through safe environments, tutorials, or trial and error.
+- **Testing**: Gradually increase the difficulty to test player skills.
+- **Rewarding**: Provide rewards like points, powers, or achievements to reinforce positive player actions.
 
-- Always change floor height when changing floor texture
-- Use border textures between different wall segments and doorways
-- Be strict about texture alignment
-- Use contrast between light and dark areas, and cramped and open areas
-- If the player can see outside, they should somehow be able to get there
-- Be strict about having several secret areas on each level
-- Make levels flow so that the players revisit areas and better understand 3D spaces
-- Create several easily recognizable landmarks for easier navigation
+### Visuals in Game Design
 
-Those 8 rules are not enough to create a good level.
+A good level is functional, legible, and visually appealing. Visual complexity should be balanced to avoid overwhelming players with "visual noise." Establish a visual hierarchy to guide player attention, using clear visual symbols and consistent vocabulary for gameplay mechanics.
 
-### Types of level design
-
-Depending on game genre \
-Depending on the camera \
-Depending on level size and game structure \
-Depending on a specific level's purpose \
-Digital & analog level design
-
-### Teaching, testing, Rewarding
-
-Humans as well as many animals have a biological tendency to play. It's through play that we acquire crucial skills (in safe environment)
-By playing, we are rewarded with pleasure and knowledge. it has been argued that acquiring knowledge is in itself pleasurable.
-
-Games can potentially teach us all sorts of things but they must absolutely be able to teach us their rules; how we play them.
-Then they test how well we understood what is meant to understand
-Finally they reward us for the efforts.
-
-Good level design makes certain the player...
-
-#### Teaching
-
-If a game cannot teach its rules, it cannot be played. \
-Fundamentals aside, games also teach tactics, better approaches, strategies, path-finding, game logic, spatial patterns, skills uses, and anything else that ,might be needed.
-
-Teaching should generally be followed by a chance of safe trying out the newfound knowledge or skill.
-
-We can teach traditionally through tutorials, manuals, wikis, videos. \
-We can teach the Montessori way by allowing experimentation \
-We can teach through examples and observation
-
-##### Designing Tutorial Level
-
-The many functions of a tutorial / first level:
-
-- the art of the arrival!
-- Set the tone, introduce the theme
-- Teaching basic controls and types of obstacles or challenges
-- Allowing the practice of key abilities
-- Testing, teaching, rewarding in the purest form.
-- Subtle hidden tutorials and controlled spaces
-- The direct versus the Montessori-type method
-- Continuous in-game teaching
-- Visual, textual and auditory learning systems
-
-#### Testing
-
-Test the ability of the player with increasing difficulty levels. \
-
-#### Rewarding
-
-- Praise
-- Points
-- Prolonged play
-- Gateway
-- Spectacle
-- Expression
-- Powers
-- Resources
-- Status
-- Completion
-  
-But also: achievements, loot, souvenir, bonus materials, un-lockable content, even more praise, customization options and surprises.
-The positive reinforcement of rewards makes the feel even more rewarding.
-
-Remember that the main way to generate dopamine motivation is by creating the anticipation of rewards. When we feel we are close to a reward, our brain releases dopamine to increase our motivation to pursue this goal.
-
-Remember that superimposed reward schedules work as well
-
-Remember that rewarding activities the player already wants to undertake make them even more satisfying
-
-But also remember that, sometimes, rewarding something already satisfying can take a way from the experience
-
-### The Visuals of Game Design
-
-A beautiful level is not enough, a good level has to be functional, legible and remain interesting both aesthetically and gameplay-wise. it must also be very prudent and economical in the amount of visual assets it uses. \
-The legibility of a level and the information it conveys can change during a game
-
-Complex graphics make noise. structuring a game's visual hierarchy can be important. \
-Players can only absorb a certain number of signals at a time. Further signals added past this limit can't be processed by the player and becomes noise.
-
-In a visual hierarchy, everything is displayed at once, but more important pieces of information are made more visible so that people notice them.
-
-The level designer, the game designer and the visual artist will co-decide on the visual symbols of gameplay mechanics and suggest pleasing and effective solutions. they will define the visual language that the game will use.
-Examples: LA Noire and Dark Souls
-
-A game must establish a metaphor vocabulary that indicates which elements are simulated mechanically. It must remain consistent with this vocabulary.
-
-Level artwork, Geometry and level design are also tasked with:
-
-- guiding players
-- engaging in environmental storytelling
-- filling-in segments devoid of gameplay
-- contributing to world building
-- triggering specific emotions
-- supporting and emphasizing gameplay
-- evoking the appropriate atmosphere
-- focus players' attention
+- **Level Design Tasks**:
+  - Guiding players
+  - Environmental storytelling
+  - Filling empty spaces
+  - Contributing to world-building
+  - Emphasizing gameplay
+  - Creating atmosphere
 
 ### Visual Composition
 
-Aims to improve views and scenes, it arranges and organizes scene elements. \
-It guides our gaze to points of interest and curial information. It creates aesthetically pleasing images. \
-It uses symmetries, the rule of thirds, guiding lines.
+Effective visual composition arranges scene elements to guide the player’s gaze and creates aesthetically pleasing images. Techniques include:
+
+- **Symmetry**
+- **Rule of Thirds**
+- **Guiding Lines**
 
 ### Traditional Level Design Pipeline
 
-**Pre-production**: Information gathering, research, references, team discussion, level design document, sketches and rough block-out. \
-**Production**: Level block-out, iteration on block-out, adding gameplay elements, more iteration and testing art and audio synching \
-**Iteration**: Final art & audio pass, lighting pass, review.
+1. **Pre-Production**: Research, gather references, create level design documents, sketch and block out levels.
+2. **Production**: Refine block-outs, add gameplay elements, test, sync audio and art.
+3. **Iteration**: Final art and audio pass, lighting pass, and review.
 
-### 3D level design considerations
+### 3D Level Design Considerations
 
-- Verticality and depth,
-- Thoroughly check lines of sight
-- Think in 3D - realize that 3D spatial awareness is a skill that can challenge many and that 3D mental maps are demanding
-- Guiding through and navigating in #d spaces must be simpler than in 2D ones,
-- Ai design must take 3d space into account
+- Incorporate verticality and depth.
+- Manage lines of sight carefully.
+- Consider the challenges of 3D navigation and spatial awareness.
+- Design AI to navigate 3D spaces effectively.
 
-noclip.website
+### Starting a New Level
 
-### A brand new level
-
-We begin with a concept, an idea, inspiration can be found in games, paintings, literature, movies...
-
-What's the purpose of the particular level? Its aesthetics? What's the intended experience?
+Begin with a concept or inspiration. Consider the purpose, aesthetics, intended player experience, space, size, architecture, narrative, goals, and challenges.
 
 ### Level Characteristics
 
-What kind of space is the level taking place in?
+Key questions for level design:
 
-How big is the level? How much time is required for it to be fully explored or beaten?
-
-What paths will players use to traverse the space?
-
-What are its aesthetic? its architecture?
-
-What is the story the level narrates
-
-What are the goals? What challenges will they face?
-
+- **What kind of space?** Describe the environment’s style and theme.
+- **Size and duration**: How long will it take to explore or complete?
+- **Paths**: What paths will players follow?
+- **Aesthetics**: What visual and architectural styles are used?
+- **Narrative**: What story does the level tell?
+- **Goals and challenges**: What objectives will players face?
