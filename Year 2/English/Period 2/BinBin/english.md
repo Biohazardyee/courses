@@ -14,7 +14,6 @@ she goes to lidl and super u, she has a girl neighbor
 - red wine 2.69 / liter
 - hot cider
 - flamed octopus' tentacles with armaniac/maple syrup
-- asian noodles
 - spice.
 
 ## Vocabulary list related to study
@@ -50,9 +49,14 @@ How does the author description of the yellow headed blackbird create a vivid im
 
 The usage of two vivid colors—bold yellow head and bright blue sky—contrasts with the black body of the bird. This emphasizes the magnificent and vivid colors of the birds that stand out from the landscape.  The colors stand out despite the dark-feathered color of the bird. Moreover, the colors are well-described and precise, making it simple for the user to synthesize the image.
 
-What is the significance of the author, distiguishing between his early bird memory and his earliest birding memory?
-
+What is the significance of the author, distinguishing between his early bird memory and his earliest birding memory?
 
 How does the author characterized Steve Jobs based on their first meeting? in 1984
 
-What litterary device does the author gives when describing Jobs' charm.
+What literary device does the author gives when describing Jobs' charm.
+
+---
+
+merry christmas
+
+your nephew just pulled in the manger - creche de noel = manger

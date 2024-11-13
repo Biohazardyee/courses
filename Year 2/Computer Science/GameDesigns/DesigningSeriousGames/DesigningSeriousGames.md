@@ -92,6 +92,7 @@
     - [3D Level Design Considerations](#3d-level-design-considerations)
     - [Starting a New Level](#starting-a-new-level)
     - [Level Characteristics](#level-characteristics)
+  - [Lesson 7: Interact Narrative \& Storytelling](#lesson-7-interact-narrative--storytelling)
 
 </details>
 
@@ -792,3 +793,6 @@ Key questions for level design:
 - **Aesthetics**: What visual and architectural styles are used?
 - **Narrative**: What story does the level tell?
 - **Goals and challenges**: What objectives will players face?
+
+## Lesson 7: Interact Narrative & Storytelling
+
