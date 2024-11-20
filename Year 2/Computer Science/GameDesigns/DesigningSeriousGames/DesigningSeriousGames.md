@@ -93,6 +93,18 @@
     - [Starting a New Level](#starting-a-new-level)
     - [Level Characteristics](#level-characteristics)
   - [Lesson 7: Interact Narrative \& Storytelling](#lesson-7-interact-narrative--storytelling)
+    - [Storytelling Basics](#storytelling-basics)
+    - [Influential Works on Story Structure](#influential-works-on-story-structure)
+    - [Types of Story Structures](#types-of-story-structures)
+    - [Narrative Elements](#narrative-elements)
+    - [Video Game Narratives](#video-game-narratives)
+    - [Types of Game Narratives](#types-of-game-narratives)
+    - [Narrative Design](#narrative-design)
+    - [Interactive \& Dynamic Writing](#interactive--dynamic-writing)
+    - [World Building](#world-building)
+    - [Environment Design](#environment-design)
+    - [Narrative Tools for Game Development](#narrative-tools-for-game-development)
+    - [Resources \& Further Reading](#resources--further-reading)
 
 </details>
 
@@ -796,3 +808,94 @@ Key questions for level design:
 
 ## Lesson 7: Interact Narrative & Storytelling
 
+### Storytelling Basics
+
+- **Elements of All Stories**:
+  - Space and time, plot, characters, conflict, resolution, point of view, theme, and narrative style.
+- **Story Arc**: A story's chronological path from beginning to end, often structured in three acts:
+  1. **Beginning**: Inciting event sets the plot in motion.
+  2. **Middle**: Protagonist faces challenges and attempts to overcome crises.
+  3. **End**: Resolution or catharsis.
+
+### Influential Works on Story Structure
+
+- **Aristotle’s *Poetics***: Defines the three-act structure and cause-and-effect in storytelling.
+- **Joseph Campbell’s *The Hero’s Journey***: A universal narrative pattern for the hero’s transformation journey, involving departure, initiation, and return.
+- **Robert McKee’s *Story***: Emphasizes that stories revolve around transformation, obstacles, and scenes that contribute to change.
+
+### Types of Story Structures
+
+- **The Three-Act Structure**: Common in Western storytelling, focusing on setup, confrontation, and resolution.
+- **Kishōtenketsu**: East Asian structure that does not rely on conflict, instead progressing through introduction, development, twist, and resolution.
+
+---
+
+### Narrative Elements
+
+- **Theme**: The central idea or message of the story (e.g., love, freedom, sacrifice).
+- **Plot**: The sequence of events or actions, usually involving escalating conflict.
+- **Pace**: Varies throughout the story, starting fast, slowing in the middle, and intensifying at the climax.
+- **Characters**: Characters should have depth, flaws, and be relatable or intriguing.
+  - **Compelling Characters**: Defined by desires, beliefs, flaws, and unique traits.
+
+### Video Game Narratives
+
+- **Narrative vs. Story**: Narrative is how the story is presented; the story is the sequence of events.
+- **Story Supporting Gameplay**: Story should enhance gameplay without alienating players uninterested in narratives.
+
+### Types of Game Narratives
+
+- **Linear Narrative**: Traditional storytelling with a fixed sequence.
+- **Branching Narrative**: Players make choices that affect the story’s direction, though it can be costly to develop.
+- **Parallel Paths**: Branches that converge at key points to reduce asset requirements.
+
+### Narrative Design
+
+- **Role**: Integrates story with game mechanics and level design to create a cohesive experience.
+  - Aligns fiction with gameplay (e.g., the HUD in *Half-Life*).
+  - Determines story elements like cutscenes, dialogue systems, and mandatory vs. optional content.
+
+---
+
+### Interactive & Dynamic Writing
+
+- **Interactive Writing**: Crafting narratives that respond to player choices.
+- **Dynamic Writing**: Story elements that adapt based on player actions (e.g., choices made in *Mass Effect*).
+
+### World Building
+
+- **Game World**: The setting where the game’s story unfolds, whether realistic, fantastical, or historical.
+- **World Elements**:
+  - **Map**: Geography, topography, and boundaries.
+  - **Systems**: Rules for physics, magic, economics, politics, etc.
+  - **Atmosphere and Theme**: Defines the world’s aesthetic and logic.
+
+### Environment Design
+
+- **Crafting Game Environments**:
+  - **Gameplay Focused**: Every environment should enhance gameplay.
+  - **Believable and Immersive**: Spaces should adhere to realistic or consistent rules (e.g., natural environments, settlements near water sources).
+  - **Urban Environments**: Reflect real-world functions while supporting gameplay needs.
+
+### Narrative Tools for Game Development
+
+- **Interactive Storytelling Tools**:
+  - [Twine](https://twinery.org/) - Interactive, non-linear stories.
+  - [Arcweave](https://arcweave.com/) - Story mapping and narrative design.
+  - [Articy Draft](https://www.articy.com/en/) - Professional narrative design tool.
+  - [Ren’Py](https://www.renpy.org/) - Visual novels and interactive stories.
+  - [Ink](https://www.inklestudios.com/ink/) - Script-based interactive storytelling.
+
+---
+
+### Resources & Further Reading
+
+- **Books and Guides**:
+  - *The Hero with a Thousand Faces* by Joseph Campbell
+  - *Story: Substance, Structure, Style and the Principles of Screenwriting* by Robert McKee
+- **Useful Articles**:
+  - *Urban Design and the Creation of Videogame Cities* by Konstantinos Dimopoulos (Gamasutra)
+- **Workshops and Tools**:
+  - *Twine Workshop*: Create an interactive text-based adventure game.
+
+---
