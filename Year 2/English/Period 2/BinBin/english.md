@@ -24,7 +24,7 @@ even if genuis do some revision
 
 revise by looking at past papers
 
-exam happens everyear
+exam happens ever year
 
 memorized
 
@@ -60,3 +60,35 @@ What literary device does the author gives when describing Jobs' charm.
 merry christmas
 
 your nephew just pulled in the manger - creche de noel = manger
+
+have something to pitch
+the beam of his charm
+be focused on
+tempting
+be restored to the throne
+thereafter
+think different
+the endeavor of assessing historic influence fascinating
+extol
+petulant
+revealing
+i found myself rather captivated
+engaging intensity
+
+lined up along
+prompt something to
+tally
+transform someone's interest in bla into a quest with a sense of purpose
+laid down enough pencil miles
+take hold
+brain exercise
+make lines on paper
+
+promote the chair
+chat bot
+
+Dinesh is being prompted by his coworker to send a file, once again. Dinesh is petulant, as he has already sent the file 5 times. It is not a brain exercise to dig into the conversation.
+
+His coworker stood there, as if he had something to pitch, in fact, he sat down, into thin air, revealing a mechanic tripod chair. He was extolled by the creation and restored the throne to his coworker, by sending him the file.
+
+Thereafter, Dinesh took hold and focused on dissing his coworker with Gilfoyle, his friend. I found myself rather captivated upon discovering that it was a chatbot all along, making lines on the paper. It laid down enough pencil miles to trick Dinesh into thinking it was Gilfoyle.
