@@ -4,6 +4,9 @@
   - [DOXX](#doxx)
     - [Shopping List](#shopping-list)
   - [Vocabulary list related to study](#vocabulary-list-related-to-study)
+  - [27/11](#2711)
+    - [Sports during Thanksgiving](#sports-during-thanksgiving)
+    - [Thanksgiving in germany](#thanksgiving-in-germany)
 
 ## DOXX
 
@@ -92,3 +95,41 @@ Dinesh is being prompted by his coworker to send a file, once again. Dinesh is p
 His coworker stood there, as if he had something to pitch, in fact, he sat down, into thin air, revealing a mechanic tripod chair. He was extolled by the creation and restored the throne to his coworker, by sending him the file.
 
 Thereafter, Dinesh took hold and focused on dissing his coworker with Gilfoyle, his friend. I found myself rather captivated upon discovering that it was a chatbot all along, making lines on the paper. It laid down enough pencil miles to trick Dinesh into thinking it was Gilfoyle.
+
+## 27/11
+
+### Sports during Thanksgiving
+
+- If I had to choose
+- If you ask me
+- Out of all the gngngngn
+- the first gnggn that comes to mind is
+- I guess I'm trying to say that
+- To put it another away
+
+When I think about thanksgiving, the first thing that comes to my mind is football.
+Since the creation of the National Football League in 1920, many teams played during Thanksgiving.
+
+It's a delightful day for the Detroit Lions fans, as out of all the teams that played in the NFL, they have been playing on Thanksgiving day since 1937.
+To put it another way, its been nearly 90 years they play on Thanksgiving.
+
+If you ask me, I'd rather watch a football match, rather than staying stuck at a never-ending dinner.
+It is a tradition to watch football during thanksgiving.
+
+
+### Thanksgiving in germany
+
+Thanksgiving as celebrated in the United States is not a traditional holiday in Germany. However, Germany does have a similar occasion called "Erntedankfest" (Harvest Thanksgiving Festival), which typically takes place in late September or early October. Here's what Germans generally do for Erntedankfest:
+
+1. Church Services and Processions
+In rural areas, Erntedankfest often begins with a church service to give thanks for the harvest. Churches are decorated with fruits, vegetables, grains, and flowers.
+Some communities organize processions with decorated harvest wagons and displays of regional agricultural products.
+2. Traditional Food
+The celebration includes feasts with seasonal dishes. Common foods include roasted meats (like goose or pork), root vegetables, potatoes, and breads.
+While there's no turkey tradition as in the U.S., some families or communities might roast chickens or serve hearty stews.
+3. Community Events
+Villages or towns may hold markets, fairs, or festivals, with activities such as music, dance, and even games.
+In larger cities, it might be less common, but some church groups or local organizations still host events.
+4. Modern Adaptations
+With globalization, some Germans have adopted American-style Thanksgiving celebrations, especially in cities or among expatriate communities. This could include turkey dinners and gatherings with family or friends.
+While Thanksgiving isn't a public holiday in Germany, the concept of gratitude and celebrating the harvest resonates with many, particularly in traditional or rural areas.

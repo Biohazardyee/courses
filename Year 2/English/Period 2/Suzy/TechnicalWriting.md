@@ -25,6 +25,12 @@
     - [How to get toothpaste on a toothbrush](#how-to-get-toothpaste-on-a-toothbrush)
     - [Information](#information)
     - [How to put toothpaste on the toothbrush](#how-to-put-toothpaste-on-the-toothbrush)
+    - [Loan](#loan)
+      - [Revision](#revision)
+    - [Copy](#copy)
+      - [Revision](#revision-1)
+      - [Blocking the pop-ups](#blocking-the-pop-ups)
+    - [Exercise](#exercise-1)
 
 ## Review of previous session
 
@@ -261,3 +267,86 @@ visual representation of a toothpaste tube:
 **Note**: Remember to unscrew or screw: Lefty loosey, righty tighty.
 
 **Note**: Some people will wet the toothbrush before putting the toothpaste, choose whatever suits the best for you.
+
+### Loan
+
+The following steps use unordered lists to try to get both new users and returning users
+through the same path.
+
+To change the amount of your loan:
+
+1. Log in to your student portal and review your loan information.
+
+2. Choose the option to modify your loan and complete the fields and submit the changes:
+• If you have a signature PIN, click Submit and specify your PIN.
+• If you do not yet have a signature PIN, click Save Only. You will need to return to this
+page when you have your PIN. If you do not yet have a signature on file, complete
+form 10235 and sign and fax it. A PIN will be sent to your student email account
+within two business days.
+
+3. Review your student account. Changes to the loan will affect your other balances, and
+you might owe additional tuition, or you might be due a refund.
+
+#### Revision
+
+Follow these steps to modify your loan information:  
+
+1. **Log in** to your **student portal**.  
+2. **Review** your information.  
+3. If you do not yet have a **signature PIN**:  
+   - Complete **Form 10235**.  
+   - Sign and fax the form.  
+
+   > You will receive a PIN in your student mail account within **two business days**.  
+
+4. Select the option to **modify your loan information**.  
+5. Fill in the required fields and **submit** your updated loan information.  
+6. Check your **student account** to confirm the changes.  
+
+> ***Note:***  
+> Changes to your loan may affect your other balances. You could owe additional tuition or, conversely, be eligible for a refund.  
+
+### Copy
+
+2. Copy the contents of the file system from the source disk to the target disk. The steps that
+you use depend on the location of the target disk:
+  a. If the target disk is accessible from the source computer, run the copyfilesystem
+command.
+  b. If the target disk is not accessible from the source computer, run the
+copyfilesystem–tmb command to copy the contents of the source disk to
+tape, and then use the copyfilesystem– tmb command to copy the contents
+from the tape to the target disk.
+
+#### Revision
+
+2. To copy the content of the file system from the source disk to the target disk.
+
+|If The Target Disk Is |  Run Command | Then Run Command |
+|---|----|---|
+| **accessible**| `copyfilesystem` ||
+|**not accessible**|`copyfilesystem–tmb`|`copyfilesystem– tmb` |
+
+#### Blocking the pop-ups
+
+|Web Browser|Block the popups from|
+|---|---|
+|Chrome| **Options** Menu|
+|Firefox| **Preferences** Menu |
+|Internet Explorer| **Settings** Menu|
+
+### Exercise 
+
+Write a definition for:
+
+- a toaster: an electronic device, heating up your piece of bread for a tasty and crunchy experience
+- Computer mouse: an electronic device used for navigating through your computer
+- Keyboard: an electronic device connected to your computer used for connecting alphabetical inputs.
+- Piano: a musical instrument mostly used in classical music it produces sound by hammering on strings when the player presses either black or white keys.
+
+- Telephone: an electronic device used for communication between two users from each end of the line. Allowing communications nearly instantly, from miles away.
+
+- Database: Organized set of data stored on the internet or locally, allowing ease of re-use and access to the data stored inside of it.
+
+- Bot: short for Robot, is mostly used on the internet to assert dominance even if it has nothing revolutionary.
+
+- Malware: malicious software making a device misbehave once infected.
