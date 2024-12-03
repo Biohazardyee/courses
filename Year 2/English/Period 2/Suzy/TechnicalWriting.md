@@ -334,7 +334,7 @@ from the tape to the target disk.
 |Firefox| **Preferences** Menu |
 |Internet Explorer| **Settings** Menu|
 
-### Exercise 
+### Exercise
 
 Write a definition for:
 

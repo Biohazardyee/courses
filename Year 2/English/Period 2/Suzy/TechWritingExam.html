@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TechWritingExam.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="pinta-user-manual">Pinta User Manual</h1>
+<details>
+<summary>Table Of Content</summary>
+<ul>
+<li><a href="#pinta-user-manual">Pinta User Manual</a>
+<ul>
+<li><a href="#what-is-pinta">What is Pinta?</a></li>
+<li><a href="#downloading-pinta">Downloading Pinta</a></li>
+<li><a href="#how-to-import-a-picture-in-pinta">How to Import a Picture in Pinta</a>
+<ul>
+<li><a href="#prerequisite">Prerequisite</a></li>
+<li><a href="#import-a-picture">Import a Picture</a></li>
+</ul>
+</li>
+<li><a href="#creating-a-new-image">Creating a New Image</a>
+<ul>
+<li><a href="#prerequisite-1">Prerequisite</a></li>
+<li><a href="#create-a-new-image">Create a New Image</a></li>
+</ul>
+</li>
+<li><a href="#understanding-the-modifying-tools">Understanding the Modifying Tools</a></li>
+<li><a href="#modify-tools-color">Modify Tools' Color</a>
+<ul>
+<li><a href="#prerequisite-2">Prerequisite</a></li>
+<li><a href="#changing-the-color-of-a-tool">Changing the Color of a Tool</a></li>
+</ul>
+</li>
+<li><a href="#set-a-primary--secondary-color">Set a Primary / Secondary Color</a>
+<ul>
+<li><a href="#setting-colors">Setting Colors</a></li>
+<li><a href="#setting-a-custom-color">Setting a Custom Color</a></li>
+</ul>
+</li>
+<li><a href="#playing-with-layers">Playing with Layers</a>
+<ul>
+<li><a href="#prerequisite-3">Prerequisite</a></li>
+<li><a href="#managing-layers">Managing Layers</a></li>
+<li><a href="#renaming-a-layer">Renaming a Layer</a></li>
+<li><a href="#reorganizing-layers">Reorganizing Layers</a></li>
+<li><a href="#layer-visibility">Layer Visibility</a></li>
+</ul>
+</li>
+<li><a href="#saving-an-image">Saving an Image</a>
+<ul>
+<li><a href="#steps-to-save-your-image">Steps to Save Your Image</a></li>
+<li><a href="#important-notes">Important Notes</a></li>
+</ul>
+</li>
+<li><a href="#final-words">Final Words</a></li>
+</ul>
+</li>
+</ul>
+</details>
+<div style="page-break-after: always;"></div>
+<h2 id="what-is-pinta">What is Pinta?</h2>
+<p><img src="image-27.png" alt="alt text"></p>
+<p>Pinta is a free, open-source program for drawing and image editing.</p>
+<p>Its goal is to provide users with a simple yet powerful way to draw and manipulate images on Linux, Mac, and Windows.</p>
+<p>The software gives you access to both basic and advanced tools to modify images as desired.</p>
+<p>This document will help you get started with Pinta and understand its key features.</p>
+<blockquote>
+<p><strong>Note</strong><br>
+Ensure your computer is powered on and connected to the internet before proceeding.</p>
+</blockquote>
+<h2 id="downloading-pinta">Downloading Pinta</h2>
+<p>If you haven't already installed Pinta, follow these steps:</p>
+<ol>
+<li>
+<p>Open your web browser.</p>
+</li>
+<li>
+<p>Enter the following URL in the address bar:<br>
+<code>https://www.pinta-project.com</code></p>
+<p>You should see the following webpage:<br>
+<img src="image.png" alt="Pinta Website"></p>
+</li>
+<li>
+<p>Click on the <strong>Download</strong> button.</p>
+</li>
+<li>
+<p>Select <strong>Download</strong> for your operating system.<br>
+<img src="image-2.png" alt="Operating System"></p>
+</li>
+<li>
+<p>Run the downloaded file by double-clicking it.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong><br>
+If you can't locate the downloaded file, check your Downloads folder.</p>
+</blockquote>
+<p>Upon successful installation, launching Pinta should display the following window:<br>
+<img src="image-3.png" alt="Pinta Launch Screen"></p>
+<table>
+<thead>
+<tr>
+<th><strong>If Pinta</strong></th>
+<th><strong>Do This</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opens</td>
+<td>You have successfully installed Pinta!</td>
+</tr>
+<tr>
+<td>Doesn't Open</td>
+<td>Repeat the steps above to troubleshoot.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="how-to-import-a-picture-in-pinta">How to Import a Picture in Pinta</h2>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Ensure Pinta is downloaded and running.</li>
+<li>Have a picture ready for modification.</li>
+</ul>
+<h3 id="import-a-picture">Import a Picture</h3>
+<p>Follow these steps to import a picture into Pinta:</p>
+<ol>
+<li>
+<p>Click <strong>Open</strong> in the top-left corner of the screen.<br>
+<img src="image-4.png" alt="Open Option"></p>
+</li>
+<li>
+<p>Browse and select the image file from your computer.<br>
+<img src="image-6.png" alt="File Explorer"></p>
+</li>
+<li>
+<p>Click <strong>Open</strong>.</p>
+</li>
+</ol>
+<p>Your image will now appear in the Pinta workspace:<br>
+<img src="image-7.png" alt="Image Imported"></p>
+<hr>
+<h2 id="creating-a-new-image">Creating a New Image</h2>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Ensure Pinta is downloaded and running.</li>
+</ul>
+<h3 id="create-a-new-image">Create a New Image</h3>
+<p>Follow these steps to create a new image in Pinta:</p>
+<ol>
+<li>
+<p>Click the <strong>New Image</strong> icon in the top-left corner.<br>
+<img src="image-9.png" alt="New Image Icon"></p>
+</li>
+<li>
+<p>A dialog box will appear:<br>
+<img src="image-10.png" alt="New Image Dialog"></p>
+</li>
+<li>
+<p>Select your desired settings, such as width, height, and resolution.</p>
+</li>
+<li>
+<p>Click <strong>OK</strong>.</p>
+</li>
+</ol>
+<p>Your new image canvas will now be ready.</p>
+<blockquote>
+<p><strong>Note</strong><br>
+Refer to this table to understand more about the settings.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Setting</strong></th>
+<th><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Preset</strong></td>
+<td>Clipboard: Uses dimensions of a copied image. Custom: Set your own values.</td>
+</tr>
+<tr>
+<td><strong>Width</strong></td>
+<td>Width of the image in pixels.</td>
+</tr>
+<tr>
+<td><strong>Height</strong></td>
+<td>Height of the image in pixels.</td>
+</tr>
+<tr>
+<td><strong>Orientation</strong></td>
+<td>Choose Portrait or Landscape orientation.</td>
+</tr>
+<tr>
+<td><strong>Background</strong></td>
+<td>Set the background to white or transparent.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="understanding-the-modifying-tools">Understanding the Modifying Tools</h2>
+<p>Pinta offers a range of tools located on the left-hand side of the screen.<br>
+This section explains the purpose of each tool, its image, functionality, and associated shortcut key.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Tool</strong></th>
+<th><strong>Image</strong></th>
+<th><strong>Functionality</strong></th>
+<th><strong>Shortcut Key</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Move Selected Pixels</strong></td>
+<td><img src="image-11.png" alt="Move Tool"></td>
+<td>Move, scale, and rotate the selected content.</td>
+<td><strong>M</strong></td>
+</tr>
+<tr>
+<td><strong>Zoom</strong></td>
+<td><img src="image-12.png" alt="Zoom Tool"></td>
+<td>Zoom in and out to adjust the view of your image.</td>
+<td><strong>Z</strong></td>
+</tr>
+<tr>
+<td><strong>Rectangle Select</strong></td>
+<td><img src="image-13.png" alt="Rectangle Tool"></td>
+<td>Select a rectangular-shaped region.</td>
+<td><strong>S</strong></td>
+</tr>
+<tr>
+<td><strong>Ellipse Select</strong></td>
+<td><img src="image-14.png" alt="Ellipse Tool"></td>
+<td>Select an elliptical-shaped region.</td>
+<td><strong>S</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Experiment with these tools to familiarize yourself with their capabilities.</p>
+<blockquote>
+<p><strong>Note</strong><br>
+This table does not yet include all tools. You can hover over any tool in the software to see its description and shortcut key.</p>
+</blockquote>
+<hr>
+<h2 id="modify-tools-color">Modify Tools' Color</h2>
+<p>For certain tools, such as the Pencil or Fill tool, changing the color is essential for customization.</p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Ensure Pinta is downloaded and running.</li>
+</ul>
+<h3 id="changing-the-color-of-a-tool">Changing the Color of a Tool</h3>
+<p>To change the color of a tool, follow these steps:</p>
+<ol>
+<li>Select the tool you want to use (e.g., Pencil, Fill).</li>
+<li>Find the <strong>Color Palette</strong> at the bottom-left corner of the screen.<br>
+<img src="image-3.png" alt="Color Palette"></li>
+<li>Click on the color you wish to use from the palette.</li>
+</ol>
+<p>After selecting a color, your chosen color will appear in the <strong>Recent Colors</strong> section on the left side of the palette.<br>
+This feature makes it easier to reuse previously selected colors.
+<img src="image-16.png" alt="alt text"></p>
+<hr>
+<h2 id="set-a-primary--secondary-color">Set a Primary / Secondary Color</h2>
+<p>Setting a primary and secondary color is a useful feature, allowing you to switch quickly between two colors while working.</p>
+<h3 id="setting-colors">Setting Colors</h3>
+<p>To assign colors, follow these instructions:
+<br></p>
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>How to Do It</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Set Primary</strong></td>
+<td>Left-click on the desired color in the palette.</td>
+</tr>
+<tr>
+<td><strong>Set Secondary</strong></td>
+<td>Right-click on the desired color in the palette.</td>
+</tr>
+</tbody>
+</table>
+<p>Once set, the primary color will be used for tools like the Pencil or Fill by default, while the secondary color can be accessed easily for alternate actions or tools.</p>
+<h3 id="setting-a-custom-color">Setting a Custom Color</h3>
+<p>To create and set custom colors in Pinta, follow these steps:</p>
+<ol>
+<li>
+<p>Click on the <strong>Custom Color Icon</strong> located next to the personal color palette.<br>
+<img src="image-17.png" alt="Custom Color Icon"></p>
+<blockquote>
+<p><strong>Note</strong><br>
+The left square sets a <strong>Primary Color</strong>, and the right square sets a <strong>Secondary Color</strong>.</p>
+</blockquote>
+</li>
+<li>
+<p>A color selection dialog box will appear:</p>
+<p><img src="image-18.png" alt="Color Dialog"></p>
+</li>
+<li>
+<p>Click on the black cross (+) to add a new custom color.</p>
+<p>This will open the custom color editor:<br>
+<img src="image-19.png" alt="Custom Color Editor"></p>
+</li>
+<li>
+<p>Use the sliders to adjust the <strong>Hue</strong>, <strong>Saturation</strong>, and <strong>Transparency</strong> to your desired color.</p>
+<ul>
+<li>You can also input a <strong>Hexadecimal Color Code</strong> directly for precise color selection.</li>
+</ul>
+</li>
+<li>
+<p>Once satisfied with your selection, click <strong>Select</strong> to confirm.</p>
+</li>
+</ol>
+<p>Your custom color will now appear in the palette, set as either the primary or secondary color based on your initial selection.</p>
+<hr>
+<h2 id="playing-with-layers">Playing with Layers</h2>
+<p>This section introduces you to working with layers in Pinta, including what layers are and how to manage them effectively. Layers allow you to stack and organize different elements of your image, making editing more flexible and non-destructive.</p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Open the image you wish to modify.</li>
+</ul>
+<h3 id="managing-layers">Managing Layers</h3>
+<p>The table below outlines the steps for creating, deleting, and duplicating layers:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Steps</strong></th>
+<th><strong>Icon</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Create a New Layer</strong></td>
+<td>1. Click the <strong>Add New Layer</strong> button.</td>
+<td><img src="image-20.png" alt="Add New Layer"></td>
+</tr>
+<tr>
+<td><strong>Delete a Layer</strong></td>
+<td>1. Select the layer you wish to delete.</td>
+<td><img src="image-21.png" alt="Layer Selection"></td>
+</tr>
+<tr>
+<td></td>
+<td>2. Click the <strong>Delete Layer</strong> button.</td>
+<td><img src="image-23.png" alt="Delete Layer"></td>
+</tr>
+<tr>
+<td><strong>Duplicate a Layer</strong></td>
+<td>1. Select the layer you want to duplicate.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2. Right-click the layer and choose <strong>Duplicate Layer</strong> from the context menu, or use the toolbar button if available.</td>
+<td><img src="image-22.png" alt="Duplicate Layer"></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note</strong><br>
+A selected layer is outlined in blue for easy identification.</p>
+</blockquote>
+<hr>
+<h3 id="renaming-a-layer">Renaming a Layer</h3>
+<p>To rename a layer, follow these steps:</p>
+<ol>
+<li>
+<p>Double-click the layer you wish to rename.</p>
+<p>A popup will appear:<br>
+<img src="image-24.png" alt="Rename Layer Dialog"></p>
+</li>
+<li>
+<p>Enter the new name for the layer in the <strong>Name</strong> field.</p>
+</li>
+<li>
+<p>Click <strong>OK</strong> to confirm.</p>
+</li>
+</ol>
+<p>Your layer is now renamed and updated in the layer list.</p>
+<hr>
+<h3 id="reorganizing-layers">Reorganizing Layers</h3>
+<p>To change the order of layers in your image:</p>
+<ol>
+<li>
+<p>Select the layer you want to move.</p>
+</li>
+<li>
+<p>Use the <strong>Move Layer</strong> drop-down menu:<br>
+<img src="image-25.png" alt="Move Layer Menu"></p>
+<p>Available options are:</p>
+<ul>
+<li><strong>Move Up</strong>: Moves the selected layer one position higher.</li>
+<li><strong>Move Down</strong>: Moves the selected layer one position lower.</li>
+</ul>
+<p><img src="image-26.png" alt="Move Layer Options"></p>
+</li>
+</ol>
+<p>Layers will be reorganized in the list and reflected in the image stack.</p>
+<hr>
+<h3 id="layer-visibility">Layer Visibility</h3>
+<p>You can toggle a layer's visibility on and off for practical purposes, such as focusing on specific elements during editing.</p>
+<p>To toggle visibility, follow these steps:</p>
+<ol>
+<li>
+<p>Identify the <strong>Layers Panel</strong> on the right side of the screen.</p>
+</li>
+<li>
+<p>Click the checkbox next to the layer you want to toggle visibility for.</p>
+<ul>
+<li>If the checkbox is checked, the layer will be <strong>visible</strong>.</li>
+<li>If the checkbox is unchecked, the layer will be <strong>hidden</strong>.</li>
+</ul>
+<p><img src="image-30.png" alt="Layer Visibility"></p>
+</li>
+</ol>
+<hr>
+<h2 id="saving-an-image">Saving an Image</h2>
+<p>Saving your image ensures that your progress and modifications are not lost. Follow these instructions to save your work effectively:</p>
+<h3 id="steps-to-save-your-image">Steps to Save Your Image</h3>
+<ol>
+<li>
+<p>Click on the <strong>Save</strong> button located at the top-left corner of the screen or simultaneously press command + S / Windows + S.<br>
+<img src="image-28.png" alt="Save Button"></p>
+<ul>
+<li>This will overwrite your current file with the modified version.</li>
+</ul>
+</li>
+</ol>
+<h3 id="important-notes">Important Notes</h3>
+<ul>
+<li>
+<p><strong>Overwriting Warning</strong>:<br>
+Saving directly will replace the original file with your modified version. If you want to preserve the original, make a copy of the file before editing.</p>
+</li>
+<li>
+<p><strong>File Location</strong>:<br>
+The saved file will be stored in the same location as the original imported file, unless specified otherwise.</p>
+</li>
+</ul>
+<p>By saving regularly, you can ensure your work is secure and avoid accidental data loss.</p>
+<hr>
+<h2 id="final-words">Final Words</h2>
+<p>This document provides an overview of Pinta's core functionalities to help you get started effectively.</p>
+<p>If you experience any bugs or issues while using Pinta, you can report them on our GitHub issue tracker:</p>
+<p><a href="https://github.com/PintaProject/Pinta/issues">https://github.com/PintaProject/Pinta/issues</a></p>
+<p>For additional documentation and tutorials, visit our How-To Guides:</p>
+<p><a href="https://www.pinta-project.com/howto/">https://www.pinta-project.com/howto/</a></p>
+<p>Our team is here to assist with troubleshooting and answer any questions you may have. Your feedback is invaluable in helping us enhance Pinta for all users.</p>
+
+</body>
+</html>
