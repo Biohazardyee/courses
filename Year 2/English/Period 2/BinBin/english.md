@@ -6,7 +6,17 @@
   - [Vocabulary list related to study](#vocabulary-list-related-to-study)
   - [27/11](#2711)
     - [Sports during Thanksgiving](#sports-during-thanksgiving)
-    - [Thanksgiving in germany](#thanksgiving-in-germany)
+    - [Thanksgiving in Germany](#thanksgiving-in-germany)
+  - [Note](#note)
+    - [1st passage](#1st-passage)
+      - [Aurelien](#aurelien)
+      - [Maxime](#maxime)
+      - [Clementine](#clementine)
+    - [2nd passage](#2nd-passage)
+    - [Paul](#paul)
+    - [Aurelien](#aurelien-1)
+      - [Clementine](#clementine-1)
+    - [Video](#video)
 
 ## DOXX
 
@@ -60,7 +70,7 @@ What literary device does the author gives when describing Jobs' charm.
 
 ---
 
-merry christmas
+merry Christmas
 
 your nephew just pulled in the manger - creche de noel = manger
 
@@ -116,8 +126,7 @@ To put it another way, its been nearly 90 years they play on Thanksgiving.
 If you ask me, I'd rather watch a football match, rather than staying stuck at a never-ending dinner.
 It is a tradition to watch football during thanksgiving.
 
-
-### Thanksgiving in germany
+### Thanksgiving in Germany
 
 Thanksgiving as celebrated in the United States is not a traditional holiday in Germany. However, Germany does have a similar occasion called "Erntedankfest" (Harvest Thanksgiving Festival), which typically takes place in late September or early October. Here's what Germans generally do for Erntedankfest:
 
@@ -133,3 +142,128 @@ In larger cities, it might be less common, but some church groups or local organ
 4. Modern Adaptations
 With globalization, some Germans have adopted American-style Thanksgiving celebrations, especially in cities or among expatriate communities. This could include turkey dinners and gatherings with family or friends.
 While Thanksgiving isn't a public holiday in Germany, the concept of gratitude and celebrating the harvest resonates with many, particularly in traditional or rural areas.
+
+## Note
+
+### 1st passage
+
+#### Aurelien
+
+- **Improvements Needed:**  
+  - Avoid saying "no" too often.  
+  - Work on being more consistent in delivery.  
+  - Improve accent clarity and articulation (e.g., "complexiti" should be "complexity").  
+  - Speak louder and with more confidence.  
+  - Watch for issues like "moRRRE" and "199 too."  
+  - "la voix baisse" 
+  - 200 won - you tried to say 200 and one
+  - You look bored and annoyed, evne if you are try to pretend
+
+#### Maxime  
+
+- **Improvements Needed:**  
+  - Avoid overusing filler words like "So."  
+  -  "rice," "race," "raise", you tried correcting yourself, it was a nice try tho. <3
+  - Be careful with "zis" instead of "this" and "Z" for "th."  
+  - Be more confident in delivering facts (e.g., "1938" and "approximately").  
+  - Work on intonation and overall clarity.  
+  - "financial difficulties," "motor vehicles"  work on pronunciation, you said feenancial
+  - Pronunciation of "nationalize all the rails" should be smoother.  
+
+#### Clementine  
+
+- **Improvements Needed:**  
+  - Ensure correct pronunciation of terms (e.g., "privatisation," "passenger").  
+  - Avoid unclear or filler phrases like  "Ouais => Bah euh."  
+  - "goid point of those?" 
+  - Work on clearer articulation of points (e.g., "The UK rails were privatized went really up fast" is unclear).  
+  - Pay attention to accent and accentuation.  
+  - Avoid using expletives like "feuck" in professional settings. or pronounce it properly lol 
+  - If you wanna talk about a specific decade say "in the 1990s"
+
+### 2nd passage
+
+### Paul
+
+- **Improvements Needed:**  
+  - Words to improve: "alright," "istory," "wouagon," "euuh," "amalgamated," "mahny" (should be "many"), "railings" (should be "railways").  
+  - Watch for pronunciation issues like "shit" sounded very french and "The histeury" (should be "the history").  
+  - Replace "wagons" with "carriages."  
+  - Clarify phrases like "stayed?" and "took ove others."  
+  - Intonation problems throughout.  
+
+### Aurelien 
+
+- **Improvements Needed:** 
+  - Words to improve: "ralways" (railways), "zey decided" , "the kality" (), a
+  - Issues with pronunciation of "r" and "w" (e.g., "dizzeuh," "euhhhhhh").  
+  - Avoid overdoing "tooooooo" and filler sounds like "euh."  
+  - Improve articulation of numbers (e.g., "in 199 too," "1982").  
+  - Work on intonation and accentuation, especially in longer sentences.  
+  - Ensure clarity with terms like "privatisation," "highly cost," "tracks and wagons," and "increase of customers."  
+  - Content is good, but pronunciation and delivery need improvement.  
+
+#### Clementine 
+
+- **Improvements Needed:**  
+  - Words to improve: "three" (ensure the "th" sound), "zirdly" (should be "thirdly"), "ticken" (should be "ticket").  
+  - Ensure proper pronunciation of "high" (emphasize the "h") and avoid replacing "ways" for "railways."  
+  - Be clearer with phrases like "euh in a passenger," "50 billion what," and "put into competition."  
+  - Focus on advantages like "cheaper," but also ensure a strong conclusion.  
+  - Intonation and filler words like "euh" need addressing.  
+
+### Video
+
+The resume is rly important it represents you, skills, past
+
+Ive seen they include everything idc what u did 20-30 y ago, you might have been a star 20 years ago, but the world has changed, you changed, only go back at around 15 years
+
+grammatical mistakes, dead punctuations, more than 1 error its done, resume are expected to be perfect, spell check
+
+all hire manager and staff check on the internet, can stop you from getting or actually get you an interview. be careful post you do, your conversation, do a google search on ur own name
+
+job advertisement, posted online, or a job description hr
+what are the skills and abilities that are required to do the job
+list the key skills that are required
+were theses skills in the past
+stories that demonstrate how they use their skills
+
+how do they dress, how do they come in
+
+if you dont handle it the right way, how you approach them
+treat everyone as part of the interview process
+
+the employers is giving us money, i can offer enough value to the company. If I give more value = more money.
+
+
+id let the employer raise the money topic first
+that's the right time after
+
+body language + eye contant + tone is impotant, we want to feel confident, communicate your confidence
+
+its strong personality, id like to be an apple tree, beautiful, blooming and fruity, cactus dont need a lot of support they can survive on their own.
+
+black friday discount of prices, unofficial start of holiday
+
+isnt only about shopping
+
+it has been in the new, bad event that happened on fridays
+
+in 1869, couple investors james fisk, gold market financial panic, black friday
+
+after the us thanksgiving
+
+bonnie tayler blake searcher, a jounrla factory management 1951, day afyer thanksgiving, it has to do with worker absentesm, had trouble to have their worker to show up
+
+Police in philadelphia, because biggest shopping day, football game, panics, dealing with traffic, foot and car traffic, deal with all that
+
+chatoci shop scene
+didnt like the connotation, wanted to rebrand it as big friday. 
+very common myth, since 1980's black friday = retail store companies become profitable, they go in the black
+
+its been so scucesful try to spin off black friday to other days, cyber monday
+
+black friday is a popular day for retailers
+
+---
+  
