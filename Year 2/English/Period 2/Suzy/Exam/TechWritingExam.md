@@ -37,7 +37,7 @@
 
 ## What is Pinta?
 
-![alt text](image-27.png)
+![alt text](/Year%202/English/Period%202/Suzy/images/image-27.png)
 
 Pinta is a free, open-source program for drawing and image editing.  
 
@@ -59,11 +59,11 @@ If you haven't already installed Pinta, follow these steps:
    `https://www.pinta-project.com`
 
    You should see the following webpage:  
-   ![Pinta Website](image.png)
+   ![Pinta Website](/Year%202/English/Period%202/Suzy/images/image.png)
 
 3. Click on the **Download** button.  
 4. Select **Download** for your operating system.  
-   ![Operating System](image-2.png)
+   ![Operating System](/Year%202/English/Period%202/Suzy/images/image-2.png)
 
 5. Run the downloaded file by double-clicking it.
 
@@ -71,7 +71,7 @@ If you haven't already installed Pinta, follow these steps:
 > If you can't locate the downloaded file, check your Downloads folder.
 
 Upon successful installation, launching Pinta should display the following window:  
-![Pinta Launch Screen](image-3.png)
+![Pinta Launch Screen](/Year%202/English/Period%202/Suzy/images/image-3.png)
 
 | **If Pinta** | **Do This**                                   |
 |--------------|-----------------------------------------------|
@@ -92,15 +92,15 @@ Upon successful installation, launching Pinta should display the following windo
 Follow these steps to import a picture into Pinta:
 
 1. Click **Open** in the top-left corner of the screen.  
-   ![Open Option](image-4.png)
+   ![Open Option](/Year%202/English/Period%202/Suzy/images/image-4.png)
 
 2. Browse and select the image file from your computer.  
-   ![File Explorer](image-6.png)
+   ![File Explorer](/Year%202/English/Period%202/Suzy/images/image-6.png)
 
 3. Click **Open**.  
 
 Your image will now appear in the Pinta workspace:  
-![Image Imported](image-7.png)
+![Image Imported](/Year%202/English/Period%202/Suzy/images/image-7.png)
 
 ---
 
@@ -115,10 +115,10 @@ Your image will now appear in the Pinta workspace:
 Follow these steps to create a new image in Pinta:
 
 1. Click the **New Image** icon in the top-left corner.  
-   ![New Image Icon](image-9.png)
+   ![New Image Icon](/Year%202/English/Period%202/Suzy/images/image-9.png)
 
 2. A dialog box will appear:  
-   ![New Image Dialog](image-10.png)
+   ![New Image Dialog](/Year%202/English/Period%202/Suzy/images/image-10.png)
 
 3. Select your desired settings, such as width, height, and resolution.  
 4. Click **OK**.
@@ -145,10 +145,10 @@ This section explains the purpose of each tool, its image, functionality, and as
 
 | **Tool**               | **Image**              | **Functionality**                                   | **Shortcut Key** |
 |-------------------------|------------------------|---------------------------------------------------|------------------|
-| **Move Selected Pixels** | ![Move Tool](image-11.png) | Move, scale, and rotate the selected content.      | **M**            |
-| **Zoom**               | ![Zoom Tool](image-12.png) | Zoom in and out to adjust the view of your image. | **Z**            |
-| **Rectangle Select**    | ![Rectangle Tool](image-13.png) | Select a rectangular-shaped region.               | **S**            |
-| **Ellipse Select**      | ![Ellipse Tool](image-14.png) | Select an elliptical-shaped region.               | **S**            |
+| **Move Selected Pixels** | ![Move Tool](/Year%202/English/Period%202/Suzy/images/image-11.png) | Move, scale, and rotate the selected content.      | **M**            |
+| **Zoom**               | ![Zoom Tool](/Year%202/English/Period%202/Suzy/images/image-12.png) | Zoom in and out to adjust the view of your image. | **Z**            |
+| **Rectangle Select**    | ![Rectangle Tool](/Year%202/English/Period%202/Suzy/images/image-13.png) | Select a rectangular-shaped region.               | **S**            |
+| **Ellipse Select**      | ![Ellipse Tool](/Year%202/English/Period%202/Suzy/images/image-14.png) | Select an elliptical-shaped region.               | **S**            |
 
 Experiment with these tools to familiarize yourself with their capabilities.
 
@@ -171,12 +171,12 @@ To change the color of a tool, follow these steps:
 
 1. Select the tool you want to use (e.g., Pencil, Fill).  
 2. Find the **Color Palette** at the bottom-left corner of the screen.  
-   ![Color Palette](image-3.png)  
+   ![Color Palette](/Year%202/English/Period%202/Suzy/images/image-3.png)  
 3. Click on the color you wish to use from the palette.  
 
 After selecting a color, your chosen color will appear in the **Recent Colors** section on the left side of the palette.  
 This feature makes it easier to reuse previously selected colors.
-![alt text](image-16.png)
+![alt text](/Year%202/English/Period%202/Suzy/images/image-16.png)
 
 ---
 
@@ -201,19 +201,19 @@ Once set, the primary color will be used for tools like the Pencil or Fill by de
 To create and set custom colors in Pinta, follow these steps:
 
 1. Click on the **Custom Color Icon** located next to the personal color palette.  
-   ![Custom Color Icon](image-17.png)  
+   ![Custom Color Icon](/Year%202/English/Period%202/Suzy/images/image-17.png)  
 
    > **Note**  
    > The left square sets a **Primary Color**, and the right square sets a **Secondary Color**.
 
 2. A color selection dialog box will appear:  
 
-   ![Color Dialog](image-18.png)  
+   ![Color Dialog](/Year%202/English/Period%202/Suzy/images/image-18.png)  
 
 3. Click on the black cross (+) to add a new custom color.  
 
    This will open the custom color editor:  
-   ![Custom Color Editor](image-19.png)  
+   ![Custom Color Editor](/Year%202/English/Period%202/Suzy/images/image-19.png)  
 
 4. Use the sliders to adjust the **Hue**, **Saturation**, and **Transparency** to your desired color.  
    - You can also input a **Hexadecimal Color Code** directly for precise color selection.
@@ -238,11 +238,11 @@ The table below outlines the steps for creating, deleting, and duplicating layer
 
 | **Action**           | **Steps**                                                                                     | **Icon**                       |
 |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------|
-| **Create a New Layer** | 1. Click the **Add New Layer** button.                                                      | ![Add New Layer](image-20.png) |
-| **Delete a Layer**    | 1. Select the layer you wish to delete.                                                      | ![Layer Selection](image-21.png) |
-|                       | 2. Click the **Delete Layer** button.                                                        | ![Delete Layer](image-23.png) |
+| **Create a New Layer** | 1. Click the **Add New Layer** button.                                                      | ![Add New Layer](/Year%202/English/Period%202/Suzy/images/image-20.png) |
+| **Delete a Layer**    | 1. Select the layer you wish to delete.                                                      | ![Layer Selection]/Year%202/English/Period%202/Suzy/images/(image-21.png) |
+|                       | 2. Click the **Delete Layer** button.                                                        | ![Delete Layer](/Year%202/English/Period%202/Suzy/images/image-23.png) |
 | **Duplicate a Layer** | 1. Select the layer you want to duplicate.                                                   |                                |
-|                       | 2. Right-click the layer and choose **Duplicate Layer** from the context menu, or use the toolbar button if available. | ![Duplicate Layer](image-22.png) |
+|                       | 2. Right-click the layer and choose **Duplicate Layer** from the context menu, or use the toolbar button if available. | ![Duplicate Layer](/Year%202/English/Period%202/Suzy/images/image-22.png) |
 
 > **Note**  
 > A selected layer is outlined in blue for easy identification.
@@ -256,7 +256,7 @@ To rename a layer, follow these steps:
 1. Double-click the layer you wish to rename.  
 
    A popup will appear:  
-   ![Rename Layer Dialog](image-24.png)  
+   ![Rename Layer Dialog](/Year%202/English/Period%202/Suzy/images/image-24.png)  
 
 2. Enter the new name for the layer in the **Name** field.  
 3. Click **OK** to confirm.  
@@ -271,13 +271,13 @@ To change the order of layers in your image:
 
 1. Select the layer you want to move.  
 2. Use the **Move Layer** drop-down menu:  
-   ![Move Layer Menu](image-25.png)  
+   ![Move Layer Menu](/Year%202/English/Period%202/Suzy/images/image-25.png)  
 
    Available options are:  
    - **Move Up**: Moves the selected layer one position higher.  
    - **Move Down**: Moves the selected layer one position lower.  
 
-   ![Move Layer Options](image-26.png)  
+   ![Move Layer Options](/Year%202/English/Period%202/Suzy/images/image-26.png)  
 
 Layers will be reorganized in the list and reflected in the image stack.
 
@@ -295,7 +295,7 @@ To toggle visibility, follow these steps:
    - If the checkbox is checked, the layer will be **visible**.  
    - If the checkbox is unchecked, the layer will be **hidden**.  
 
-   ![Layer Visibility](image-30.png)
+   ![Layer Visibility](/Year%202/English/Period%202/Suzy/images/image-30.png)
 
 ---
 
@@ -306,7 +306,7 @@ Saving your image ensures that your progress and modifications are not lost. Fol
 ### Steps to Save Your Image
 
 1. Click on the **Save** button located at the top-left corner of the screen or simultaneously press command + S / Windows + S.  
-   ![Save Button](image-28.png)
+   ![Save Button](/Year%202/English/Period%202/Suzy/images/image-28.png)
 
    - This will overwrite your current file with the modified version.
 
