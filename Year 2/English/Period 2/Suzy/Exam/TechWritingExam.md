@@ -37,7 +37,7 @@
 
 ## What is Pinta?
 
-![alt text](/Year%202/English/Period%202/Suzy/images/image-27.png)
+![alt text](../images/image-27.png)
 
 Pinta is a free, open-source program for drawing and image editing.  
 
@@ -50,6 +50,8 @@ This document will help you get started with Pinta and understand its key featur
 > **Note**  
 > Ensure your computer is powered on and connected to the internet before proceeding.
 
+<div style="page-break-after: always;"></div>
+
 ## Downloading Pinta
 
 If you haven't already installed Pinta, follow these steps:
@@ -59,11 +61,12 @@ If you haven't already installed Pinta, follow these steps:
    `https://www.pinta-project.com`
 
    You should see the following webpage:  
-   ![Pinta Website](/Year%202/English/Period%202/Suzy/images/image.png)
+   ![Pinta Website](../images/image.png)
 
 3. Click on the **Download** button.  
+   ![download button](../images/image-1.png)
 4. Select **Download** for your operating system.  
-   ![Operating System](/Year%202/English/Period%202/Suzy/images/image-2.png)
+   ![Operating System](../images/image-2.png)
 
 5. Run the downloaded file by double-clicking it.
 
@@ -71,14 +74,15 @@ If you haven't already installed Pinta, follow these steps:
 > If you can't locate the downloaded file, check your Downloads folder.
 
 Upon successful installation, launching Pinta should display the following window:  
-![Pinta Launch Screen](/Year%202/English/Period%202/Suzy/images/image-3.png)
+![Pinta Launch Screen](../images/image-3.png)
 
-| **If Pinta** | **Do This**                                   |
-|--------------|-----------------------------------------------|
-| Opens        | You have successfully installed Pinta!       |
-| Doesn't Open | Repeat the steps above to troubleshoot.      |
+| **If Pinta** | **Do This**                             |
+| ------------ | --------------------------------------- |
+| Opens        | You have successfully installed Pinta!  |
+| Doesn't Open | Repeat the steps above to troubleshoot. |
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## How to Import a Picture in Pinta
 
@@ -92,17 +96,18 @@ Upon successful installation, launching Pinta should display the following windo
 Follow these steps to import a picture into Pinta:
 
 1. Click **Open** in the top-left corner of the screen.  
-   ![Open Option](/Year%202/English/Period%202/Suzy/images/image-4.png)
+   ![Open Option](../images/image-4.png)
 
 2. Browse and select the image file from your computer.  
-   ![File Explorer](/Year%202/English/Period%202/Suzy/images/image-6.png)
+   ![File Explorer](../images/image-6.png)
 
 3. Click **Open**.  
 
 Your image will now appear in the Pinta workspace:  
-![Image Imported](/Year%202/English/Period%202/Suzy/images/image-7.png)
+![Image Imported](../images/image-7.png)
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Creating a New Image
 
@@ -115,10 +120,10 @@ Your image will now appear in the Pinta workspace:
 Follow these steps to create a new image in Pinta:
 
 1. Click the **New Image** icon in the top-left corner.  
-   ![New Image Icon](/Year%202/English/Period%202/Suzy/images/image-9.png)
+   ![New Image Icon](../images/image-9.png)
 
 2. A dialog box will appear:  
-   ![New Image Dialog](/Year%202/English/Period%202/Suzy/images/image-10.png)
+   ![New Image Dialog](../images/image-10.png)
 
 3. Select your desired settings, such as width, height, and resolution.  
 4. Click **OK**.
@@ -128,27 +133,29 @@ Your new image canvas will now be ready.
 > **Note**  
 > Refer to this table to understand more about the settings.
 
-| **Setting**     | **Purpose**                                                                 |
-|------------------|-----------------------------------------------------------------------------|
-| **Preset**       | Clipboard: Uses dimensions of a copied image. Custom: Set your own values. |
-| **Width**        | Width of the image in pixels.                                              |
-| **Height**       | Height of the image in pixels.                                             |
-| **Orientation**  | Choose Portrait or Landscape orientation.                                  |
-| **Background**   | Set the background to white or transparent.  |
+| **Setting**     | **Purpose**                                                                |
+| --------------- | -------------------------------------------------------------------------- |
+| **Preset**      | Clipboard: Uses dimensions of a copied image. Custom: Set your own values. |
+| **Width**       | Width of the image in pixels.                                              |
+| **Height**      | Height of the image in pixels.                                             |
+| **Orientation** | Choose Portrait or Landscape orientation.                                  |
+| **Background**  | Set the background to white or transparent.                                |
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## Understanding the Modifying Tools
 
 Pinta offers a range of tools located on the left-hand side of the screen.  
 This section explains the purpose of each tool, its image, functionality, and associated shortcut key.
 
-| **Tool**               | **Image**              | **Functionality**                                   | **Shortcut Key** |
-|-------------------------|------------------------|---------------------------------------------------|------------------|
-| **Move Selected Pixels** | ![Move Tool](/Year%202/English/Period%202/Suzy/images/image-11.png) | Move, scale, and rotate the selected content.      | **M**            |
-| **Zoom**               | ![Zoom Tool](/Year%202/English/Period%202/Suzy/images/image-12.png) | Zoom in and out to adjust the view of your image. | **Z**            |
-| **Rectangle Select**    | ![Rectangle Tool](/Year%202/English/Period%202/Suzy/images/image-13.png) | Select a rectangular-shaped region.               | **S**            |
-| **Ellipse Select**      | ![Ellipse Tool](/Year%202/English/Period%202/Suzy/images/image-14.png) | Select an elliptical-shaped region.               | **S**            |
+| **Tool**                 | **Image**                                 | **Functionality**                                 | **Shortcut Key** |
+| ------------------------ | ----------------------------------------- | ------------------------------------------------- | ---------------- |
+| **Move Selected Pixels** | ![Move Tool](../images/image-11.png)      | Move, scale, and rotate the selected content.     | **M**            |
+| **Zoom**                 | ![Zoom Tool](../images/image-12.png)      | Zoom in and out to adjust the view of your image. | **Z**            |
+| **Rectangle Select**     | ![Rectangle Tool](../images/image-13.png) | Select a rectangular-shaped region.               | **S**            |
+| **Ellipse Select**       | ![Ellipse Tool](../images/image-14.png)   | Select an elliptical-shaped region.               | **S**            |
 
 Experiment with these tools to familiarize yourself with their capabilities.
 
@@ -156,6 +163,8 @@ Experiment with these tools to familiarize yourself with their capabilities.
 > This table does not yet include all tools. You can hover over any tool in the software to see its description and shortcut key.
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## Modify Tools' Color
 
@@ -171,14 +180,16 @@ To change the color of a tool, follow these steps:
 
 1. Select the tool you want to use (e.g., Pencil, Fill).  
 2. Find the **Color Palette** at the bottom-left corner of the screen.  
-   ![Color Palette](/Year%202/English/Period%202/Suzy/images/image-3.png)  
+   ![Color Palette](../images/image-3.png)  
 3. Click on the color you wish to use from the palette.  
 
 After selecting a color, your chosen color will appear in the **Recent Colors** section on the left side of the palette.  
 This feature makes it easier to reuse previously selected colors.
-![alt text](/Year%202/English/Period%202/Suzy/images/image-16.png)
+![alt text](../images/image-16.png)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## Set a Primary / Secondary Color
 
@@ -189,10 +200,10 @@ Setting a primary and secondary color is a useful feature, allowing you to switc
 To assign colors, follow these instructions:
 <br>
 
-| **Action**      | **How to Do It**                           |
-|------------------|--------------------------------------------|
-| **Set Primary**  | Left-click on the desired color in the palette. |
-| **Set Secondary**| Right-click on the desired color in the palette. |
+| **Action**        | **How to Do It**                                 |
+| ----------------- | ------------------------------------------------ |
+| **Set Primary**   | Left-click on the desired color in the palette.  |
+| **Set Secondary** | Right-click on the desired color in the palette. |
 
 Once set, the primary color will be used for tools like the Pencil or Fill by default, while the secondary color can be accessed easily for alternate actions or tools.
 
@@ -201,19 +212,23 @@ Once set, the primary color will be used for tools like the Pencil or Fill by de
 To create and set custom colors in Pinta, follow these steps:
 
 1. Click on the **Custom Color Icon** located next to the personal color palette.  
-   ![Custom Color Icon](/Year%202/English/Period%202/Suzy/images/image-17.png)  
+   ![Custom Color Icon](../images/image-17.png)  
 
    > **Note**  
    > The left square sets a **Primary Color**, and the right square sets a **Secondary Color**.
 
+<div style="page-break-after: always;"></div>
+
 2. A color selection dialog box will appear:  
 
-   ![Color Dialog](/Year%202/English/Period%202/Suzy/images/image-18.png)  
+   ![Color Dialog](../images/image-18.png)  
+
+<div style="page-break-after: always;"></div>
 
 3. Click on the black cross (+) to add a new custom color.  
 
    This will open the custom color editor:  
-   ![Custom Color Editor](/Year%202/English/Period%202/Suzy/images/image-19.png)  
+   ![Custom Color Editor](../images/image-19.png)  
 
 4. Use the sliders to adjust the **Hue**, **Saturation**, and **Transparency** to your desired color.  
    - You can also input a **Hexadecimal Color Code** directly for precise color selection.
@@ -223,6 +238,8 @@ To create and set custom colors in Pinta, follow these steps:
 Your custom color will now appear in the palette, set as either the primary or secondary color based on your initial selection.
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## Playing with Layers
 
@@ -236,18 +253,20 @@ This section introduces you to working with layers in Pinta, including what laye
 
 The table below outlines the steps for creating, deleting, and duplicating layers:
 
-| **Action**           | **Steps**                                                                                     | **Icon**                       |
-|-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------|
-| **Create a New Layer** | 1. Click the **Add New Layer** button.                                                      | ![Add New Layer](/Year%202/English/Period%202/Suzy/images/image-20.png) |
-| **Delete a Layer**    | 1. Select the layer you wish to delete.                                                      | ![Layer Selection]/Year%202/English/Period%202/Suzy/images/(image-21.png) |
-|                       | 2. Click the **Delete Layer** button.                                                        | ![Delete Layer](/Year%202/English/Period%202/Suzy/images/image-23.png) |
-| **Duplicate a Layer** | 1. Select the layer you want to duplicate.                                                   |                                |
-|                       | 2. Right-click the layer and choose **Duplicate Layer** from the context menu, or use the toolbar button if available. | ![Duplicate Layer](/Year%202/English/Period%202/Suzy/images/image-22.png) |
+| **Action**             | **Steps**                                                                                                              | **Icon**                                   |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| **Create a New Layer** | 1. Click the **Add New Layer** button.                                                                                 | ![Add New Layer](../images/image-20.png)   |
+| **Delete a Layer**     | 1. Select the layer you wish to delete.                                                                                | ![Layer Selection]../images/(image-21.png) |
+|                        | 2. Click the **Delete Layer** button.                                                                                  | ![Delete Layer](../images/image-23.png)    |
+| **Duplicate a Layer**  | 1. Select the layer you want to duplicate.                                                                             |                                            |
+|                        | 2. Right-click the layer and choose **Duplicate Layer** from the context menu, or use the toolbar button if available. | ![Duplicate Layer](../images/image-22.png) |
 
 > **Note**  
 > A selected layer is outlined in blue for easy identification.
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Renaming a Layer
 
@@ -256,7 +275,7 @@ To rename a layer, follow these steps:
 1. Double-click the layer you wish to rename.  
 
    A popup will appear:  
-   ![Rename Layer Dialog](/Year%202/English/Period%202/Suzy/images/image-24.png)  
+   ![Rename Layer Dialog](../images/image-24.png)  
 
 2. Enter the new name for the layer in the **Name** field.  
 3. Click **OK** to confirm.  
@@ -265,23 +284,27 @@ Your layer is now renamed and updated in the layer list.
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ### Reorganizing Layers
 
 To change the order of layers in your image:
 
 1. Select the layer you want to move.  
 2. Use the **Move Layer** drop-down menu:  
-   ![Move Layer Menu](/Year%202/English/Period%202/Suzy/images/image-25.png)  
+   ![Move Layer Menu](../images/image-25.png)  
 
    Available options are:  
    - **Move Up**: Moves the selected layer one position higher.  
    - **Move Down**: Moves the selected layer one position lower.  
 
-   ![Move Layer Options](/Year%202/English/Period%202/Suzy/images/image-26.png)  
+   ![Move Layer Options](../images/image-26.png)  
 
 Layers will be reorganized in the list and reflected in the image stack.
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ### Layer Visibility
 
@@ -295,9 +318,11 @@ To toggle visibility, follow these steps:
    - If the checkbox is checked, the layer will be **visible**.  
    - If the checkbox is unchecked, the layer will be **hidden**.  
 
-   ![Layer Visibility](/Year%202/English/Period%202/Suzy/images/image-30.png)
+   ![Layer Visibility](../images/image-30.png)
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## Saving an Image
 
@@ -306,7 +331,7 @@ Saving your image ensures that your progress and modifications are not lost. Fol
 ### Steps to Save Your Image
 
 1. Click on the **Save** button located at the top-left corner of the screen or simultaneously press command + S / Windows + S.  
-   ![Save Button](/Year%202/English/Period%202/Suzy/images/image-28.png)
+   ![Save Button](../images/image-28.png)
 
    - This will overwrite your current file with the modified version.
 
@@ -321,6 +346,8 @@ Saving your image ensures that your progress and modifications are not lost. Fol
 By saving regularly, you can ensure your work is secure and avoid accidental data loss.
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## Final Words
 
