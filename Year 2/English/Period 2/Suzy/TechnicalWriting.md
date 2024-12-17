@@ -31,6 +31,10 @@
       - [Revision](#revision-1)
       - [Blocking the pop-ups](#blocking-the-pop-ups)
     - [Exercise](#exercise-1)
+  - [Exam Feedback](#exam-feedback)
+    - [Widows and Orphans](#widows-and-orphans)
+      - [Techniques for eliminating widows include](#techniques-for-eliminating-widows-include)
+      - [Techniques for eliminating an orphan](#techniques-for-eliminating-an-orphan)
 
 ## Review of previous session
 
@@ -350,3 +354,45 @@ Write a definition for:
 - Bot: short for Robot, is mostly used on the internet to assert dominance even if it has nothing revolutionary.
 
 - Malware: malicious software making a device misbehave once infected.
+
+## Exam Feedback
+
+use the BAR method
+
+- Background: where you are in the application and what you want to do
+- Action: The action that you must perform
+- Result: The result of the action and the result of all the actions you have performed in the procedure
+
+Know thy user: the number one rule in technical writing.
+Start a procedure with "To..."
+
+### Widows and Orphans
+
+In typesetting, widows and orphans are single lines of text from a paragraph that dangle at either the beginning or end of a block of text, or form a very short final line at the end of a paragraph.
+
+Widow – A paragraph ending line that falls at the beginning of the following page or column, thus separated from the rest of the text. Mnemonically, a widow is “alone at the top” (of the family tree, or in this case, the page.)
+
+Orphan – A paragraph-opening line that appears by itself at the bottom of a page or column, thus separated from the rest of the text. Mnemonically, an orphan is “alone at the bottom” of the family tree, but, in this case, of the page.
+
+Runt – A word, part of a word, or a very short line that appears by itself at the end of a paragraph. Mnemonically still “alone at the bottom,” just this time at the bottom of a paragraph. Orphans of this type give the impression of too much white space
+
+#### Techniques for eliminating widows include
+
+- Forcing a page break early, producing a shorter page;
+- Adjusting the leading, the space between lines of text;
+- Adjusting the spacing between words to produce tighter or looser
+paragraphs;
+- Adjusting the hyphenation within the paragraph;
+- Adjusting the margins of the page;
+- Subtle scaling of the page without distorting the letters;
+- Rewriting a portion of the paragraph;
+- Reduce the letter-spacing (tracking) of the words;
+- Adding a pull quote to the text (usual in magazines);
+- Adding a floating block (figure) to the text, or resizing
+an existing figure.
+
+#### Techniques for eliminating an orphan
+
+- Inserting a blank line;
+- Forcing a page break;
+

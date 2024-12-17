@@ -17,6 +17,7 @@
     - [Aurelien](#aurelien-1)
       - [Clementine](#clementine-1)
     - [Video](#video)
+    - [Shark Dent](#shark-dent)
 
 ## DOXX
 
@@ -253,7 +254,7 @@ in 1869, couple investors james fisk, gold market financial panic, black friday
 
 after the us thanksgiving
 
-bonnie tayler blake searcher, a jounrla factory management 1951, day afyer thanksgiving, it has to do with worker absentesm, had trouble to have their worker to show up
+bonnie tayler blake searcher, a journal factory management 1951, day afyer thanksgiving, it has to do with worker absentesm, had trouble to have their worker to show up
 
 Police in philadelphia, because biggest shopping day, football game, panics, dealing with traffic, foot and car traffic, deal with all that
 
@@ -266,4 +267,20 @@ its been so scucesful try to spin off black friday to other days, cyber monday
 black friday is a popular day for retailers
 
 ---
-  
+
+### Shark Dent
+
+Bot-It
+a website mobile app ai online task - 150K dollar 10% stake
+
+I am Thibaud, CEO and founder of avIAtion. avIAtion is an AI weather forecast system designed specifically for AVIATION.
+This AI model serves as a tool for flight and maintenance planning as well as reducing the environmental impact of aviation.
+How so? By mitigating re-route during flight to avoid meteorological hazards, helping in mitigating flight delays and deletion if conditions are not met for takeoff, thus avoiding a huge amount of people to take their car to the airport for nothing.
+I demand $10K, an 8% stake and a mentor to keep on developing my project and having a professional and external feedback on my project.
+
+at avIAtion we are soaring Towards a Greener Future
+
+![alt text](avIAtion.png)
+
+morning
+mourning
