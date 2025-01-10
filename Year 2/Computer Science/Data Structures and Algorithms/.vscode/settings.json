@@ -1,5 +1,11 @@
 {
     "files.associations": {
         "iostream": "cpp"
-    }
+    },
+    "[markdown]": {
+        "editor.cursorSurroundingLines": 0
+    },
+    "cSpell.words": [
+        "cout"
+    ]
 }

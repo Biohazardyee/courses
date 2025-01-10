@@ -14,6 +14,16 @@
   - [Sorting algorithms](#sorting-algorithms)
     - [Bubble sort](#bubble-sort)
   - [Merge sort algorithm](#merge-sort-algorithm)
+  - [What is data structure?](#what-is-data-structure)
+    - [On data Structures](#on-data-structures)
+  - [Known Data Structures - Array](#known-data-structures---array)
+    - [List](#list)
+    - [Record](#record)
+    - [Hash Table](#hash-table)
+    - [Stack/Queue](#stackqueue)
+    - [Tree/Graph](#treegraph)
+  - [Data structures in C++ STL](#data-structures-in-c-stl)
+  - [Vectors](#vectors)
 
 ## what is this about
 
@@ -70,9 +80,9 @@ Same as in C
     - characters array with a twist
 
 Dedicated data type: string
-    - To use it, we must include an additional header the <string> library
+    - To use it, we must include an additional header the `<string>` library
 
-The <string> library offers many functionalities.
+The `<string>` library offers many functionalities.
 
 ## Introduction to Version Control
 
@@ -110,9 +120,9 @@ Distributed file systems send and receive data via REST.
 
 Web services using REST are called RESTful APIs or REST APIs.
 
-## Non-algorithm 
+## Non-algorithm
 
-It may never stop, violating the finiteness property. 
+It may never stop, violating the finiteness property.
 
 The step randomly picking a positive integer is not sufficiently rigorous or unambiguous.
     - Out of the set of infinitely many positive integers, what is the meaning of 'randomly picking'? It violates the definiteness property.
@@ -140,12 +150,94 @@ The sorting problem us a classic problem in computer science. The purpose of sor
 
 ### Bubble sort
 
-- the name bubble sort comes from the fact that large numbers will gradually bubble up to the top. 
-
+- the name bubble sort comes from the fact that large numbers will gradually bubble up to the top.
 - In each round, compare every adjacent pair of numbers from left to right, and exchange the two numbers of a pair if the larger one is on the left side.
 
 ## Merge sort algorithm
 
-- In the insertion sort algorithm, we divide the original problems into two unequal sub-problems, where one subproblem contains n - 1 integers and the other subproblem contains only one integer. 
+- In the insertion sort algorithm, we divide the original problems into two unequal sub-problems, where one subproblem contains n - 1 integers and the other subproblem contains only one integer.
 - In another sorting algorithm, called the merge sort algorithm, we divide the original problem into two sub-problems, which deal with almost equal number of integers.
 
+## What is data structure?
+
+- In computer science, a data structure is a data organization and storage format that is usually chosen for efficient access to data.
+- More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
+
+### On data Structures
+
+Data structures serve as the basis for abstract data types (ADT)
+
+- the ADT defines the logical form of the data type. The data structure implements the physical form of the data type.
+
+Different types of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks.
+
+- For example, relational databases commonly use B-tree indexes for data retrieval, while compiler implementations usually use hash tables to look up identifiers.
+- Data structures provide a means to manage large amounts of data efficiently for uses such as large databases and internet indexing services.
+- Usually, efficient data structures are key to designing efficient algorithms.
+- Data structures can be used to organize the storage and retrieval of information stored in both main memory and secondary memory.
+
+## Known Data Structures - Array
+
+- An array is a number of elements in a specific order, typically all of the same type (depending on the language, individual elements may either all be forcer to be the same type, or may be of almost any type).
+- Elements are accessed using an integer index to specify which element is required
+- Typical implementations allocate contiguous memory words for the elements of array (but this is not always a necessity).
+- Arrays may be fixed-length or resizable.
+
+### List
+
+- A linked list (also just called list) is a linear collection of data elements of any type, called nodes, where each node has itself a value, and points to the next node in the linked list.
+- The principal advantage of a linked list over an array is that values can always be efficiently inserted and removed without relocating the rest of the list.
+- Certain other operations, such as  random access to a certain element, are however slower on lists than on arrays.
+
+### Record
+
+- A record (also called tuple or struct) is an aggregate data structure. a record is a value that contains other values, typically in fixed number and sequence and typically indexed by names.
+- The elements of records are usually called fields or members, In the context of Object Oriented Programming, records are known as plain old data structures to distinguish them from objects.
+
+### Hash Table
+
+- Hash tables, also known as hash maps, are data structures that provide fast retrieval of values based on keys.
+- They use a hashing function to map keys to indexes in an array, allowing for constant-time access in the average case.
+- Hash tables are commonly used in dictionaries, caches, and database indexing.
+- However, hash collisions can occur, which can impact their performance. Techniques like chaining and open addressing are employed to handle collisions.
+
+### Stack/Queue
+
+- Stacks and queues are abstract data types that can be implemented using arrays or linked lists.
+- A stack has two primary operations: push (adds an element to the top of the stack) and pop (removes the topmost element from the stack), that follows the Last In, First Out (LIFO) principle.
+- Queues have two main operations: enqueue (adds an element to the rear of the queue) and dequeue (removes an element from the front of the queue), this follows the First In, First Out (FIFO) principle
+
+### Tree/Graph
+
+- Trees represent a hierarchical organization of elements. A tree consists of nodes connected by edges, with one node being the root and all other nodes forming sub-tress. Trees are widely used in various algorithms and data storage scenarios.
+- Graphs are collections of nodes connected by edges, representing relationships between entities. Graphs can be used to model social networks, computer networks, and transportation networks, among other things.
+
+## Data structures in C++ STL
+
+- the key components of the STL consist of containers, iterators and algorithms and the relationship between them:
+  - Containers are data structures that provides a way to store data, like vectors, lists etc..
+  - Iterators are object used to access elements of a data structure.
+  - Algorithms include functions, like sort() and find(), that perform operations on data structures through iterators.
+
+## Vectors
+
+```c++
+
+
+#include <iostream>
+#include <vector>
+
+int main(){
+  std::vector<int> v = {8,4,5,9}
+
+  v.push_back(6);
+  v.push_back(9);
+
+  v[2] = -1;
+
+  for (int n : v)
+    std::cout << n << ' ';
+  std::cout << "/n";
+}
+
+```
