@@ -223,7 +223,6 @@ Different types of data structures are suited to different kinds of applications
 
 ```c++
 
-
 #include <iostream>
 #include <vector>
 
