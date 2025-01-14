@@ -24,6 +24,13 @@
     - [Tree/Graph](#treegraph)
   - [Data structures in C++ STL](#data-structures-in-c-stl)
   - [Vectors](#vectors)
+  - [What is a tree?](#what-is-a-tree)
+    - [Properties](#properties)
+    - [Balanced trees](#balanced-trees)
+    - [Types of tress](#types-of-tress)
+  - [Heaps](#heaps)
+  - [Decision trees](#decision-trees)
+    - [Tree traversal algorithms](#tree-traversal-algorithms)
 
 ## what is this about
 
@@ -240,3 +247,66 @@ int main(){
 }
 
 ```
+
+## What is a tree?
+
+A tree is a special type of graph that is connected and acyclic, meaning it has no cycles or loops. It consists of nodes (vertices) and edges (connection between nodes), where there is exactly one path between any two nodes.
+
+In other words, a tree is a graph where, for any two nodes, you can traverse from one to the other without retracing any edge, and there are no circular path.
+
+### Properties
+
+- Connectivity
+  - A tree is connected graph, meaning there is a connexion between two vertices. Unlike general graphs
+
+- Acyclic
+  - A tree is acyclic
+
+- Depth
+  - The depth of a tree is the length of the longest path from the route to any leaf. The depth of a tree gives insight into its hierarchy and its important
+
+- Height
+  - The height of a tree is the number of edges on the longest path from the root of any leaf. The height is a measure of the longest possible chain of nodes.
+
+- Number of edges
+  - For a tree with n vertices, there are always n-1...
+
+- Leaf nodes
+
+- Level Of A node
+  - is defined by its distance from the root. The root is at level 0, its direct connection is at level 1 and so on.
+
+- Rooted trees
+  - A tree can be considered as rooted tree if one vertex is designated as the "root" and all the edges have the direction pointing away from this root.
+  - In a rooted tree, the hierarchy is clearly defined, and each vertex has a parent and potentially multiple children.
+
+### Balanced trees
+
+- A tree is said balanced if the height difference between the left and right subtrees of any node is minimal (usually not greater than one).
+- Balanced trees are important for performance optimization in search operations.
+
+### Types of tress
+
+- **Binary search tree** is a binary tree in which each node follows the property that all the values in the left subtree are less than the node's value and all the values in the right subtree are greater than the node's value.
+
+## Heaps
+
+- A heap us a specialized tree-based date structure that satisfies the heap property.
+- It is a complete binary tree, meaning all levels of the tree are fully filled except possibly for the last level, which is filled from left to right
+- The heap us commonly used in algorithms like heap sort and in data structures like priority queue.
+
+- Tree are two main types of heaps
+  - Max-heaps: In a max-heap, the key of each parent node is greater than or equal to the keys of its children. This ensures that the maximum key is at the root of the tree
+  - Min-heaps: In a min-heap, the key of each parent node is less than or equal to the keys of its children,This ensure that the minimum key is at the root of the tree
+
+## Decision trees
+
+- A decision tree is used in machine learning to represent decisions and their possibles consequences including outcomes, costs and utility.
+  - Decision trees are commonly used in classification and regressions tasks.
+
+- It is a tree-like structure where each internal node represents a decision based on a feature, each branch represents an outcome of the decision, and each leaf node represents a class label (in classification) or a continuous value (in regression).
+
+### Tree traversal algorithms
+
+- Pre-order traversal: the root node is visited first, followed by the left subtree and the the right subtree.
+- Level-Order traversal: The left subtree is visited first, followed by the root node, and then the right subtree. This is particularly useful in binary search trees as it returns values in sorted order
