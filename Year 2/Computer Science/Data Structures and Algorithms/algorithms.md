@@ -310,3 +310,4 @@ In other words, a tree is a graph where, for any two nodes, you can traverse fro
 
 - Pre-order traversal: the root node is visited first, followed by the left subtree and the the right subtree.
 - Level-Order traversal: The left subtree is visited first, followed by the root node, and then the right subtree. This is particularly useful in binary search trees as it returns values in sorted order
+

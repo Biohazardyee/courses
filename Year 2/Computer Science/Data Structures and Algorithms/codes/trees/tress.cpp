@@ -1,13 +1,14 @@
 #include <iostream>
+#include "balanceBST.hpp"
 
 using namespace std;
 
-typedef struct Node
-{
-    int data;
-    struct Node *leftChild;
-    struct Node *rightChild;
-} Node;
+// typedef struct Node
+// {
+//     int data;
+//     struct Node *leftChild;
+//     struct Node *rightChild;
+// } Node;
 
 Node *ROOT = NULL;
 
@@ -96,8 +97,10 @@ int main()
     {
         insert(array[i]);
     }
+    postOrderTraversal(ROOT);
+    balanceBST(ROOT);
     cout << "Preorder Traversal: " << endl;
-    preOrderTraversal(ROOT);
+    inOrderTraversal(ROOT);
 
     return 0;
 }
