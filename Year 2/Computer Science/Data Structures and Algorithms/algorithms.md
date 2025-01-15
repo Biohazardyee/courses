@@ -31,6 +31,14 @@
   - [Heaps](#heaps)
   - [Decision trees](#decision-trees)
     - [Tree traversal algorithms](#tree-traversal-algorithms)
+  - [What is a graph?](#what-is-a-graph)
+    - [Types of graphs](#types-of-graphs)
+    - [Representation of graphs](#representation-of-graphs)
+    - [Spanning trees](#spanning-trees)
+      - [Minimum spanning trees](#minimum-spanning-trees)
+  - [Shortest Path](#shortest-path)
+  - [Depth first search](#depth-first-search)
+  - [Breadth First Search](#breadth-first-search)
 
 ## what is this about
 
@@ -311,3 +319,85 @@ In other words, a tree is a graph where, for any two nodes, you can traverse fro
 - Pre-order traversal: the root node is visited first, followed by the left subtree and the the right subtree.
 - Level-Order traversal: The left subtree is visited first, followed by the root node, and then the right subtree. This is particularly useful in binary search trees as it returns values in sorted order
 
+## What is a graph?
+
+A graph is an abstract data type (adt) which consists of a set of objects that are connected via links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.
+
+Formally, a graph is a pair of sets (V, E), where V is the set of vertices and E is the set of edges, connecting the pairs of vertices.
+
+Adjacency: Two nodes or vertices are adjacent if they are connected to each other through an an endangered language
+
+A path: A path represents
+
+### Types of graphs
+
+- A simple graph is a type of graph where there are no loops (edges that connect a vertex to itself) and no multiple edges between any pair of vertices. In other words, each pair of vertices is connected by at most one edge, and each edge connects two distinct vertices.
+
+- A multigraph is a type of graph in which multiple edges are allowed between the same pair of vertices.
+  - Unlike a single graph, there is at most one edge between any two vertices, a multigraph
+
+- A directed graph is a type of graph in which the edges have direction. In other words, each edge in a directed graph points from one vertex to another. This indicates one way relationships.
+  - The direction of the edge is often represented with an arrow, showing the flow from the starting point to the ending vertex.
+
+- An undirected, you can go from a to b and b to a.
+
+- A weighted graph is a type of graph where each edge is assigned a weight, usually representing some form of cost, distance or value
+  - These weight can be used to represent a variety of metrics, such as travel time, distance between locations or bandwidth in a network.
+
+- Complete graph is a type of graph in which every pair of distinct vertices is connected by a unique edge. In other words, every vertex is directly connected to every other vertex in the graph.
+
+- A bipartite graph is a type of graph in which the vertices can be divided into two distinct sets such that no two vertices within the same set are adjacent.
+  - In other words, every edge connects a vertex from one to set to a vertex from the other set, and there are no edges connecting vertices within the same set.
+
+- A complete bipartite graph is a special type of bipartite graph where every vertex in the first set is connected to every vertex from the second set by an unique set.
+  - There are no edges within each set
+
+### Representation of graphs
+
+- While representing graphs, we must carefully depict the elements (vertices and edges) present in the graph and the relationship between them.
+- Visually, a graph is represented with a finite set of nodes and connecting links between them.
+- However, we can also represent graphs using more abstract, but still meaningful ways:
+
+Adjacency matrix
+
+- An adjacency matrix is a square matrix
+
+For a directed graph, a frequency matrix is not necessarily symmetric.
+
+In a weighted graph, the adjacency matrix stores the weight of the edge between vertices.
+
+Unlike the adjacency matrix, which stores a value for every possible edge in the graph, the adjacency list stores only the edges that exist.
+
+An adjacency list is a way of representing a graph where each vertex has a list of other vertices it is directly connected to. This representation is efficient in terms of space, especially for sparse graphs, as it only stores the edges that actually exist in the graph.
+
+The adjacency list consists of an array of lists, where each list contains the neighbor of a particular vertex.
+
+In a directed graph, the list will only contain outgoing edges. In an undirected graph, the list will contain both incoming and outgoing edges.
+
+### Spanning trees
+
+A spanning tree is a subset of an undirected graph that contains all the vertices of the graph connected with the minimum number of edges in the graph.
+
+#### Minimum spanning trees
+
+A minimum spanning tree is a subset of edges of a connected weighted undirected graph that connects all the vertices together with the minimum possible total edge weight.
+
+Common algorithms Kruskal, Prim
+
+## Shortest Path
+
+The shortest path in a graph is defined as the minimum cost group from one vertex to another. This is most commonly seen in weighted directed graphs but it is also applicable to undirected graphs.
+
+A popular real-world application of finding the shortest path in a graph is navigating a topology or map.
+
+Common algorithms: Dijkstra, Bellman-Ford, A*
+
+## Depth first search
+
+DFS is a recursive algorithm for searching all the vertices of a graph or tree data structure. This algorithm traverses a graph in a depth ward motion and uses a stack to remember to get the next vertex to start a search, when a dead end occurs in any iteration.
+
+## Breadth First Search
+
+BFS algorithm traverses a graph in a breadth ward motion. It uses a queue to remember the next vertex to start a search, when a dead end occurs in any iteration.
+
+It starts at a root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level.
