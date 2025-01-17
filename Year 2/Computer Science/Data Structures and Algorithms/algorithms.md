@@ -39,6 +39,8 @@
   - [Shortest Path](#shortest-path)
   - [Depth first search](#depth-first-search)
   - [Breadth First Search](#breadth-first-search)
+  - [Dijkstra Algorithm](#dijkstra-algorithm)
+  - [A\* algorithm](#a-algorithm)
 
 ## what is this about
 
@@ -401,3 +403,14 @@ DFS is a recursive algorithm for searching all the vertices of a graph or tree d
 BFS algorithm traverses a graph in a breadth ward motion. It uses a queue to remember the next vertex to start a search, when a dead end occurs in any iteration.
 
 It starts at a root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level.
+
+## Dijkstra Algorithm
+
+- Dijkstra's algorithm is an algorithm for finding the shortest path between nodes in a weighted graph, which may represent, for example, a road network.
+
+- It was conceived by computer scientist Edsger Dijkstra in 1956 and published in 1959.
+
+## A* algorithm
+
+- Can be seen as an extension of Dijkstra's algorithm. A* achieves better performance by using heuristics to guide its search.
+- Peter Hart, Nils Nilsson and Bertram Raphael of Stanford Research Institute (now SRI International) first published the algorithm in 1968.
