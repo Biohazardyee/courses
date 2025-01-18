@@ -27,6 +27,8 @@
   - [Bubble sort](#bubble-sort)
     - [Asymptotic Notations](#asymptotic-notations)
     - [Big-O notation](#big-o-notation)
+  - [Divide-and-conquer algorithms](#divide-and-conquer-algorithms)
+  - [Insertion sort algorithm](#insertion-sort-algorithm)
   - [Merge sort algorithm](#merge-sort-algorithm)
   - [What is data structure?](#what-is-data-structure)
     - [On data Structures](#on-data-structures)
@@ -367,10 +369,44 @@ The Ω notation denotes a lower bound of the complexity
 
 The Θ notation denotes an estimate of same order of the actual complexity.
 
+![1737223316858](image/algorithms/1737223316858.png)
+
+## Divide-and-conquer algorithms
+
+- Divide and conquer is an algorithm design paradigm based on the idea hat we recursively break down a problem into two or more subproblems of the similar type, until these subproblems become simple enough to be solved directly.
+- Many examples:
+  - Binary search
+  - Insertion sort
+  - Merger sort
+  - ...
+
+## Insertion sort algorithm
+
+- One natural idea is to firstly sort the first n - 1 integers and then insert the n-th integer into the proper position of a sorted sequence.
+- How can we sort the first n - 1 integers? well, this is a subproblem with smaller size. This leads to the idea of the insertion sort algorithm.
+- I n each round, the first i integers of the sequence are already in order. Our task is to insert the (i + 1)th integer into the proper position
+
+Input: An array A of length n to be sorted.
+Output: A sorted array A.
+Steps:
+for i = 1 to n-1
+ j = i + 1;
+ while (j > 1) and (A[j-1] > A[j])
+  exchange A[j] with A [j - 1];
+  j = j - 1;
+
+The insertion sort algorithm is not a typical example of divide-and-conquer method.
+But it illustrates the idea of subproblem.
+
 ## Merge sort algorithm
 
-- In the insertion sort algorithm, we divide the original problems into two unequal sub-problems, where one subproblem contains n - 1 integers and the other subproblem contains only one integer.
-- In another sorting algorithm, called the merge sort algorithm, we divide the original problem into two sub-problems, which deal with almost equal number of integers.
+- In the insertion sort algorithm, we divide the original problem into two unequal subproblems, where one subproblem contains n - 1 integers and the other subproblem contains only one integer.
+
+- In another sorting algorithm, called the merge sort algorithm, we divide the original problem into two subproblems, which deal with almost equal number of integers.
+
+The sorting problem of MergeSort([A[1],...,A[n]]) is first divided into two subproblems: MergeSort([A[1],...,A[n/2]]) and MergeSort([A[n/2+1],...,A[n]]).
+
+Then we merge the results B and C of the two sub-problems, which are each a sorted sequence of integers.
 
 ## What is data structure?
 
