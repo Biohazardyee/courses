@@ -26,6 +26,7 @@
   - [Sorting algorithms](#sorting-algorithms)
   - [Bubble sort](#bubble-sort)
     - [Asymptotic Notations](#asymptotic-notations)
+    - [Big-O notation](#big-o-notation)
   - [Merge sort algorithm](#merge-sort-algorithm)
   - [What is data structure?](#what-is-data-structure)
     - [On data Structures](#on-data-structures)
@@ -355,6 +356,16 @@ for i = 1 to n-1 // for each round
 - In the bubble sort algorithm, for n positive integers, the algorithm requires n(n-1)/2 comparisons and at most n(n-1)/2 exchange steps.
 - Usually we do not need to know the exact number or quantity of resource required.
 - We can say the bubble sort algorithm requires roughly n^2 steps, or more professionally, we say the time complexity of bubble sort algorithm is O(n^2).
+
+### Big-O notation
+
+The big-O notation denotes an upper bound of the complexity
+
+The small-o notation denotes a strict upper bound of the complexity
+
+The Ω notation denotes a lower bound of the complexity
+
+The Θ notation denotes an estimate of same order of the actual complexity.
 
 ## Merge sort algorithm
 
