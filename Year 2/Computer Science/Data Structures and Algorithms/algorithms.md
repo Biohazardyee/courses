@@ -3,16 +3,29 @@
 - [Data Structures and Algorithms](#data-structures-and-algorithms)
   - [what is this about](#what-is-this-about)
   - [Structure of the course](#structure-of-the-course)
+  - [Brief C++ history](#brief-c-history)
+  - [Namespaces in C++](#namespaces-in-c)
   - [Essential Data Types](#essential-data-types)
   - [Strings in C++](#strings-in-c)
+  - [References and pointers in C++](#references-and-pointers-in-c)
+    - [Dynamic Memory in C++](#dynamic-memory-in-c)
+      - [Pros](#pros)
+      - [Common pitfalls](#common-pitfalls)
   - [Introduction to Version Control](#introduction-to-version-control)
     - [Benefits of version control](#benefits-of-version-control)
     - [Basic Git Commands](#basic-git-commands)
   - [Fundamentals of REST APIs](#fundamentals-of-rest-apis)
+    - [6 guiding principles for REST](#6-guiding-principles-for-rest)
+    - [How REST APUs work](#how-rest-apus-work)
+    - [Main elements of RESTful API](#main-elements-of-restful-api)
+    - [How to access a resource](#how-to-access-a-resource)
+  - [What is an algorithm?](#what-is-an-algorithm)
+    - [Properties of algorithms](#properties-of-algorithms)
   - [Non-algorithm](#non-algorithm)
   - [Search Algorithms](#search-algorithms)
   - [Sorting algorithms](#sorting-algorithms)
-    - [Bubble sort](#bubble-sort)
+  - [Bubble sort](#bubble-sort)
+    - [Asymptotic Notations](#asymptotic-notations)
   - [Merge sort algorithm](#merge-sort-algorithm)
   - [What is data structure?](#what-is-data-structure)
     - [On data Structures](#on-data-structures)
@@ -72,6 +85,20 @@ int main() {
 }
 ```
 
+## Brief C++ history
+
+In 1979, Bjarne Stroustrup, a Danish computer scientist began work on C with classes, the predecessor to C++, as part of his PhD thesis.
+
+Initially, Stroupstrup's C with class added features to the C compiler Cpre, including classes, derived classes, strong typing , inlining and default arguments.
+
+In 19823, Stroustrup started to develop a successor to C with classes, which he named C++.
+
+## Namespaces in C++
+
+A namespace is a declarative region that provides a scope to the identifiers inside it.
+
+Namespaces are used to organize code into local groups and to prevent name collisions that can occur especially when your code base includes multiple libraries.
+
 ## Essential Data Types
 
 The void type describes an empty set of values.
@@ -81,9 +108,17 @@ The void type describes an empty set of values.
 The boolean type can have values true or false.
     - The size of the bool type is implementation-specific
 
+The char type is a character representation type that efficiently encodes members of the basic execution character set.
+    - The C++ compiler treats variables of type char, signed char and unsigned char as having different types.
+
+Floating-point types provide an approximation of fractional values over a wide range of magnitudes.
+
 The int type is the default basic integer type. It can represent all of the whole numbers over an implementation-specific range.
 
 A signed integer representation is one that can hold both positive and negative values.
+    - It's used by default or when the signed modifier keyword is present.
+
+The unsigned modifier keyword specifies an unsigned representation that can only hold non-negative values.
 
 A size modifier specifies the width in bits of the integer representation used.
 
@@ -100,6 +135,40 @@ Dedicated data type: string
     - To use it, we must include an additional header the `<string>` library
 
 The `<string>` library offers many functionalities.
+
+## References and pointers in C++
+
+As in C, we can store memory addresses in variables
+
+Pointers and pointer operations are more powerful in C++
+    - Fundamental in OOP
+
+### Dynamic Memory in C++
+
+C had malloc()
+C++ has operators **new** and **delete**
+
+new is followed by a data type specifier and if a sequence of more than one element is required, the number of these within brackets []. It returns a pointer to the beginning of the new block of memory allocated.
+
+pointer = new type
+pointer = new type [number_of_elements]
+
+In most cases, memory allocated dynamically is only needed during specific periods of time within a program; once it is no longed needed, it can be freed so that the memory becomes available again for other requests of dynamic memory. this is the purpose of operator delete.
+
+deleter pointer;
+delete[] pointer;
+
+#### Pros
+
+- Flexibility: Dynamic memory allocation allows us to allocate memory as needed during runtime.
+- Data structure: data structures such as linked lists, trees, graphs and resizable arrays (vectors in C++) often need to allocate memory dynamically to accommodate varying amount of data.
+- Resource management: We can allocate memory when needed and deallocate it when it's no longer required.
+- Dynamic arrays: Dynamic memory allocation allows us to create arrays whose size can be determined during runtime.
+
+#### Common pitfalls
+
+- Memory leaks
+- Dangling pointers
 
 ## Introduction to Version Control
 
@@ -134,23 +203,123 @@ REST APIs provide a flexible, lightweight way to integrate applications and to c
 REST is a software architectural style for distributed hypermedia systems, used in the development of web services.
 
 Distributed file systems send and receive data via REST.
+    - Distributed file systems send and receive data via REST.
+    - Web services using REST are called RESTful APIs or REST APIs.
 
 Web services using REST are called RESTful APIs or REST APIs.
 
+### 6 guiding principles for REST
+
+- Uniform interface
+  - All API requests for the same resource should look the same, no matter where the request comes from.
+  - The REST API should ensure that the same piece of data, such as the name or email address of a user, belongs to only one uniform resource identifier (URI).
+  - Resources shouldn't be too large but should contain every piece of information that the client might need.
+
+- Client-server decoupling:
+  - In REST API design, client and server applications must be completely independent of each other.
+  - The only information that the client application should know is the URI of the requested resource; it can't interact with the server application in any other ways.
+  - Similarly, a server application shouldn't modify the client application other than passing it to the requested data via HTTP
+
+- Statelessness
+  - REST APIs are stateless, meaning that each request needs to include all the information necessary for processing it.
+  - In other words, REST APIs do not require any server-side sessions.
+  - Server applications aren't allowed to store any data related to a client request.
+
+- Cacheability
+  - When possible, resources should be cacheable on the client or server side. Server response also need to contain information about whether caching is allowed for the delivered resource.
+  - The goal is to improve performance on the client side, while increasing scalability on the server side.
+
+- Layered system architecture
+  - In REST APIs, the calls and responses go through different layers. As a rule of thumb, don;t assume that the client and the server applications connect to each other.
+  - There may be a number of different intermediaries in the communication loop. REST APIs need to be designed so that neither the client nor the server can tell whether it communicates with the end application or an intermediary.
+
+- Code on demand (optional)
+  - REST APIs usually send static resources, but in certain cases, responses can also contain executable code (such as Java applets). In these cases, the code should only run on-demand.
+
+### How REST APUs work
+
+- REST APIs communicate through HTTP requests to perform database functions like creating, reading, updating and deleting records (CRUD) within a resource.
+- For example, a REST API would use a GET request to retrieve a record. A POS request creates a new record. A PUT request updates a record, and a DELETE request deletes one.
+
+- The state of a resource at any particular instant or timestamp is known as the resource representation.
+
+- This information can be delivered to a client in virtually any format including Javascript Object Notation (JSON), HTML, WLT, Python, PHP or plain text. Json is popular because it's readable by both humans and machines and it is programming language-agnostic.
+
+- Request headers and parameters are also important in REST API calls because they include important identifier information such as:
+  - Metadata, authorizations, uniform resource identifiers (URI), caching, cookies and more.
+
+- Request headers and response headers, along with conventional HTTP status codes, are used within well-designed REST APIs.
+
+### Main elements of RESTful API
+
+- Client. The client is the software code or application that requests a resource from a server.
+- Server, is the software code or application that controls the resource and responds to client requests for the resource.
+- Resource, is any data or content, such as text, video and images, the server controls and makes available in response to client requests.
+
+### How to access a resource
+
+- HTTP method. This details what should happen to the specified resource. The four fundamental HTTP methods are know as verbs.
+- Endpoint. The endpoint shows where the resource is located. It typically includes a URI.
+- Header, has the details needed to execute the call and handle the response. A request header might include authentication data, an encryption key, etc.
+- Body, the body contains relevant information to or from the server. for example, a body may contain the new data to be added to the server through a POST or PUT method.
+
+## What is an algorithm?
+
+Definition. An algorithm is a finite set of rules specifying sequences of computational steps for solving a given problem.
+
+### Properties of algorithms
+
+- Finiteness. An algorithm must always terminate after a finite number of steps.
+- Definiteness. Each step of an algorithm must be precisely defined, that is, the actions to be carried out must be rigorously and unambiguously specified.
+- Input. An algorithm has zero or more inputs, given before the algorithm begins or during the algorithms execution.
+- Output. An algorithm has one or more outputs, which relate to the inputs.
+- Effectiveness. Every operation of an algorithm must be sufficiently rudimentary, such that in principle, the operation can be done by a human using paper and pencil, in finite time.
+
+Algorithm represent essential ideas of programs. They are sufficiently detailed to ensure that they are step-by-step procedures but ignore many syntactic and semantic details of any particular programming language.
+
+In the design and analysis of algorithms, people often use pseudocode.
+
 ## Non-algorithm
+
+Consider the problem of finding a common divisor of two positive integers x and y.
+
+Algorithm 1: Randomly Pick and Check
+Input: Two positive integers x and y.
+Output: A positive integer z such that x % z = 0 and y % z = 0.
+Steps:
+while true
+ randomly pick a positive integer z
+ if (x % z == 0) and (y % z == 0) then halt
+
+Algorithm 1 is not an algorithm!
 
 It may never stop, violating the finiteness property.
 
-The step randomly picking a positive integer is not sufficiently rigorous or unambiguous.
-    - Out of the set of infinitely many positive integers, what is the meaning of 'randomly picking'? It violates the definiteness property.
+The step “randomly picking a positive integer” is not sufficiently rigorous or unambiguous.
+Out of the set of infinitely many positive integers, what is the meaning of “randomly picking”? It violates the definiteness property.
 
-Algorithm 2: Euclid's algorithm
+Consider the problem of finding a common divisor of two positive integers x and y.
+
+Algorithm 2: Euclid’s Algorithm
+Input: Two positive integers x and y.
+Output: A positive integer z such that x % z = 0 and y % z = 0.
+Steps:
+while y != 0
+ x = y
+ y = x % y
+ z = x
+
+Algorithm 2 is indeed an algorithm. In fact, it does more than finding a common divisor, but finding the greatest common divisor of x and y.
+
+It can also be implemented as a recursive algorithm!
 
 ## Search Algorithms
 
 - Let's implement:
   - Brute force (linear) search
+    - Search for a random number in an array, by checking every position in the array.
   - Binary search
+    - "Decrease and conquer" algorithm, working on sorted arrays, by iteratively/recursively breaking them down in halves.
 
 which one is faster?
 What does faster mean?
@@ -165,10 +334,27 @@ The sorting problem us a classic problem in computer science. The purpose of sor
 - heap sort
 - merge sort...
 
-### Bubble sort
+## Bubble sort
 
 - the name bubble sort comes from the fact that large numbers will gradually bubble up to the top.
 - In each round, compare every adjacent pair of numbers from left to right, and exchange the two numbers of a pair if the larger one is on the left side.
+- After one round, the largest number will be moved to the rightmost position. We then go to the next round and compare and exchange every pair of numbers from left to right again
+
+Input: An array A of length n to be sorted.
+Output: A sorted array A.
+Steps:
+for i = 1 to n-1 // for each round
+ for j = 1 to n-i // compare every adjacent pair
+  if A[j] > A[j + 1] then exchange A [j] with A [j + 1];
+
+### Asymptotic Notations
+
+- It is always important to know whether an algorithm is efficient or not.
+- Given a problem or an algorithm, how such resource (such as execution time or storage space) is theoretically required?
+
+- In the bubble sort algorithm, for n positive integers, the algorithm requires n(n-1)/2 comparisons and at most n(n-1)/2 exchange steps.
+- Usually we do not need to know the exact number or quantity of resource required.
+- We can say the bubble sort algorithm requires roughly n^2 steps, or more professionally, we say the time complexity of bubble sort algorithm is O(n^2).
 
 ## Merge sort algorithm
 
