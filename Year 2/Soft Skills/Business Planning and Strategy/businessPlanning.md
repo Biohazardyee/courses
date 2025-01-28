@@ -1,5 +1,30 @@
 # Business Planning and Strategy
 
+- [Business Planning and Strategy](#business-planning-and-strategy)
+  - [Digital Transformation as a Strategic Imperative](#digital-transformation-as-a-strategic-imperative)
+    - [Emerging trends impacting Business strategy](#emerging-trends-impacting-business-strategy)
+      - [AI and Automation](#ai-and-automation)
+      - [Blockchain](#blockchain)
+      - [Sustainability in IT](#sustainability-in-it)
+  - [Challenges for IT engineers in strategy](#challenges-for-it-engineers-in-strategy)
+  - [Opportunities for IT engineers in strategy](#opportunities-for-it-engineers-in-strategy)
+  - [Practical tips for IT engineers](#practical-tips-for-it-engineers)
+  - [Business Plans](#business-plans)
+    - [Introduction to business plan](#introduction-to-business-plan)
+    - [Why it matters for IT engineers](#why-it-matters-for-it-engineers)
+    - [The role of IT engineer in business planning](#the-role-of-it-engineer-in-business-planning)
+    - [KEy components of a business plan](#key-components-of-a-business-plan)
+      - [Executive summary](#executive-summary)
+      - [Market Analysis](#market-analysis)
+      - [Organization and Management](#organization-and-management)
+      - [Product or service line](#product-or-service-line)
+      - [Marketing and Sales strategy](#marketing-and-sales-strategy)
+      - [Financial projections](#financial-projections)
+      - [Funding request](#funding-request)
+    - [Tools and frameworks for IT engineers](#tools-and-frameworks-for-it-engineers)
+    - [Challenges in Business Planning for IT engineers](#challenges-in-business-planning-for-it-engineers)
+
+
 KPIs = key performance indicator
 
 helps people to understand how a team or project is going
