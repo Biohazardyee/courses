@@ -33,6 +33,10 @@
     - [Examples](#examples)
     - [Key Takeaways](#key-takeaways)
   - [Value Proposition Canvas](#value-proposition-canvas)
+    - [Customer Segment](#customer-segment)
+    - [Value Proposition](#value-proposition-1)
+    - [Application of the value proposition canvas for the artists of Spotify](#application-of-the-value-proposition-canvas-for-the-artists-of-spotify)
+    - [Application for our entrepreneurial idea](#application-for-our-entrepreneurial-idea)
 
 ## Unit 1: Exploring Entrepreneurship and Ideation
 
@@ -101,9 +105,7 @@ This framework helps you present your entrepreneurial idea in a structured, conc
 ### Spotify
 
 - **WHY**: Building a cultural platform that unlocks the potential of human creativity, empowering anyone to discover, enjoy, and share music without limits.
-  
 - **HOW**: Allowing artists to live off their art through a tech platform that provides fans with an inspiring and seamless way to support and enjoy their favorite music.
-  
 - **WHAT**: Streaming millions of music tracks while paying an affordable monthly fee.
 
 ## 5W2H Framework
@@ -175,13 +177,13 @@ The PESTLE framework breaks down market analysis into six different factors, des
 
 ## Our Problem
 
-| **Problem** | Unavailability of driving tutors during the supervised driving period for young people. |
-|-------------|------------------------------------------------------------------------------------------|
+| **Problem** | Unavailability of driving tutors during the supervised driving period for young people.                                                                                                                          |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **WHY**     | We want to provide high schoolers and college students who desire to quickly obtain their driving licenses with access to available and experienced driving tutors, allowing them to practice driving regularly. |
-| **HOW**     | A platform that facilitates proper communication between drivers in training and experienced drivers. |
-| **WHAT**    | Software that enables drivers in training to find available driving tutors near their location. |
+| **HOW**     | A platform that facilitates proper communication between drivers in training and experienced drivers.                                                                                                            |
+| **WHAT**    | Software that enables drivers in training to find available driving tutors near their location.                                                                                                                  |
 
-<tanguy@sociego.co>
+[tanguy@sociego.co](mailto:tanguy@sociego.co)
 
 ### Direct Competitors
 
@@ -206,29 +208,19 @@ The PESTLE framework breaks down market analysis into six different factors, des
 Team 3: Augmented Reality system to navigate through a mall - GPS mobile + supermarket, find a specific item in a shop.
 
 - **Political**: Supermarket policies and government regulations regarding technical innovation.
-  
 - **Economic**: A probable decrease in sales as people spend less time in supermarkets, coupled with inflation.
-
 - **Sociological**: A decline in human contact, with fewer people in shops as they can more easily and quickly find what they need.
-
 - **Technological**: The use of augmented reality, GPS technologies, mobile technologies, automation, and cybersecurity.
-
 - **Legal**: Compliance with GDPR and considerations regarding privacy.
-
 - **Environmental**: Reduced need to travel from shop to shop to find specific items, leading to decreased car usage and increased e-consumption.
 
 #### Our team by Team 3
 
 - **Political**: Compliance by verifying the drivers; they must meet the necessary requirements.
-  
 - **Economic**: The application needs to be affordable, as the price for the driving license is already expensive.
-  
 - **Sociological**: People in rural areas need to be able to drive.
-  
 - **Technological**: Utilization of GPS technology.
-  
 - **Legal**: Insurance requirements.
-  
 - **Environmental**: Promotion of eco-friendly driving, including electric cars.
 
 ## Value Proposition
@@ -261,3 +253,48 @@ The best value propositions give measurable and demonstrable benefits or reliefs
 
 ## Value Proposition Canvas
 
+![1738074633626](image/entrepreneurship/1738074633626.png)
+
+Start with the customer (right) part first; don't assume the solution exists before listing items on the customer part of the canvas.
+
+### Customer Segment
+
+- **Persona**:
+  - Customer or beneficiary (not necessarily the one who pays, and not always the user).
+- **Gains**:
+  - Positive outcomes or benefits that provide satisfaction or joy to the customer.
+- **Pains**:
+  - Negative feelings or challenges the customer experiences while performing a task.
+
+Once you've mapped and understood the persona, you can now focus on the left part.
+
+### Value Proposition
+
+Build your product or service to:
+
+- **Relieve Pains**:
+  - Address and alleviate the challenges faced by the persona.
+- **Enhance Gains**:
+  - Create additional value and positive outcomes based on the persona's needs and desires.
+
+Ensure that the left part of the canvas aligns with the fundamental aspects identified on the right side. This alignment is crucial for crafting a compelling value proposition that resonates with your target audience.
+
+### Application of the value proposition canvas for the artists of Spotify
+
+- Persona:
+  - customer job: make the music, create the lyrics and the beat, record the music, release the music, create an album, growing their fame, perform concert, earn money
+  - Pains: Illegal music downloads, piracy, scammed by labels, find a label, find partnerships,lack channels for exposure, no specific feedback
+  - Gains: exposure, gain money, show their art, having groupies, independence
+
+![1738075872744](image/entrepreneurship/1738075872744.png)
+
+- Value Proposition:
+  - Products and services: cheap music hosting for less than $2 / month, music and artist suggestions, artist profile, music evaluation
+  - Pain relievers: receiving fess from Spotify depending on the number of listenings, automatic payments, trust-worthy platform, getting exposure to new listeners and labels, can expose your musics and profile, detailed feedback from listeners
+  - Gain creators: Ads for new artists, suggestions, playlist suggestions, lyrics, link to social networks, advertise your concerts, gain money, sell albums, sell merchandise, can be scouted by labels.
+
+![1738076698751](image/entrepreneurship/1738076698751.png)
+
+### Application for our entrepreneurial idea
+
+![1738078840376](image/entrepreneurship/1738078840376.png)
