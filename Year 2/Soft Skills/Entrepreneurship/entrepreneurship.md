@@ -298,3 +298,4 @@ Ensure that the left part of the canvas aligns with the fundamental aspects iden
 ### Application for our entrepreneurial idea
 
 ![1738078840376](image/entrepreneurship/1738078840376.png)
+
