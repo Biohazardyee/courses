@@ -26,6 +26,13 @@
   - [Our Problem](#our-problem)
     - [Direct Competitors](#direct-competitors)
     - [Indirect Competitors](#indirect-competitors)
+    - [PESTLE](#pestle)
+      - [Team 3](#team-3)
+      - [Our team by Team 3](#our-team-by-team-3)
+  - [Value Proposition](#value-proposition)
+    - [Examples](#examples)
+    - [Key Takeaways](#key-takeaways)
+  - [Value Proposition Canvas](#value-proposition-canvas)
 
 ## Unit 1: Exploring Entrepreneurship and Ideation
 
@@ -191,3 +198,66 @@ The PESTLE framework breaks down market analysis into six different factors, des
 3. **Online Driving Courses** - Platforms like **iDriveSafely** or **Aceable** that offer online courses for driving education, which may serve as alternatives to in-person supervised lessons.
 4. **Car Rental Services** - Companies like **Enterprise** or **Hertz** that allow individuals to rent cars, potentially reducing the urgency for supervised driving lessons.
 5. **Mobile Apps for Learning** - Apps like **RoadReady** that help learners track their driving practice and prepare for tests, serving as supplementary tools rather than direct competitors.
+
+### PESTLE
+
+#### Team 3
+
+Team 3: Augmented Reality system to navigate through a mall - GPS mobile + supermarket, find a specific item in a shop.
+
+- **Political**: Supermarket policies and government regulations regarding technical innovation.
+  
+- **Economic**: A probable decrease in sales as people spend less time in supermarkets, coupled with inflation.
+
+- **Sociological**: A decline in human contact, with fewer people in shops as they can more easily and quickly find what they need.
+
+- **Technological**: The use of augmented reality, GPS technologies, mobile technologies, automation, and cybersecurity.
+
+- **Legal**: Compliance with GDPR and considerations regarding privacy.
+
+- **Environmental**: Reduced need to travel from shop to shop to find specific items, leading to decreased car usage and increased e-consumption.
+
+#### Our team by Team 3
+
+- **Political**: Compliance by verifying the drivers; they must meet the necessary requirements.
+  
+- **Economic**: The application needs to be affordable, as the price for the driving license is already expensive.
+  
+- **Sociological**: People in rural areas need to be able to drive.
+  
+- **Technological**: Utilization of GPS technology.
+  
+- **Legal**: Insurance requirements.
+  
+- **Environmental**: Promotion of eco-friendly driving, including electric cars.
+
+## Value Proposition
+
+A value proposition is a synthetic statement which defines the added value a product or service has for the customer it is sold to
+
+### Examples
+
+**Airbnb**:
+
+Airbnb offers travelers unique accommodations for a fair price, anywhere in the world, and helps them experience human connection with the hosts
+
+**Spotify**:
+
+Spotify provides to listeners unlimited access to millions of high quality music tracks, for an affordable monthly fee and through an high-end user experience.
+
+### Key Takeaways
+
+- **Know your customer**
+
+To have a strong value proposition, you must understand well who are your personas: the beneficiaries you're giving value to
+
+- **Provide benefits or relive painstaking**
+
+Good value propositions don't have to be the ones which you win more: they can be ones with which you lose less.
+
+- **Build something unique**
+
+The best value propositions give measurable and demonstrable benefits or reliefs in a way which differentiates from alternatives.
+
+## Value Proposition Canvas
+
