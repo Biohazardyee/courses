@@ -37,6 +37,9 @@
     - [Value Proposition](#value-proposition-1)
     - [Application of the value proposition canvas for the artists of Spotify](#application-of-the-value-proposition-canvas-for-the-artists-of-spotify)
     - [Application for our entrepreneurial idea](#application-for-our-entrepreneurial-idea)
+    - [Team 5 trying to kill us](#team-5-trying-to-kill-us)
+  - [Porter&#39;s Five Forces](#porters-five-forces)
+  - [Personal SWOT Analysis](#personal-swot-analysis)
 
 ## Unit 1: Exploring Entrepreneurship and Ideation
 
@@ -299,3 +302,25 @@ Ensure that the left part of the canvas aligns with the fundamental aspects iden
 
 ![1738078840376](image/entrepreneurship/1738078840376.png)
 
+### Team 5 trying to kill us
+
+- demand, if not enough trainers or not enough tutors the platform wont be sustainable
+- the demand fluctuates hugely during vacation
+- contracts, tutors have contracts with the driving schools
+- retention how to renew the user base, how do you fidelize tutors
+
+## Porter's Five Forces
+
+This framework helps you to analyze the competitive environment of a business, through 4 influencing forces and 1 interfacing force
+
+![1738227679211](image/entrepreneurship/1738227679211.png)
+
+## Personal SWOT Analysis
+
+|          **Strengths**          |            **Weaknesses**            |                           **Opportunities**                           |                   **Threats**                   |
+| :------------------------------------: | :----------------------------------------: | :-------------------------------------------------------------------------: | :----------------------------------------------------: |
+|          Strong social skills          |          Limited technical skills          |  Opportunities for skill development through online courses and workshops  |  Rapid technological advancements may outpace skills  |
+| Sense of humor (can lighten the mood) |   Sometimes struggle with communication   | Networking opportunities in social settings to enhance communication skills | Competition from peers with stronger technical skills |
+|             Quick learner             | Tendency to be not be confident in myself |      Potential to collaborate on projects that leverage social skills      |     Economic downturns affecting job availability     |
+|        Expressive and creative        | May take time to adapt to new environments |            Growing demand for soft skills in various industries            | Changes in industry trends that favor technical skills |
+| Ability to connect with diverse groups |    Occasionally hesitant to share ideas    | Volunteering or joining clubs to practice and enhance communication skills |  Negative feedback or criticism affecting confidence  |
