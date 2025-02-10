@@ -98,3 +98,49 @@
 
 ---
 
+### **Client-Server Architecture and Communication**
+
+"Let me walk you through how our client-server architecture works.
+
+First, we have the **server**, which is hosted locally. This server is essentially the brain of our system. It stores the dataset CSV file, which can be accessed using Hypertext Transfer Protocol.
+
+Now, what does the server do? Well, it’s responsible for all the heavy lifting. It hosts the shortest path algorithm. It also handles all the pre-processing. Most importantly, this is where the actual computation happens. When you ask for the shortest path, the server is the one that calculates it.
+
+---
+
+On the other hand, we have the **client**. The client is the interface with which you interact with the algorithm where you input your starting point—let’s call it Point A—and your destination, Point B. The client then sends this information to the server for processing. Once the server computes the result, it sends the output back to the client. This output includes three key pieces of information:
+
+1. The sequence of nodes that make up the shortest path.
+2. The total travel time from Point A to Point B.
+3. And the computation time—how long it took the algorithm to find the solution.
+
+Now, how do the client and server talk to each other? They communicate using a **REST API**. Specifically, we use a single **GET method** for this communication. The client sends a GET request to the server, which includes the input parameters: Point A, Point B, and a header that specifies whether the response should be in **JSON** or **XML** format. This flexibility in response format allows us to support a wider range of use cases and makes the system more versatile.
+
+but this in the slides
+
+<!-- Here’s how the workflow looks in practice:
+
+1. The user inputs Point A and Point B into the client.
+2. The client sends a GET request to the server with these details and the preferred response format.
+3. The server retrieves the dataset, runs the algorithm, and computes the shortest path, travel time, and computation time.
+4. The server then sends this information back to the client in the requested format—either JSON or XML.
+5. Finally, the client displays the results to the user in a clear and user-friendly way. -->
+
+---
+
+Such an architecture allows an efficient scalable and flexible software that can be used in a professional environment.
+
+How was it looking like on the prototype? lets find out.
+
+<!-- ### **Why This Architecture Works So Well**
+
+"This setup has several advantages:
+
+it is efficient, scalable, flexible
+
+- **Efficiency**: By handling all the computation on the server, the client stays lightweight and responsive.
+- **Scalability**: The server can handle multiple client requests at once, making it suitable for larger applications.
+- **Flexibility**: Supporting both JSON and XML responses ensures our system can integrate with a variety of other tools and platforms.
+- **Separation of Concerns**: By clearly dividing responsibilities—client for user interaction and server for computation—we make the system easier to maintain and update.
+
+--- -->
