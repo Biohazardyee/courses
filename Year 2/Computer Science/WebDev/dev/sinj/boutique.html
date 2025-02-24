@@ -1,50 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boutique - Sinj</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="boutique.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
     <div class="nav-bar">
-        <a href="index.html">🏠 Home</a>
-        <a href="sinj.html">🌴 Sinj Page</a>
-        <a href="about.html">🤔 About</a>
-        <a href="boutique.html">🛍️ Boutique</a>
+      <a href="index.html">🏠 Home</a>
+      <a href="sinj.html">🌴 Sinj Page</a>
+      <a href="about.html">🤔 About</a>
+      <a href="boutique.html">🛍️ Boutique</a>
+      <a href="#cart" id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
     </div>
     <header>
-        <h1>Bienvenue dans la Boutique Sinj! 🛍️</h1>
-        <p>Explorez nos articles exclusifs inspirés par l'univers de Sinj.</p>
+      <h1>Bienvenue dans la Boutique Sinj! 🛍️</h1>
+      <p>Explorez nos articles exclusifs inspirés par l'univers de Sinj.</p>
     </header>
     <div class="container">
-        <h2>Nos Produits</h2>
-        <div class="product">
-            <img src="https://i.pinimg.com/236x/cd/3c/a5/cd3ca5a9a56d5863bf090278034cefd7.jpg" alt="T-shirt Sinj">
-            <h3>T-shirt Sinj</h3>
-            <p>Affichez votre style avec ce t-shirt officiel Sinj.</p>
-            <span class="price">19,99€</span>
-            <button>Ajouter au panier</button>
-        </div>
-        <hr>
-        <div class="product">
-            <img src="https://pbs.twimg.com/profile_images/1702349766942756864/lMmwh78c_400x400.jpg" alt="Casquette Sinj">
-            <h3>Casquette Sinj</h3>
-            <p>Un must-have pour les vrais fans de Sinj.</p>
-            <span class="price">14,99€</span>
-            <button>Ajouter au panier</button>
-        </div>
-        <hr>
-        <div class="product">
-            <img src="https://ih1.redbubble.net/image.5582456495.7916/sss,small,product,750x1000.jpg" alt="Mug Sinj">
-            <h3>Mug Sinj</h3>
-            <p>Commencez votre journée avec la vibe Sinj.</p>
-            <span class="price">9,99€</span>
-            <button>Ajouter au panier</button>
-        </div>
+      <h2>Nos Produits</h2>
+      <div class="product" data-name="T-shirt Sinj" data-price="19.99">
+        <img
+          src="https://i.pinimg.com/236x/cd/3c/a5/cd3ca5a9a56d5863bf090278034cefd7.jpg"
+          alt="T-shirt Sinj"
+        />
+        <h3>T-shirt Sinj</h3>
+        <p>Affichez votre style avec ce t-shirt officiel Sinj.</p>
+        <span class="price">19,99€</span>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <hr />
+      <div class="product" data-name="Casquette Sinj" data-price="14.99">
+        <img
+          src="https://pbs.twimg.com/profile_images/1702349766942756864/lMmwh78c_400x400.jpg"
+          alt="Casquette Sinj"
+        />
+        <h3>Casquette Sinj</h3>
+        <p>Un must-have pour les vrais fans de Sinj.</p>
+        <span class="price">14,99€</span>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <hr />
+      <div class="product" data-name="Mug Sinj" data-price="9.99">
+        <img
+          src="https://ih1.redbubble.net/image.5582456495.7916/sss,small,product,750x1000.jpg"
+          alt="Mug Sinj"
+        />
+        <h3>Mug Sinj</h3>
+        <p>Commencez votre journée avec la vibe Sinj.</p>
+        <span class="price">9,99€</span>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
     </div>
+
+    <div id="cart" class="cart-container">
+      <h2>🛒 Votre Panier</h2>
+      <br>
+      <ul id="cart-items"></ul>
+      <p>Total: <span id="cart-total">0.00€</span></p>
+      <button id="clear-cart">Vider le panier</button>
+    </div>
+
     <footer>
-        <p>© 2025 Tibo Pas Bo - Sinj pour toujours 💖</p>
+      <p>© 2025 Tibo Pas Bo - Sinj pour toujours 💖</p>
     </footer>
-</body>
+  </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    updateCartUI();
+
+    document.querySelectorAll(".product button").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        const productElement = event.target.closest(".product");
+        const productName = productElement.querySelector("h3").innerText;
+        const productPrice = parseFloat(productElement.dataset.price); // Get price from data attribute
+
+        addToCart(productName, productPrice);
+      });
+    });
+
+    function addToCart(name, price) {
+      const existingItem = cart.find((item) => item.name === name);
+      if (existingItem) {
+        existingItem.quantity += 1;
+        existingItem.totalPrice = (
+          existingItem.quantity * existingItem.price
+        ).toFixed(2); // Ensure correct calculation
+      } else {
+        cart.push({ name, price, quantity: 1, totalPrice: price.toFixed(2) });
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const cartItemsContainer = document.getElementById("cart-items");
+      const cartTotalElement = document.getElementById("cart-total");
+      const cartCountElement = document.getElementById("cart-count");
+
+      cartItemsContainer.innerHTML = "";
+      let total = 0;
+      let itemCount = 0;
+
+      cart.forEach((item) => {
+        const cartItem = document.createElement("li");
+        cartItem.innerText = `${item.name} (x${item.quantity}) - ${item.totalPrice}€`;
+        cartItemsContainer.appendChild(cartItem);
+
+        total += parseFloat(item.totalPrice);
+        itemCount += item.quantity;
+      });
+
+      cartTotalElement.innerText = `${total.toFixed(2)}€`;
+      cartCountElement.innerText = itemCount;
+    }
+
+    document.getElementById("clear-cart").addEventListener("click", () => {
+      localStorage.removeItem("cart");
+      cart.length = 0; // Clear array in memory
+      updateCartUI();
+    });
+  });
+</script>

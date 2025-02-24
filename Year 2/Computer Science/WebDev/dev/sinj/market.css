@@ -1,0 +1,206 @@
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-10px, 10px) rotate(-2deg);
+  }
+  20% {
+    transform: translate(10px, -10px) rotate(2deg);
+  }
+  30% {
+    transform: translate(-15px, 15px) rotate(-3deg);
+  }
+  40% {
+    transform: translate(15px, -15px) rotate(3deg);
+  }
+  50% {
+    transform: translate(-5px, 5px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(5px, -5px) rotate(1deg);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+body {
+  background: url("https://images.fineartamerica.com/images-medium-large-5/scary-dark-alley-louis-dallara.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  padding: 50px;
+  transition: background 0.2s ease-in-out;
+  cursor: url("https://cur.cursors-4u.net/anime/ani-1/ani64.cur"), auto;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.glitch {
+  animation: glitch 0.1s infinite;
+  filter: contrast(150%) brightness(60%) saturate(200%);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(10, 10, 10, 0.95);
+  padding: 20px;
+  border: 2px solid #ff0000;
+  box-shadow: 0px 0px 15px #ff0000;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.product {
+  background: black;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ff0000;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+  transform: rotate(3deg) scale(1.1);
+}
+
+.buy-button {
+  background: black;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.buy-button:hover {
+  background: #ff0000;
+  color: black;
+  box-shadow: 0px 0px 10px #ff0000;
+  transform: translateY(-5px);
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Style for the random horror text */
+@font-face {
+  font-family: "Creepy";
+  src: url("https://fonts.gstatic.com/s/creepster/v13/AlZy_zVUqJz4yMrniH4Rcn35.woff2")
+    format("woff2");
+}
+
+.horror-text {
+  position: fixed;
+  color: #ff0000;
+  font-size: 32px;
+  font-family: "Creepy", "Impact", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #ff0000, 0 0 15px rgba(255, 0, 0, 0.8),
+    2px 2px 2px rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none; /* Makes text non-interactive */
+  transform: rotate(var(--rotation));
+  animation: flicker 0.5s infinite;
+  text-transform: uppercase;
+}
+
+.horror-text.large {
+  font-size: 48px;
+  color: #aa0000;
+}
+
+.horror-text.dripping::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(#ff0000, transparent);
+  filter: blur(1px);
+  opacity: 0.7;
+}
+.corrupt-text {
+  color: #ff0000;
+  text-shadow: 0 0 5px #ff0000;
+  animation: corrupt-text 1s infinite;
+}
+
+@keyframes corrupt-text {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: skew(10deg, 10deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.corrupt-layout {
+  transform: rotate(1deg) scale(1.02);
+  transition: transform 0.5s ease-in-out;
+}
+
+.corrupt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.05);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.corrupt-image {
+  filter: grayscale(100%) contrast(200%);
+}
+
+.final-breakdown {
+  animation: final-breakdown 5s forwards;
+}
+
+@keyframes final-breakdown {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5) rotate(45deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0) rotate(90deg);
+    opacity: 0;
+  }
+}

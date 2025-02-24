@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          -45deg,
+          black,
+          darkgreen,
+          rgb(1, 2, 1),
+          green,
+          black
+        );
+        background-size: 500% 500%;
+        animation: gradientMove 10s linear infinite;
+        color: white;
+        text-align: center;
+        position: relative;
+        overflow-x: hidden; /* Prevents horizontal scrolling but allows vertical scrolling */
+        overflow-y: auto; /* Allows vertical scrolling */
+      }
+
+      /* Animated Gradient */
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Floating Light Waves */
+      body::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.1) 0%,
+          transparent 70%
+        );
+        animation: waveMove 8s infinite linear;
+        z-index: -1;
+      }
+
+      @keyframes waveMove {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px 0;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+      }
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+      }
+      .active {
+        background-color: red;
+        border-radius: 5px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+      }
+      h1,
+      h2 {
+        color: lime;
+      }
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+      audio {
+        width: 100%;
+        margin-top: 10px;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 15px;
+      }
+      .gallery img {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        border: 2px solid white;
+      }
+      .shop-button {
+        padding: 12px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        background: linear-gradient(to right, #ff5f6d, #ffc371);
+        color: black;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.3);
+      }
+
+      .shop-button:hover {
+        background: linear-gradient(to right, #ff9966, #ff5e62);
+        transform: scale(1.05);
+        box-shadow: 0px 6px 15px rgba(255, 99, 71, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="blog.html" id="blog">Blog</a>
+        <a href="about.html" id="about">About Me</a>
+        <a href="contact.html" id="contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>My Blog</h1>
+      <p>
+        Welcome to my blog! Here you will find all my thoughts and musings on a
+        variety of topics.
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>My Guitar Performance 🎸</h2>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/QweQb534E3o?si=8BkYzqWQDjxoAJWP"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>My Guitar</h2>
+      <img
+        src="https://www.ibanez.com/common/product_artist_file/file/p_region_GRG120QASP_BGD_2Y_02_sub_1.jpg"
+        alt="My Guitar"
+      />
+      <p>
+        The <strong>Ibanez GRG120QASP</strong> is a
+        <strong>high-performance electric guitar</strong> from the renowned
+        Ibanez GIO series, designed for players who want professional quality at
+        an affordable price. Featuring a quilted maple art grain top, this
+        guitar provides both stunning aesthetics and balanced tonal
+        characteristics.
+      </p>
+      <ul style="text-align: left; max-width: 600px; margin: 0 auto">
+        <li><strong>Body:</strong> Poplar with Quilted Maple Art Grain Top</li>
+        <li>
+          <strong>Neck:</strong> Maple with GRG shape for fast playability
+        </li>
+        <li><strong>Fretboard:</strong> Purpleheart with 24 jumbo frets</li>
+        <li>
+          <strong>Pickups:</strong> Infinity R (H-H) for **versatile rock and
+          metal tones**
+        </li>
+        <li><strong>Bridge:</strong> T102 tremolo for expressive playing</li>
+        <li><strong>Best For:</strong> Rock, Metal, and Shredding</li>
+      </ul>
+
+      <h3>Buy it here</h3>
+      <button
+        class="shop-button"
+        onclick="window.location.href='https://www.thomann.de/de/ibanez_grg120qasp_bgd.htm'"
+      >
+        🛒 Buy Now on Thomann
+      </button>
+
+      <h2>Audio Recording 🎵</h2>
+      <audio controls>
+        <source
+          src="One Step Closer Cover in 1 hour lmao.m4a"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="container">
+      <h2>Photo Gallery 📸</h2>
+      <div class="gallery">
+        <img
+          src="https://www.spirit-of-metal.com/les%20goupes/L/Lorna%20Shore/pics/1770183_logo.jpg"
+          alt="Photo 1"
+        />
+        <img
+          src="https://m.media-amazon.com/images/I/91f-1JgLvqL._UF1000,1000_QL80_.jpg"
+          alt="Photo 2"
+        />
+        <img
+          src="https://www.emp-online.fr/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw17aee57b/images/4/7/3/5/473586a.jpg?sfrm=png"
+          alt="Photo 3"
+        />
+        <img
+          src="https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_51/518229/16529651_800.jpg"
+          alt="Photo 4"
+        />
+        <img
+          src="https://store-images.s-microsoft.com/image/apps.857.65642028844779555.c518e652-fc85-4d6e-99a2-3e9ae1656a91.cf450892-9317-48fe-8d3b-f6083c6c5d9a?q=90&w=480&h=270"
+          alt="Photo 5"
+        />
+        <img
+          src="https://sm.ign.com/t/ign_fr/news/s/stalker-2-/stalker-2-to-debut-in-early-2024-according-to-developers-fac_sq78.1200.jpg"
+          alt="Photo 6"
+        />
+      </div>
+    </div>
+
+    <script>
+      // Get the current page's filename
+      const currentPage = window.location.pathname.split("/").pop();
+
+      // Mapping of page filenames to link IDs
+      const pageLinks = {
+        "blog.html": "blog",
+        "about.html": "about",
+        "contact.html": "contact",
+        "": "home",
+      };
+
+      // Highlight the active link if it matches the current page
+      if (pageLinks[currentPage]) {
+        document.getElementById(pageLinks[currentPage]).classList.add("active");
+      }
+    </script>
+    <footer>
+      <p>&copy; 2025 Thibaud Marlier. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

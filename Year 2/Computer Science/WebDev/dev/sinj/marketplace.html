@@ -5,155 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Marché Noir</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      @keyframes glitch {
-        0% {
-          transform: translate(0);
-        }
-        10% {
-          transform: translate(-10px, 10px) rotate(-2deg);
-        }
-        20% {
-          transform: translate(10px, -10px) rotate(2deg);
-        }
-        30% {
-          transform: translate(-15px, 15px) rotate(-3deg);
-        }
-        40% {
-          transform: translate(15px, -15px) rotate(3deg);
-        }
-        50% {
-          transform: translate(-5px, 5px) rotate(-1deg);
-        }
-        60% {
-          transform: translate(5px, -5px) rotate(1deg);
-        }
-        100% {
-          transform: translate(0);
-        }
-      }
-
-      body {
-        background: url("https://images.fineartamerica.com/images-medium-large-5/scary-dark-alley-louis-dallara.jpg")
-          no-repeat center center fixed;
-        background-size: cover;
-        color: #00ff00;
-        font-family: "Courier New", monospace;
-        text-align: center;
-        padding: 50px;
-        transition: background 0.2s ease-in-out;
-        cursor: url("https://cur.cursors-4u.net/anime/ani-1/ani64.cur"), auto;
-        overflow-x: hidden;
-        position: relative;
-        min-height: 100vh;
-      }
-
-      .glitch {
-        animation: glitch 0.1s infinite;
-        filter: contrast(150%) brightness(60%) saturate(200%);
-      }
-
-      .container {
-        max-width: 800px;
-        margin: auto;
-        background: rgba(10, 10, 10, 0.95);
-        padding: 20px;
-        border: 2px solid #ff0000;
-        box-shadow: 0px 0px 15px #ff0000;
-        position: relative;
-        z-index: 1;
-      }
-
-      h1 {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        text-shadow: 0 0 10px #ff0000;
-      }
-
-      .product {
-        background: black;
-        padding: 15px;
-        margin: 15px 0;
-        border: 1px solid #ff0000;
-        text-align: left;
-        transition: transform 0.2s ease-in-out;
-      }
-
-      .product:hover {
-        transform: rotate(3deg) scale(1.1);
-      }
-
-      .buy-button {
-        background: black;
-        color: #ff0000;
-        border: 1px solid #ff0000;
-        padding: 10px;
-        margin-top: 10px;
-        cursor: pointer;
-        width: 100%;
-        font-size: 16px;
-        transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
-      }
-
-      .buy-button:hover {
-        background: #ff0000;
-        color: black;
-        box-shadow: 0px 0px 10px #ff0000;
-        transform: translateY(-5px);
-      }
-
-      @keyframes flicker {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      
-      /* Style for the random horror text */
-      @font-face {
-        font-family: 'Creepy';
-        src: url('https://fonts.gstatic.com/s/creepster/v13/AlZy_zVUqJz4yMrniH4Rcn35.woff2') format('woff2');
-      }
-      
-      .horror-text {
-        position: fixed;
-        color: #ff0000;
-        font-size: 32px;
-        font-family: 'Creepy', 'Impact', sans-serif;
-        font-weight: bold;
-        letter-spacing: 2px;
-        text-shadow: 0 0 8px #ff0000, 0 0 15px rgba(255, 0, 0, 0.8), 2px 2px 2px rgba(0, 0, 0, 0.9);
-        z-index: 999;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-        pointer-events: none; /* Makes text non-interactive */
-        transform: rotate(var(--rotation));
-        animation: flicker 0.5s infinite;
-        text-transform: uppercase;
-      }
-      
-      .horror-text.large {
-        font-size: 48px;
-        color: #aa0000;
-      }
-      
-      .horror-text.dripping::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 100%;
-        height: 15px;
-        background: linear-gradient(#ff0000, transparent);
-        filter: blur(1px);
-        opacity: 0.7;
-      }
-    </style>
+    <link rel="stylesheet" href="market.css" />
   </head>
   <body>
     <div class="container">
@@ -206,148 +58,271 @@
     </audio>
 
     <script>
-      // Play creepy audio on mouse move
-      function playCreepyAudio() {
-        const audio = document.getElementById("creepyAudio");
-        audio.volume = 0.3;
-        audio.play();
-      }
-
-      document.body.addEventListener("mousemove", playCreepyAudio, {
-        once: true,
-      });
-
-      // Glitch effect
-      function glitchEffect() {
-        document.body.classList.add("glitch");
-        setTimeout(() => {
-          document.body.classList.remove("glitch");
-        }, 400);
-      }
-
-      // Flash creepy images
-      function flashCreepypasta() {
-        const originalBackground =
-          "https://images.fineartamerica.com/images-medium-large-5/scary-dark-alley-louis-dallara.jpg";
-        const creepypastaImages = [
-          "https://i1.sndcdn.com/artworks-000659422921-kmjoau-t500x500.jpg",
-          "https://i1.sndcdn.com/artworks-000655012789-5cc8d5-t500x500.jpg",
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ3NDYEukdAOkMvipoRvKFfd-BWJPcgPRxnw&s",
-          "https://www.shutterstock.com/image-illustration/creepy-looking-figure-smiling-dark-600nw-2348912379.jpg",
-        ];
-
-        const randomImage =
-          creepypastaImages[Math.floor(Math.random() * creepypastaImages.length)];
-        document.body.style.backgroundImage = `url(${randomImage})`;
-        glitchEffect();
-        setTimeout(() => {
-          document.body.style.backgroundImage = `url(${originalBackground})`;
-        }, 1000); // Revert after 1 second
-      }
-
-      // Randomly flash creepy images
-      setInterval(flashCreepypasta, Math.random() * 5000 + 2000); // Every 2-7 seconds
-
-      // Update mystery text (Original function)
-      function updateMysteryText() {
-        const textElement = document.getElementById("mysteryText");
-        textElement.innerText =
-          Math.random() < 0.5 ? "I see you." : "They are watching.";
-        setTimeout(updateMysteryText, Math.random() * 10000 + 5000); // Every 5-15 seconds
-      }
-      updateMysteryText();
+        // Track time spent on the page
+        let timeSpent = 0;
+        const corruptionInterval = setInterval(() => {
+          timeSpent += 1;
+          applyCorruptionEffects(timeSpent);
+        }, 1000); // Check every second
       
-      // Random text appearing and disappearing at random locations
-      function createRandomHorrorText() {
-        const horrorText = document.createElement("div");
-        horrorText.classList.add("horror-text");
-        
-        // Array of horror messages
-        const horrorMessages = [
-          "They are watching. 👁️", 
-          "HELP ME", 
-          "DIIIIE", 
-          "BEHIND YOU", 
-          "RUN", 
-          "DON'T LOOK", 
-          "GET OUT", 
-          "CAN'T ESCAPE", 
-          "YOUR SOUL IS MINE", 
-          "SCREAMING WON'T HELP", 
-          "THEY'RE COMING", 
-          "NOWHERE TO HIDE 👁️", 
-          "BLOOD", 
-          "TOO LATE", 
-          "WE SEE ALL 👁️👁️👁️",
-          "JOIN US",
-          "FOREVER TRAPPED",
-          "NO ESCAPE"
-        ];
-        
-        // Select random message
-        const randomMessage = horrorMessages[Math.floor(Math.random() * horrorMessages.length)];
-        horrorText.innerText = randomMessage;
-        
-        // Random special effects (30% chance)
-        if (Math.random() < 0.3) {
-          horrorText.classList.add("large");
-        }
-        
-        // Add dripping effect (20% chance)
-        if (Math.random() < 0.2) {
-          horrorText.classList.add("dripping");
-        }
-        
-        // Set random position on screen
-        const randomX = Math.floor(Math.random() * (window.innerWidth - 200));
-        const randomY = Math.floor(Math.random() * (window.innerHeight - 50));
-        
-        // Set random rotation
-        const randomRotation = Math.floor(Math.random() * 60) - 30; // -30 to +30 degrees
-        horrorText.style.setProperty('--rotation', `${randomRotation}deg`);
-        
-        // Position the text
-        horrorText.style.left = `${randomX}px`;
-        horrorText.style.top = `${randomY}px`;
-        
-        // Add to body
-        document.body.appendChild(horrorText);
-        
-        // Play random creepy sound (25% chance)
-        if (Math.random() < 0.25) {
-          const whisperSound = new Audio('https://www.fesliyanstudios.com/play-mp3/6717');
-          whisperSound.volume = 0.2;
-          whisperSound.play();
-        }
-        
-        // Fade in
-        setTimeout(() => {
-          horrorText.style.opacity = "1";
-        }, 100);
-        
-        // Fade out and remove after random time
-        const displayTime = Math.random() * 2000 + 1000; // 1-3 seconds
-        setTimeout(() => {
-          horrorText.style.opacity = "0";
-          setTimeout(() => {
-            horrorText.remove();
-          }, 500); // Remove after fade out
-        }, displayTime);
-        
-        // Schedule next appearance (more frequent now)
-        const nextAppearance = Math.random() * 4000 + 1000; // 1-5 seconds
-        setTimeout(createRandomHorrorText, nextAppearance);
-        
-        // 15% chance to trigger another message quickly for a "burst" effect
-        if (Math.random() < 0.15) {
-          setTimeout(() => {
-            createRandomHorrorText();
-          }, 200);
-        }
-      }
+        // Store the flash interval ID
+        const flashInterval = setInterval(
+          flashCreepypasta,
+          Math.random() * 5000 + 2000
+        );
       
-      // Start the random horror text appearances
-      setTimeout(createRandomHorrorText, 3000); // Start after 3 seconds
-    </script>
+        // Apply corruption effects based on time spent
+        function applyCorruptionEffects(time) {
+          const body = document.body;
+          const container = document.querySelector(".container");
+          const images = document.querySelectorAll("img");
+          const audio = document.getElementById("creepyAudio");
+      
+          // Stage 1: Minor glitches (after 10 seconds)
+          if (time >= 10 && time < 30) {
+            body.classList.add("glitch");
+            setTimeout(() => body.classList.remove("glitch"), 200);
+      
+            // Slight image corruption
+            images.forEach((img) => {
+              img.style.filter = "grayscale(20%) blur(1px) contrast(150%)";
+            });
+          }
+      
+          // Stage 2: Text corruption and moderate image corruption (after 30 seconds)
+          if (time >= 30 && time < 60) {
+            const texts = document.querySelectorAll("h1, h3, p, span");
+            texts.forEach((text) => text.classList.add("corrupt-text"));
+      
+            // Moderate image corruption
+            images.forEach((img) => {
+              img.style.filter = "grayscale(50%) blur(2px) contrast(200%) hue-rotate(90deg)";
+              img.style.transform = "skew(-5deg, -5deg)";
+            });
+          }
+      
+          // Stage 3: Layout corruption and severe image corruption (after 60 seconds)
+          if (time >= 60 && time < 90) {
+            container.classList.add("corrupt-layout");
+      
+            // Severe image corruption
+            images.forEach((img) => {
+              img.style.filter = "grayscale(80%) blur(3px) contrast(300%) hue-rotate(180deg)";
+              img.style.transform = "skew(-10deg, -10deg) scale(1.1)";
+            });
+          }
+      
+          // Stage 4: Creepy overlays and extreme image corruption (after 90 seconds)
+          if (time >= 90 && time < 120) {
+            const overlay = document.createElement("div");
+            overlay.classList.add("corrupt-overlay");
+            body.appendChild(overlay);
+      
+            // Extreme image corruption
+            images.forEach((img) => {
+              img.style.filter = "grayscale(100%) blur(5px) contrast(400%) hue-rotate(270deg)";
+              img.style.transform = "skew(-15deg, -15deg) scale(1.2)";
+            });
+          }
+      
+          // Stage 5: Final breakdown (after 120 seconds)
+          if (time >= 120) {
+            clearInterval(corruptionInterval); // Stop further corruption
+            body.classList.add("final-breakdown");
+            audio.pause(); // Stop the audio
+      
+            // Stop the creepy image flashing interval
+            clearInterval(flashInterval);
+      
+            // Wait 10 seconds before showing the black screen and eerie text
+            setTimeout(() => {
+              // Clear the body content
+              body.innerHTML = "";
+      
+              // Remove the background image and set the background to black
+              body.style.backgroundImage = "none";
+              body.style.backgroundColor = "black";
+      
+              // Stop any ongoing glitch effects
+              body.classList.remove("glitch");
+      
+              // Add a single eerie text
+              const eerieMessages = [
+                "You can't escape.",
+                "They are here.",
+                "It's too late.",
+                "You belong to us now.",
+                "The end is only the beginning.",
+                "Forever trapped.",
+                "No one can hear you.",
+                "The darkness consumes.",
+                "You were warned.",
+                "They are watching.",
+              ];
+      
+              const randomMessage =
+                eerieMessages[Math.floor(Math.random() * eerieMessages.length)];
+              const eerieText = document.createElement("h1");
+              eerieText.innerText = randomMessage;
+              eerieText.style.color = "red";
+              eerieText.style.textAlign = "center";
+              eerieText.style.position = "absolute";
+              eerieText.style.top = "50%";
+              eerieText.style.left = "50%";
+              eerieText.style.transform = "translate(-50%, -50%)";
+              eerieText.style.fontSize = "48px";
+              eerieText.style.fontFamily = "'Creepy', 'Impact', sans-serif";
+              eerieText.style.textShadow = "0 0 10px red";
+      
+              body.appendChild(eerieText);
+            }, 10000); // Wait 10 seconds before showing the final message
+          }
+        }
+      
+        // Play creepy audio on mouse move
+        function playCreepyAudio() {
+          const audio = document.getElementById("creepyAudio");
+          audio.volume = 0.3;
+          audio.play();
+        }
+      
+        document.body.addEventListener("mousemove", playCreepyAudio, {
+          once: true,
+        });
+      
+        // Glitch effect
+        function glitchEffect() {
+          document.body.classList.add("glitch");
+          setTimeout(() => {
+            document.body.classList.remove("glitch");
+          }, 400);
+        }
+      
+        // Flash creepy images
+        function flashCreepypasta() {
+          const originalBackground =
+            "https://images.fineartamerica.com/images-medium-large-5/scary-dark-alley-louis-dallara.jpg";
+          const creepypastaImages = [
+            "https://i1.sndcdn.com/artworks-000659422921-kmjoau-t500x500.jpg",
+            "https://i1.sndcdn.com/artworks-000655012789-5cc8d5-t500x500.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ3NDYEukdAOkMvipoRvKFfd-BWJPcgPRxnw&s",
+            "https://www.shutterstock.com/image-illustration/creepy-looking-figure-smiling-dark-600nw-2348912379.jpg",
+          ];
+      
+          const randomImage =
+            creepypastaImages[
+              Math.floor(Math.random() * creepypastaImages.length)
+            ];
+          document.body.style.backgroundImage = `url(${randomImage})`;
+          glitchEffect();
+          setTimeout(() => {
+            document.body.style.backgroundImage = `url(${originalBackground})`;
+          }, 1000); // Revert after 1 second
+        }
+      
+        // Update mystery text (Original function)
+        function updateMysteryText() {
+          const textElement = document.getElementById("mysteryText");
+          textElement.innerText =
+            Math.random() < 0.5 ? "I see you." : "They are watching.";
+          setTimeout(updateMysteryText, Math.random() * 10000 + 5000); // Every 5-15 seconds
+        }
+        updateMysteryText();
+      
+        // Random text appearing and disappearing at random locations
+        function createRandomHorrorText() {
+          const horrorText = document.createElement("div");
+          horrorText.classList.add("horror-text");
+      
+          // Array of horror messages
+          const horrorMessages = [
+            "They are watching. 👁️",
+            "HELP ME",
+            "DIIIIE",
+            "BEHIND YOU",
+            "RUN",
+            "DON'T LOOK",
+            "GET OUT",
+            "CAN'T ESCAPE",
+            "YOUR SOUL IS MINE",
+            "SCREAMING WON'T HELP",
+            "THEY'RE COMING",
+            "NOWHERE TO HIDE 👁️",
+            "BLOOD",
+            "TOO LATE",
+            "WE SEE ALL 👁️👁️👁️",
+            "JOIN US",
+            "FOREVER TRAPPED",
+            "NO ESCAPE",
+          ];
+      
+          // Select random message
+          const randomMessage =
+            horrorMessages[Math.floor(Math.random() * horrorMessages.length)];
+          horrorText.innerText = randomMessage;
+      
+          // Random special effects (30% chance)
+          if (Math.random() < 0.3) {
+            horrorText.classList.add("large");
+          }
+      
+          // Add dripping effect (20% chance)
+          if (Math.random() < 0.2) {
+            horrorText.classList.add("dripping");
+          }
+      
+          // Set random position on screen
+          const randomX = Math.floor(Math.random() * (window.innerWidth - 200));
+          const randomY = Math.floor(Math.random() * (window.innerHeight - 50));
+      
+          // Set random rotation
+          const randomRotation = Math.floor(Math.random() * 60) - 30; // -30 to +30 degrees
+          horrorText.style.setProperty("--rotation", `${randomRotation}deg`);
+      
+          // Position the text
+          horrorText.style.left = `${randomX}px`;
+          horrorText.style.top = `${randomY}px`;
+      
+          // Add to body
+          document.body.appendChild(horrorText);
+      
+          // Play random creepy sound (25% chance)
+          if (Math.random() < 0.25) {
+            const whisperSound = new Audio(
+              "https://www.fesliyanstudios.com/play-mp3/6717"
+            );
+            whisperSound.volume = 0.2;
+            whisperSound.play();
+          }
+      
+          // Fade in
+          setTimeout(() => {
+            horrorText.style.opacity = "1";
+          }, 100);
+      
+          // Fade out and remove after random time
+          const displayTime = Math.random() * 2000 + 1000; // 1-3 seconds
+          setTimeout(() => {
+            horrorText.style.opacity = "0";
+            setTimeout(() => {
+              horrorText.remove();
+            }, 500); // Remove after fade out
+          }, displayTime);
+      
+          // Schedule next appearance (more frequent now)
+          const nextAppearance = Math.random() * 4000 + 1000; // 1-5 seconds
+          setTimeout(createRandomHorrorText, nextAppearance);
+      
+          // 15% chance to trigger another message quickly for a "burst" effect
+          if (Math.random() < 0.15) {
+            setTimeout(() => {
+              createRandomHorrorText();
+            }, 200);
+          }
+        }
+      
+        // Start the random horror text appearances
+        setTimeout(createRandomHorrorText, 3000); // Start after 3 seconds
+      </script>
   </body>
 </html>

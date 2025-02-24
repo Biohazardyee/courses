@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <style>
+      /* General Styling */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, black, #004d00);
+        color: #d4d4d4;
+      }
+
+      /* Header & Navbar */
+      header {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      nav a {
+        color: #00ff00;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #008000;
+        color: white;
+      }
+
+      .active {
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+      }
+
+      /* Main Content */
+      main {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5);
+      }
+
+      h1 {
+        color: #00ff00;
+        text-align: center;
+      }
+
+      h2 {
+        color: #00cc00;
+        border-bottom: 2px solid #00ff00;
+        padding-bottom: 5px;
+      }
+
+      h3 {
+        color: #00b300;
+      }
+
+      ul {
+        list-style-type: square;
+      }
+
+      ul li {
+        margin-bottom: 8px;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 10px;
+        margin-top: 30px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #00ff00;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="blog.html" id="blog">Blog</a>
+        <a href="about.html" id="about">About Me</a>
+        <a href="contact.html" id="contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Hi, I am Thibaud Marlier</h1>
+
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Playing video games</li>
+        <li>Metal Music</li>
+        <li>Programming</li>
+        <li>Fencing 🤺</li>
+      </ul>
+
+      <h2>My Education</h2>
+      <p>
+        I am a student at <strong>ALGOSUP</strong> in Vierzon. It is a
+        <strong>Software Development School</strong>.
+      </p>
+
+      <h2>My Skills</h2>
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Programming Languages: Flutter/Dart, Python, C++, GDScript, Verilog</li>
+        <li>Languages: English (fluent), French (native), German (scholar)</li>
+        <li>Soft Skills: Management, Communication, Teamwork, Problem-Solving</li>
+        <li>Game Engine: Godot</li>
+        <li>Technical Writing</li>
+      </ul>
+
+      <h2>School Projects</h2>
+      <p>
+        <strong>Project Virtual Processor:</strong> Created a virtual processor
+        from scratch using C. Developed an educational CPU for beginners and
+        professionals, alongside a compiler for our assembly language. 
+      </p>
+
+      <p>
+        <strong>Project AdoptACandidate:</strong> Developed a Tinder-like mobile
+        app for recruitment, reducing biases and promoting fair matches. Built
+        using Flutter/Dart.
+      </p>
+
+      <p>
+        <strong>Project SeriousGame:</strong> Designed a game to educate
+        players on climate change using the Godot Engine.
+      </p>
+
+      <p>
+        <strong>Project FPGA:</strong> Recreated Frogger using FPGA technology
+        in Verilog, optimizing for real-time performance.
+      </p>
+    </main>
+
+    <footer>
+      &copy; 2025 Thibaud Marlier | Personal Website
+    </footer>
+
+    <script>
+      // Get the current page's filename
+      const currentPage = window.location.pathname.split("/").pop();
+
+      // Mapping of page filenames to link IDs
+      const pageLinks = {
+        "blog.html": "blog",
+        "about.html": "about",
+        "contact.html": "contact",
+        "": "home", // Default case if no file is specified
+      };
+
+      // Highlight the active link if it matches the current page
+      if (pageLinks[currentPage]) {
+        document.getElementById(pageLinks[currentPage]).classList.add("active");
+      }
+    </script>
+  </body>
+</html>

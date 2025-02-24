@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <script
+      src="https://kit.fontawesome.com/your-kit-code.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* General Styling */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, black, #004d00);
+        color: #d4d4d4;
+      }
+
+      /* Header & Navbar */
+      header {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      nav a {
+        color: #00ff00;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #008000;
+        color: white;
+      }
+
+      .active {
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+      }
+
+      /* Main Content */
+      main {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5);
+        text-align: center;
+      }
+
+      h1 {
+        color: #00ff00;
+        text-align: center;
+      }
+
+      /* Social Links */
+      .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .socials a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        width: 220px;
+        transition: 0.3s;
+      }
+
+      .socials a:hover {
+        background: red;
+      }
+
+      .socials img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 10px;
+        margin-top: 30px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #00ff00;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="blog.html" id="blog">Blog</a>
+        <a href="about.html" id="about">About Me</a>
+        <a href="contact.html" id="contact" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Find Me Here</h1>
+
+      <div class="socials">
+        <a href="https://github.com/Biohazardyee" target="_blank">
+          <img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU" alt="GitHub Logo" /> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/thibaudmarlier/" target="_blank">
+          <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=w600-h300-pc0xffffff-pd" alt="LinkedIn Logo" /> LinkedIn
+        </a>
+        <a href="mailto:thibaud.marlier@algosup.com">
+          <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email Logo" /> Email Me
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Thibaud Marlier. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
