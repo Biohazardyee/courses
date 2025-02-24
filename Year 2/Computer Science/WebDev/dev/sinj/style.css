@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+body {
+    background: linear-gradient(45deg, #ffdd00, #ff0077, #00ff88);
+    color: #fff;
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    animation: backgroundMove 10s infinite alternate;
+}
+@keyframes backgroundMove {
+    0% { background-position: left top; }
+    100% { background-position: right bottom; }
+}
+h1 {
+    font-size: 4rem;
+    text-shadow: 3px 3px 10px #000;
+    animation: wobble 1.5s infinite alternate ease-in-out;
+}
+@keyframes wobble {
+    0% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}
+h2 {
+    border-bottom: 3px dashed #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+ul, ol {
+    list-style-position: inside;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.3rem;
+}
+li {
+    margin: 5px 0;
+}
+img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.palm-tree {
+    position: absolute;
+    width: 100px;
+    top: -20px;
+}
+.left-tree {
+    left: -110px;
+}
+.right-tree {
+    right: -110px;
+}
+.nav-bar {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 15px;
+}
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+button {
+    background: linear-gradient(45deg, #ffdd00, #ff0077, #029f56);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e04e00;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #c74400;
+    transform: scale(0.98);
+}
