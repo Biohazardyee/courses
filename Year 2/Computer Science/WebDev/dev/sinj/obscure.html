@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: black;
-            color: crimson;
+            color: red;
             font-family: 'Courier New', monospace;
             text-align: center;
             padding: 50px;
@@ -45,6 +45,12 @@
             cursor: pointer;
             box-shadow: 0px 0px 10px crimson;
         }
+        .error {
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -53,10 +59,25 @@
         <p>"Ceux qui cherchent la lumière doivent d'abord embrasser l'obscurité..."</p>
         <div class="symbol">🔺</div>
         <p>Seuls les élus peuvent entrer. Donnez-nous votre nom et attendez l'appel.</p>
-        <form class="join-form">
-            <input type="text" placeholder="Votre Nom" required>
+        <form class="join-form" onsubmit="return checkCode(event)">
+            <input type="text" id="accessCode" placeholder="Votre Nom" required>
             <button type="submit">Soumettre</button>
+            <p class="error" id="errorMessage">Code incorrect. Essayez encore...</p>
         </form>
     </div>
+
+    <script>
+        function checkCode(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            const input = document.getElementById("accessCode").value;
+            const errorMessage = document.getElementById("errorMessage");
+
+            if (input === "dev1234") {
+                window.location.href = "marketplace.html"; // Redirect to the next page
+            } else {
+                errorMessage.style.display = "block"; // Show error message
+            }
+        }
+    </script>
 </body>
 </html>
