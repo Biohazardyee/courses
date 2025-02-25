@@ -1,0 +1,172 @@
+.circle1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  position: fixed;
+  border: 2px solid black;
+  top: 0.1%;
+  left: 0.1%;
+}
+
+.circle2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(0, 255, 0);
+  position: fixed;
+  border: 2px solid black;
+  bottom: 0.1%;
+  right: 0.1%;
+}
+
+.circle3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 255);
+  position: fixed;
+  border: 2px solid black;
+  bottom: 0.1%;
+  left: 0.1%;
+}
+
+.circle4 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 0);
+  position: fixed;
+  border: 2px solid black;
+  top: 0.1%;
+  right: 0.1%;
+}
+
+.rectangle1 {
+  width: 50px;
+  height: auto;
+  background-color: rgb(0, 0, 255);
+  border: 2px solid black;
+  color: aliceblue;
+  text-align: center;
+}
+
+.textRect {
+  border-radius: 10px; /* Smooth rounded corners */
+  background: linear-gradient(to right, rgb(0, 68, 204), rgb(0, 136, 255)); /* Gradient effect */
+  overflow: auto;
+  height: auto; /* Adjusts height dynamically based on content */
+  width: 70%; /* Slightly reduced for better centering */
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Arial', sans-serif; /* Clean font */
+  font-size: 1.2em; /* Slightly larger text */
+  font-weight: 500; /* Medium boldness */
+  padding: 15px 20px; /* Spacing inside the box */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  
+  /* Center horizontally */
+  margin: 20px auto; 
+  display: block;
+}
+
+
+.sticky {
+  position: fixed;
+  background: linear-gradient(to right, rgb(0, 127, 0), rgb(0, 179, 0)); /* Smooth green gradient */
+  z-index: 1000;
+  width: 50%; /* Responsive width */
+  border: 2px solid black;
+  text-align: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 20px; /* Adds spacing inside */
+  border-radius: 10px; /* Softer edges */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Adds depth */
+  
+  /* Centering */
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+
+.top {
+  display: block;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: beige;
+  color: black;
+  font-weight: bold;
+  width: 70px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gray;
+
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+}
+
+.Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px; /* Fixed width for uniformity */
+  height: 50px; /* Ensures a consistent size */
+  background-color: #ff7f7f; /* Softer red for better aesthetics */
+  border: none; /* Removes default border */
+  border-radius: 10px; /* Smooth, rounded corners */
+  font-size: 1em; /* Readable font size */
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s ease; /* Smooth transition effect */
+  cursor: pointer; /* Indicates interactivity */
+}
+
+.wrapper {
+  background: rgba(50, 50, 50, 0.8); /* Darker, semi-transparent background */
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px; /* Creates space between buttons */
+  padding: 10px 20px; /* Adds padding around the navbar */
+  border-radius: 10px; /* Smooth edges */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Hover Effect
+.Box:hover {
+  background-color: #ff5555; 
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+} */
+nav {
+  display: flex;
+  background-color: #aaf;
+  justify-content: center; /* Center the nav items horizontally */
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 14px;
+  width: 100px;
+  height: auto;
+  text-align: center;
+  line-height: auto;
+  display: flex;
+  align-items: center; /* Center the text vertically */
+  justify-content: center; /* Center the text horizontally */
+}
+
+nav a:hover{
+  color: #fff;
+}
