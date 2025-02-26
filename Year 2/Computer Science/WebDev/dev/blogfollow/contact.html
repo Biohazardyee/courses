@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Contact Me</h1>
+            <div class="menu"></div>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <form action method="get">
+
+        <div class="name">
+            <label for="username">Full Name </label>
+            <input maxlength="20" type="text" name="username" id="username" required/>
+        </div>
+
+        
+
+        <div class="email">
+            <label for="email">Email</label>
+            <input maxlength="30" type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+        </div>
+
+
+        <div class="job">
+            <label for="Job">Job</label>
+            <select name="Job" id="Job">
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Staff">Staff</option>
+            </select>
+        </div>
+        
+        <div class="message">
+            <label for="about-you">Your Message</label>
+            <textarea rows="5" cols="50" name="message" id="about-you"> </textarea>
+        </div>
+
+
+
+        <input type="hidden" name="hiddenValue" value="9999">
+
+        <input type="submit" />
+        <input type="reset" />
+
+    </form>
+</body>
+
+</html>

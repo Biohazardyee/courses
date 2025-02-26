@@ -1,0 +1,70 @@
+/* Apply a modern font and improve text readability */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #B399D4, #8B5FBF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center everything inside the page */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card-style container with a glassmorphism effect */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    max-width: 90%;
+}
+
+/* Welcome text */
+.welcome {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Stylish button */
+.enter-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #6a11cb, #ad25fc);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect */
+.enter-button:hover {
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Add a slight button press effect */
+.enter-button:active {
+    transform: translateY(1px) scale(1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
