@@ -1,0 +1,96 @@
+/* section .container>a {
+    color: red;
+} */
+
+section h1+p {
+    color: blue;
+}
+
+p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+p::first-line {
+    text-decoration: underline;
+}
+
+section .container>p {
+    color: green;
+}
+
+section h1+p::first-letter {
+    color: yellow;
+}
+
+p::selection {
+    background-color: yellow;
+    color: red;
+}
+
+h1::after {
+    content: "!";
+    display: block;
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+}
+
+h2::after {
+    content: "->";
+    display: inline;
+    color: pink;
+}
+
+p {
+    position: relative;
+    background-color: powderblue;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+}
+
+
+p::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #aaf;
+    top: 0;
+    left: 0;
+}
+
+p::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #aaf;
+    bottom: 0;
+    right: 0;
+}
+
+a::before {
+    content: url(star.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a:has(i):hover {
+    position: relative;
+    color: pink;
+}
+
+a[target="algosup"] {
+    position: relative;
+    color: green;
+}
+
+.survey div:has(input[required]) > label {
+    color: red;
+}

@@ -1,0 +1,27 @@
+.orig {
+    border: 2px dashed brown;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+.box{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+
+.second {
+    transform: translate(30px, 30px);
+}
+
+.third {
+    transform: scale(.5) rotate(-45deg);
+}
+
+.forth {
+    transform: skew(40deg);
+}
