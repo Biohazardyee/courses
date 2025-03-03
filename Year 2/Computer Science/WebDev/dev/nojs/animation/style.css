@@ -1,0 +1,49 @@
+.orig {
+    border: 2px dashed brown;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+.box{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    transition: transform 2s;
+}
+
+.second {
+    transform: translate(30px, 30px);
+}
+
+.third {
+    transform: scale(.5) rotate(-45deg);
+}
+
+.forth {
+    transform: skew(40deg);
+}
+
+.second:hover {
+    transform: translate(30px, 30px) rotate(45deg);
+}
+
+.third:hover {
+    transform: scale(1) rotate(90deg) translate(30px, 30px);
+}
+
+.forth:hover {
+    transform: skew(-40deg) scale(1.5);
+}
+
+
+@media screen and (min-width: 640px) {
+    .box {
+        width: 50px;
+        height: 50px;
+    }
+    
+}
