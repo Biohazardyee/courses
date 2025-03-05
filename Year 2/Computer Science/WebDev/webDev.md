@@ -1,6 +1,6 @@
 # Web Development
 
-## Goals 
+## Goals
 
 - Understanding Web basics
 - Build & Style web pages
@@ -8,8 +8,8 @@
 - Use package managers & bundlers
 - Understand TypeScript language
 - Advanced libraries/frameworks
-    - CSS libraries
-    - Component-based frameworks
+  - CSS libraries
+  - Component-based frameworks
 
 ## References
 
@@ -17,8 +17,8 @@
 - W3Schools
 - Stack Overflow
 - Node.js
-    - https://nodejs.org
-    - https://npmjs.com
+  - https://nodejs.org
+  - https://npmjs.com
 
 ## Tools
 
@@ -35,17 +35,19 @@
 - User Goal: a user expects something from a webpage, you should have a goal for each page
 - Web Contetn: achieving the goal by giving content to a webpage
 - Presented using
-    - HTML (content/structure)
-    - CSS (style)
-    - JS (behavior)
+  - HTML (content/structure)
+  - CSS (style)
+  - JS (behavior)
 
 Main component: Website
+
 - Linked Pages
 - Rendered in browser
 
 Second component: Browser
 
 Third component: Server
+
 - Hosting website
 - Address (IP)
 - Domain (algosup.com)
@@ -62,14 +64,53 @@ website -> server -> code -> browser
 
 ## HTML Documents
 
-- Hyper Text Markup Language
-    - Text file
-    - Website Structure
-    - Describe Content
+- Function as value
 
+```JS
+function showMessage() {
+    console.log('Hello World');
+}
+```
 
-## JS Basics 
+### Callback functions
 
+- Passing function as parameters
+- To another function
+- Common in JS apps
+
+```JS
+function play(params, output){
+    // code
+    output('Played');
+}
+
+play('another message', showMessage)
+```
+
+### Arrow functions
+
+- Easier way to declare functions
+- Concise
+- create same functions
+
+```JS
+let sum = (a,b) => a + b;
 ### Variables
 
-let or var
+let sum = (a,b) => {
+    let result = a + b;
+    return result;
+}
+```
+
+## Module 
+
+### Exporting
+
+- export keyword
+
+```JS
+export const RED = #f00;
+export function logger(){...}
+export default message;
+```
