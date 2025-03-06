@@ -14,9 +14,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 });
 const article = document.querySelector('article');
 const addButton = document.querySelector('#add-btn');
+let count = 1;
 addButton.addEventListener('click', ()=>{
     const p = document.createElement('p');
-    p.textContent = 'New paragraph';
+    p.textContent = `New paragraph ${count++}`;
     p.classList.add('red');
     article.append(p);
 });
