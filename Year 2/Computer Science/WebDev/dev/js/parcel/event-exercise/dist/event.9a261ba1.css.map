@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;AAKA;;;;AAIA","sources":["event-exercise/style.css"],"sourcesContent":["#output{\n    height: 200px;\n    transition: background-color 0.35s;\n}\n\n.red {\n    background-color: #faa;\n}\n\n.blue{\n    background-color: #aaf;\n}"],"names":[],"version":3,"file":"event.9a261ba1.css.map","sourceRoot":"/__parcel_source_root/"}

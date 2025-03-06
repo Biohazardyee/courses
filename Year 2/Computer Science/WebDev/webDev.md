@@ -114,3 +114,13 @@ export const RED = #f00;
 export function logger(){...}
 export default message;
 ```
+
+## DOM BASICS
+
+### Searching
+
+- find element by selector 
+- Use same css selectors 
+- `querySelector()`
+  - Takes selector
+  - returns first element match

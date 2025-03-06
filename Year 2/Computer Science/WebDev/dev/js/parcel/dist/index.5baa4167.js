@@ -596,77 +596,63 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"igcvL":[function(require,module,exports,__globalThis) {
-var _counterJs = require("./counter.js");
-var _styleLess = require("./style.less");
-console.time('test');
-console.log('app.js file');
-console.log((0, _counterJs.count));
-let name = 'John Doe';
-console.log('Then name of the use is ' + name);
-console.log(`Then name of the use is ${name}`);
-console.warn('This is a warning');
-console.error('This is an error');
-console.clear();
-const tech = [
-    'HTMl',
-    'CSS',
-    'JS',
-    'Node'
-];
-console.table(tech);
-console.log(tech);
-const post = {
-    title: 'Post One',
-    content: 'This is post one',
-    author: 'John Doe'
-};
-console.table(post);
+const h1Element = document.querySelector('#title');
+console.log(h1Element);
+const h3Element = document.querySelector('h3');
+console.log(h3Element);
+const post = document.querySelector('#post2 > p:last-child');
 console.log(post);
-console.group('Numbers');
-console.log('1');
-console.log('2');
-console.log('3');
-console.groupEnd();
-console.timeEnd('test'); // document.write('inside the page ooo')
- // alert('alerte generalllllllle')
+const posts = document.querySelectorAll('p');
+console.log(posts);
+const article = document.querySelector('article');
+console.log(article.children);
+console.log(article.parentElement);
+console.log(article.nextElementSibling);
+console.log(article.previousElementSibling);
+article.querySelector('p');
+const btn = document.querySelector('#btn');
+// btn.onclick = () => {
+//     console.log('1st handler');
+// };
+// btn.onclick = () => {
+//     console.log('2nd handler');
+// }
+//? Event Propagation
+const superEl = document.querySelector('#super');
+const parentEl = document.querySelector('#parent');
+const childEl = document.querySelector('#child');
+superEl.addEventListener('click', ()=>{
+    console.log('super clicked');
+});
+parentEl.addEventListener('click', (event)=>{
+    console.log('parent clicked');
+    event.stopPropagation();
+});
+childEl.addEventListener('click', ()=>{
+    console.log('child clicked');
+});
+const link = document.querySelector('#link');
+document.addEventListener('contextmenu', (event)=>{
+    event.preventDefault();
+    console.log('right click');
+});
+// article.innerHTML = '<p>New paragraph</p>'
+// article.textContent = '<p>New paragraph</p>'
+//? Implement a page with input, button and div. Whenever the user clicks on the button 
+//? take the text inside the input and display in the div
+//? input.value
+const inputName = document.querySelector('#input');
+// inputName.addEventListener('input', (event) => {
+// }
+// );
+btn.addEventListener('click', ()=>{
+    const div = document.querySelector('#output');
+    div.textContent = inputName.value;
+});
+inputName.addEventListener('keypress', (event)=>{
+    if (event.key === 'Enter') btn.click();
+});
 
-},{"./counter.js":"6RyQW","./style.less":"lNM2w"}],"6RyQW":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "count", ()=>count);
-console.log('console.js file');
-const count = 100;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports,__globalThis) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"lNM2w":[function() {},{}]},["eCF1U","igcvL"], "igcvL", "parcelRequire94c2")
+},{}]},["eCF1U","igcvL"], "igcvL", "parcelRequire94c2")
 
 //# sourceMappingURL=index.5baa4167.js.map

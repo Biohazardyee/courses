@@ -1,0 +1,12 @@
+#output {
+    height: 200px;
+    transition: background-color 0.35s;
+}
+
+.red {
+    background-color: #faa;
+}
+
+.blue {
+    background-color: #aaf;
+}

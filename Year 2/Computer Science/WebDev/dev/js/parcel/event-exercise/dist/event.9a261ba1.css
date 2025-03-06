@@ -1,0 +1,13 @@
+#output {
+  height: 200px;
+  transition: background-color .35s;
+}
+
+.red {
+  background-color: #faa;
+}
+
+.blue {
+  background-color: #aaf;
+}
+/*# sourceMappingURL=event.9a261ba1.css.map */

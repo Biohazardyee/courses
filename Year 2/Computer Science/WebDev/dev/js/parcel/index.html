@@ -8,27 +8,133 @@
         console.log('Hello World');
         </script> -->
 
-        <script src="main.js" defer type="module"></script>
+        <script src="app.js" defer type="module"></script>
+        <style>
+            #super{
+                border: 2px solid red;
+            }
+            #parent{
+                border: 2px solid blue;
+            }
+            #child{
+                border: 2px solid green;
+            }
+        </style>
     </head>
     <body>
         <h1 id="title">DOM Basics!!</h1>
-        <button id="btn">Click Me</button>
-        <p class="post">Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Dolore tempore voluptatem dolor culpa reprehenderit sunt
-            explicabo laborum odit perspiciatis. Totam, quis cupiditate.
-            Accusamus facere commodi ducimus, asperiores quibusdam iure
-            iusto?</p>
-        <p class="post">Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Dolore tempore voluptatem dolor culpa reprehenderit sunt
-            explicabo laborum odit perspiciatis. Totam, quis cupiditate.
-            Accusamus facere commodi ducimus, asperiores quibusdam iure
-            iusto?</p>
-        <p class="post">Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Dolore tempore voluptatem dolor culpa reprehenderit sunt
-            explicabo laborum odit perspiciatis. Totam, quis cupiditate.
-            Accusamus facere commodi ducimus, asperiores quibusdam iure
-            iusto?</p>
 
-        
+        <div>
+            <input type="text" id="input" placeholder="Enter your name">
+        </div>
+
+        <button id="btn">Accept</button>
+
+        <div id="output"></div>
+
+        <div id="super">
+            <p>super</p>
+            <div id="parent">
+                <p>parent</p>
+                <div id="child">
+                    <p>child</p>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <article id="post1">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam veritatis sit repudiandae iusto deleniti
+                    consequuntur blanditiis quidem sed odio aspernatur
+                    consequatur esse repellat illum expedita, quae soluta ad
+                    pariatur nam? Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quia odio vitae placeat deleniti fuga
+                    ullam esse vel consequatur, nemo soluta commodi amet. Earum,
+                    doloribus! Unde harum sit adipisci autem debitis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam veritatis sit repudiandae iusto deleniti
+                    consequuntur blanditiis quidem sed odio aspernatur
+                    consequatur esse repellat illum expedita, quae soluta ad
+                    pariatur nam?Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repudiandae esse voluptas, ut tenetur
+                    facere explicabo excepturi doloremque tempore ullam quasi,
+                    adipisci, dignissimos beatae saepe. Sit provident unde iure
+                    ab maxime.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam veritatis sit repudiandae iusto deleniti
+                    consequuntur blanditiis quidem sed odio aspernatur
+                    consequatur esse repellat illum expedita, quae soluta ad
+                    pariatur nam?Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repudiandae esse voluptas, ut tenetur
+                    facere explicabo excepturi doloremque tempore ullam quasi,
+                    adipisci, dignissimos beatae saepe. Sit provident unde iure
+                    ab maxime.</p>
+            </article>
+            <article id="post2">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam veritatis sit repudiandae iusto deleniti
+                    consequuntur blanditiis quidem sed odio aspernatur
+                    consequatur esse repellat illum expedita, quae soluta ad
+                    pariatur nam?Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repudiandae esse voluptas, ut tenetur
+                    facere explicabo excepturi doloremque tempore ullam quasi,
+                    adipisci, dignissimos beatae saepe. Sit provident unde iure
+                    ab maxime.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam veritatis sit repudiandae iusto deleniti
+                    consequuntur blanditiis quidem sed odio aspernatur
+                    consequatur esse repellat illum expedita, quae soluta ad
+                    pariatur nam?Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repudiandae esse voluptas, ut tenetur
+                    facere explicabo excepturi doloremque tempore ullam quasi,
+                    adipisci, dignissimos beatae saepe. Sit provident unde iure
+                    ab maxime.</p>
+                <p> Hello Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Laboriosam veritatis sit repudiandae iusto deleniti
+                    consequuntur blanditiis quidem sed odio aspernatur
+                    consequatur esse repellat illum expedita, quae soluta ad
+                    pariatur nam?Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repudiandae esse voluptas, ut tenetur
+                    facere explicabo excepturi doloremque tempore ullam quasi,
+                    adipisci, dignissimos beatae saepe. Sit provident unde iure
+                    ab maxime.</p>
+            </article>
+            <article>
+                <h3>Article 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam veritatis sit repudiandae iusto deleniti
+                    consequuntur blanditiis quidem sed odio aspernatur
+                    consequatur esse repellat illum expedita, quae soluta ad
+                    pariatur nam? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Iste exercitationem quis, esse commodi
+                    similique dolorum voluptas totam, optio quae placeat
+                    accusantium. Obcaecati cumque qui quam vel reiciendis
+                    aperiam temporibus perspiciatis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam veritatis sit repudiandae iusto deleniti
+                    consequuntur blanditiis quidem sed odio aspernatur
+                    consequatur esse repellat illum expedita, quae soluta ad
+                    pariatur nam?Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repudiandae esse voluptas, ut tenetur
+                    facere explicabo excepturi doloremque tempore ullam quasi,
+                    adipisci, dignissimos beatae saepe. Sit provident unde iure
+                    ab maxime.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam veritatis sit repudiandae iusto deleniti
+                    consequuntur blanditiis quidem sed odio aspernatur
+                    consequatur esse repellat illum expedita, quae soluta ad
+                    pariatur nam?Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repudiandae esse voluptas, ut tenetur
+                    facere explicabo excepturi doloremque tempore ullam quasi,
+                    adipisci, dignissimos beatae saepe. Sit provident unde iure
+                    ab maxime.</p>
+            </article>
+
+        </section>
+
     </body>
 </html>
