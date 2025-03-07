@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dialog</title>
+        <style>
+            #message {
+                width: 300px;
+                background-color: #f0f0f0;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 1px 1px 5px gray;
+            }
+            #message h3 {
+                margin: 0;
+            }
+
+            #message::backdrop{
+                background-color: rgba(0, 0, 0, .7);
+            }
+            
+        </style>
+        <script src="dialog.js" defer></script>
+    </head>
+    <body>
+        <h1>Dialog</h1>
+
+        <div>
+
+            <img
+            src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+            alt="placeholder">
+        </div>
+        <div>
+
+            <button id="full-btn">Fullscreen</button>
+            <button id="exitFullscreen-btn">Exit Fullscreen</button>
+        </div>    
+            
+        <button id="open-btn">Open</button>
+        <button id="add-btn">Add Paragraph</button>
+
+        <div id="content">
+
+        </div>
+
+        <dialog id="message" popover>
+            <h3>Message</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Delectus natus qui reiciendis eius saepe veniam illum quia?
+                Placeat quibusdam et provident omnis! Vitae error facere soluta
+                obcaecati voluptates nostrum maiores?</p>
+            <button id="close-btn">Close</button>
+        </dialog>
+    </body>
+</html>
