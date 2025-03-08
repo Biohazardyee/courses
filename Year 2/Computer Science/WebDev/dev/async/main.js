@@ -62,6 +62,13 @@ app.post('/posts', (req, res) => {
 }
 );
 
+app.delete('/posts', (req, res) => {
+    posts.shift();
+    res.send({
+        type: posts
+    });
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 }
