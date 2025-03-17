@@ -54,7 +54,7 @@ pick a way that coding has been used in the world and present about it
 
 - "Moving forward, I suggest that..."
 
-## Oral Presenation
+## Oral Presentation
 
 **Outline:** How have video games evolved throughout the century?
 
@@ -71,7 +71,53 @@ Tibo:
 - How AI enhanced and will enhance video games
 - Conclusion
 
-### Internet Era
+## Alexis' part
+
+### **Introduction**
+
+Good morning everyone! Let me ask you a simple question: **Who here plays video games?** Looks like a lot of you do!
+
+But let me ask you another question: **How many of you actually know the history of video games?** Probably not as many, right? Well, today, we're going to take a journey through time and explore **how video games evolved, thanks to coding.**
+
+### **The Origins of Video Games (1950s - 1970s)**
+
+Video games didn't just appear overnight. They started as **simple experiments** by computer scientists in the 1950s and 60s.
+
+- The first known video game was **"Tennis for Two" (1958)**—a simple tennis simulation on an oscilloscope, created by physicist William Higinbotham.
+- Then, in 1962, **"Spacewar!"** became one of the first digital computer games, developed by MIT students.
+
+But back then, games were **basic**—there were no home consoles, no advanced graphics, and certainly no 3D worlds. Everything was **hardcoded** by programmers using languages like **Assembly** on massive computers.
+
+### **The Golden Era of Video Games (1970s - 1980s)**
+
+Then came the boom—the **Golden Age of Video Games!**
+
+In 1972, **Atari** released **Pong**, one of the first commercially successful arcade games. But how did coding improve games in this era?
+
+1. **Game Logic & AI** – Developers started writing better algorithms to control the game's behavior. For example, in **Pac-Man (1980),** each ghost had **different AI**—one chased the player, one blocked paths, and one moved randomly.
+2. **Better Graphics & Color** – In the late 70s, games moved from **black and white** to **colorful pixel graphics**, thanks to advancements in **assembly language programming**.
+3. **Home Consoles** – The late 70s also introduced **consoles like the Atari 2600**, allowing people to play at home. Programmers had to **optimize code** so games could fit in tiny cartridges!
+
+This era was all about **arcades**, **high scores**, and games that pushed the limits of what early computers could do.
+
+### **The 3D Era (1990s - 2000s): A Coding Revolution**
+
+After the golden age of **2D games**, a new challenge appeared—**how to make games fully 3D**. This required **huge advancements in coding**.
+
+1. **3D Graphics Engines** – Developers created **3D engines** like **id Tech (Doom, Quake)** and **Unreal Engine** that made it easier to program realistic environments.
+2. **Polygons Replace Pixels** – Instead of just using sprites, programmers used **polygons**—tiny triangles that made up 3D objects. This allowed for **more detailed characters and worlds**.
+3. **Advanced Physics & AI** – Thanks to better coding, objects in games started behaving **realistically**. For example:
+   - Cars in **Gran Turismo** felt like real cars because of complex physics calculations.
+   - Enemies in **Half-Life (1998)** used AI to **hide, chase, and react** to the player.
+4. **Better Programming Languages** – The rise of **C++ and scripting languages** made games faster and more efficient. Developers could **reuse code**, making game development **easier and more powerful**.
+
+This era gave us **Super Mario 64, The Legend of Zelda: Ocarina of Time, Grand Theft Auto III**, and many more—all thanks to major **coding breakthroughs**!
+
+Now, I'll hand it over to Pibo, he'll talk you about what happened during the early 2000s: Internet
+
+## Thibaud's part
+
+### **Internet Era**
 
 This brings us to the next point: the early 21st century, also known as the internet era.
 
@@ -81,7 +127,7 @@ The second key development was the rise of online gaming. Players were finally a
 
 Lastly, the mobile gaming industry began to take shape. One of the first notable mobile games was Snake on the Nokia 3310, released in 2000. As technology advanced, mobile games evolved significantly, and with the launch of the iPhone in 2007, games like Angry Birds emerged, showcasing major improvements in graphics, sound, and gameplay. The difference in mobile gaming technology between 2000 and 2009 was staggering, setting the stage for the massive mobile gaming industry we see today.
 
-### How AI enhanced and will enhance video games
+### **How AI enhanced and will enhance video games**
 
 New technologies such as AI have been used in video games since the 1980s, though they were more like algorithms than true artificial intelligence. Over the years, AI has evolved, particularly in the behavior of Non-Playable Characters (NPCs), enhancing both the gaming experience and immersion.
 
@@ -94,4 +140,3 @@ But what about the future of AI in gaming? One of the most exciting developments
 Additionally, AI can enhance video game graphics through AI-powered upscaling tools, improving textures and resolution in older or lower-quality games. This technology is already being used in remastered editions and emulation to provide a more polished and immersive experience.
 
 ### Conclusion
-
