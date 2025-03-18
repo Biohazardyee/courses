@@ -102,3 +102,59 @@ Technical writing:
 | < $100,000                      | 10% of the stumpage value | $1,000                      |
 | Between $100,000 and $250,000   | 5% of the stumpage value  | $10,000                     |
 | > $250,000                      | 3% of the stumpage value  | $12,500                     |
+
+## What is a README?
+
+In software distribution and software development, a README file contains
+information about the other files in a directory or archive of computer software. A form of documentation, it is usually a simple plain text file called README, Read Me, READ.ME, README.txt, or README.md (to indicate the use of Markdown).
+
+The file's name is generally written in uppercase. On Unix-like systems in
+particular, this causes it to stand out – both because lowercase filenames are more common, and because the ls command commonly sorts and displays files in ASCII-code order, in which uppercase filenames will appear first.
+
+### A README file typically encompasses:
+
+- Configuration instructions
+- Installation instructions
+- Operating instructions
+- A file manifest (a list of files in the directory or archive)
+- Copyright and licensing information
+- Contact information for the distributor or author
+- A list of known bugs
+- Troubleshooting instructions
+- Credits and acknowledgments
+- A changelog (usually aimed at fellow programmers)
+- A news section (usually aimed at end users)
+
+### History of the README
+
+The convention of including a README file began in the mid-1970s. Early
+Macintosh system software installed a Read Me on the Startup Disk, and
+README files commonly accompanied third-party software.
+
+In particular, there is a long history of free software and open-source software including a README file; the GNU Coding Standards encourage including one to provide "a general overview of the package".
+
+Since the advent of the web as a de facto standard platform for software
+distribution, many software packages have moved (or occasionally, copied)
+some of the above ancillary files and pieces of information to a website or wiki, sometimes including the README itself, or sometimes leaving behind only a brief README file without all of the information required by a new user of the software.
+
+### README as a generic term
+
+Standard set of README files:
+|||
+|---|---|
+|README|General information|
+|AUTHORS|Credits|
+|Thanks|Acknoledgements|
+|CHANGELOG|A detailed changelog, intended for programmers|
+|NEWS|A basic changelog intended for users|
+|INSTALL|Installation instructions|
+|COPYING/LICENSE|Copyright and licensing information|
+|BUGS|Known bugs and instructions on reporting new ones|
+
+### Definitions: Configuration
+
+In communications or computer systems, a configuration of a system refers to
+the arrangement of each of its functional units, according to their nature, number and chief characteristics. Often, configuration pertains to the choice of hardware, software, firmware, and documentation. Along with its architecture, the configuration of a computer system affects both its function and performance.
+
+The configuration of a computer is typically recorded in a configuration file. In modern computer systems, this is created and updated automatically as physical components are added or removed. Applications may assume that the configuration file is an accurate representation of the physical configuration and act accordingly.
+
