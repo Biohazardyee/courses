@@ -140,3 +140,6 @@ But what about the future of AI in gaming? One of the most exciting developments
 Additionally, AI can enhance video game graphics through AI-powered upscaling tools, improving textures and resolution in older or lower-quality games. This technology is already being used in remastered editions and emulation to provide a more polished and immersive experience.
 
 ### Conclusion
+
+Video games have evolved a lot since the 1960's to become what we know now. All these games/console/legacy have been developped by programmers, from all around the world. All of them trying to be more innovative than the previous generation. 
+There's still a lot to come for video games, it's a promising future right? But, ethics should be considered, could AI one day create video games on its own? Many programmers and video game industry could lose a lot of employees. 
