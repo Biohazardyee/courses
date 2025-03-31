@@ -13,7 +13,7 @@
 
 Not something necessarily said to the audience, but we need to be clear about it.
 
-You (personnaly), you have a point of view. \
+You (personally), you have a point of view. \
 Them, they have an issue, they expect something
 
 Your point of view + their issue
@@ -33,7 +33,7 @@ Something that has meaning and people can understand.
 3. Motivate
 4. Get Action
 
-The message has to do smthg with the action of the audicence
+The message has to do smthg with the action of the audience
 
 | Intention                                                                                                       | Action expected from the audience | Core message                                                              |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------- |
@@ -41,7 +41,7 @@ The message has to do smthg with the action of the audicence
 
 #### 'So that' ladder
 
-I'm making a presentation so that... and repeat as much steps as possible
+I'm making a presentation so that... and repeat as many steps as possible
 
 And do the same for the purpose
 
@@ -61,28 +61,26 @@ I'm making a sales presentation so that I can demonstrate the unique capabilitie
 
 | Core Message                                                              | Core message v2                                                                  | Core message v3                                                                                                                                             |
 | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Invest in the solution to increase profitability, productivity and safety | Invest in our solution to increase productivity and safety in your business unit | Invest in our smart solution to move bulky loads easily and safely, even in reduced space in orde to increase productivity and safety in your business unit |
+| Invest in the solution to increase profitability, productivity and safety | Invest in our solution to increase productivity and safety in your business unit | Invest in our smart solution to move bulky loads easily and safely, even in reduced space in order to increase productivity and safety in your business unit |
 
 Final message:
 
-Move bulky loads easily and safel, even in reduced space. \
-To increase prouctivity and safety thanks to our smart load moving solution
+Move bulky loads easily and safely, even in reduced space. \
+To increase productivity and safety thanks to our smart load moving solution
 
 ### Public
 
-Who's your targeted audience and what are their objections and desires?
+Who's your targeted audience, and what are their objections and desires?
 
 |       | +                                                                                                                                                         | -                                                                                      |
 | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | Knows | Who he is and his company, has issues moving bulky loads, current solutions are costly hazardous or inefficient                                           | That this solution exists, how it works, if it is efficient                            |
-| Wants | To be able to move huge machines, reduce risks at work, get better results, image of a progressive person, show the teams that he takes good care of them | Pay too much, be bothered with maintenance na dproblem solving, fear of AI going crazy |
+| Wants | To be able to move huge machines, reduce risks at work, get better results, image of a progressive person, show the teams that he takes good care of them | Pay too much, be bothered with maintenance and problem solving, fear of AI going crazy |
 | Can   | Buy the solution or not, make some adaptations, have ad hoc carts                                                                                         | Change the config of the carts                                                         |
 
 ### Arguments
 
-A whole, is something that has a beginning a middle and an end. 
-
-
+A whole, is something that has a beginning a middle and an end.
 
 ### Conception
 
