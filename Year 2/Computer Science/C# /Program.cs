@@ -17,6 +17,22 @@
 //     }
 // }
 
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Console.WriteLine("What's your name?");
+//         string name = Console.ReadLine();
+
+//         Console.WriteLine("How old are you?");
+//         int age = Convert.ToInt32(Console.ReadLine());
+
+//         Console.WriteLine("Hello, " + name + "!");
+//         Console.WriteLine("You are " + age + " years old.");
+
+//         Console.ReadKey();
+//     }
+// }
 
 namespace MyFirstProgram
 {
@@ -24,15 +40,16 @@ namespace MyFirstProgram
     {
         static void Main(string[] args)
         {
-            int x = 123;
-            int y = 321;
+            Random random = new Random();
 
-            int z = x + y;
+            int num = random.Next(1, 7);
 
-            Console.WriteLine(x);
-            Console.WriteLine(y);
-            Console.WriteLine(z);
-            
+            Console.WriteLine("Rolling a die...");
+            Console.WriteLine("You rolled a " + num + "!");
+
+
+
+
             Console.ReadKey();
         }
     }
