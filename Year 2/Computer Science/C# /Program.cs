@@ -164,10 +164,123 @@
 //         Console.WriteLine(); // Move to the next line after printing a row
 //     }
 
+// static void Main(string[] args)
+// {
+//     string[] cars = new string[3];
+//     // string[] cars = { "BMW", "Mustang", "Corvette" }
+//     cars[0] = "Tesla";
+//     cars[1] = "Mustang";
+//     cars[2] = "Corvette"
+//     for (int i = 0; i < cars.Length; i++)
+//     {
+//         Console.WriteLine(cars[i]);
+//     
+//     Console.ReadKey();
+// }
+
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         string[] cars = { "BMW", "Mustang", "Corvette" };
+
+//         foreach (string car in cars)
+//         {
+//             Console.WriteLine(car);
+//         }
+//         Console.ReadKey();
+//     }
+
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         string name = "Yibo";
+//         int age = 21; 
+
+//         singHappyBirthday(name, age);
+//         singHappyBirthday(name, age);
+//         singHappyBirthday(name, age);
+
+
+//         Console.ReadKey();
+//     }
+//     static void singHappyBirthday(string name, int age)
+//     {
+//         Console.WriteLine("Happy Birthday To You!");
+//         Console.WriteLine("Happy Birthday To You!");
+//         Console.WriteLine($"Happy Birthday dear {name}!");
+//         Console.WriteLine($"You're {age} years old!");
+//         Console.WriteLine("Happy Birthday To You!\n");
+//     }
+// }
+
+// static void Main(string[] args)
+// {
+//     double x;
+//     double y;
+//     double result;
+
+//     Console.WriteLine("Enter number 1: ");
+//     x = Convert.ToDouble(Console.ReadLine());
+
+//     Console.WriteLine("Enter number 2: ");
+//     y = Convert.ToDouble(Console.ReadLine());
+
+//     result = Multiply(x, y);
+
+//     Console.WriteLine($"Your result is: {result}!");
+
+//     Console.ReadKey();
+// }
+// static double Multiply(double x, double y)
+// {
+//     double z = x * y;
+//     return z; 
+// }
+
+// static void Main(string[] args)
+// {
+//     double total;
+
+//     total = Multiply(2, 3, 4);
+
+//     Console.WriteLine(total);
+//     Console.ReadKey();
+// }
+// static double Multiply(double a, double b)
+// {
+//     return a * b;
+// }
+//  static double Multiply(double a, double b, double c)
+// {
+//     return a * b * c; 
+// }
+
+// // params
+// static void Main(string[] args)
+// {
+//     double total = CheckOut(3.99, 5.75, 15, 1.45, 10.25);
+
+//     Console.WriteLine(total);
+//     Console.ReadKey();
+// }
+// static double CheckOut(params double[] prices)
+// {
+//     double total = 0;
+
+//     foreach (double price in prices)
+//     {
+//         total += price;
+//     }
+//     return total; 
+// }
+
 namespace MyFirstProgram
 {
     class Program
     {
-        
     }
+
 }
+
