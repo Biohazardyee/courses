@@ -276,11 +276,48 @@
 //     return total; 
 // }
 
+// static void Main(string[] args)
+// {
+//     double temperature = 20;
+//     string message;
+//     message = (temperature >= 15) ? "It's hot outside" : "It's cold outside";
+//     Console.WriteLine(message);
+//     Console.ReadKey();
+
+// static void Main(string[] args)
+// {
+//     // multidimensional arrays
+//     string[,] parkingLot = {{ "Mustang", "F-150", "Explorer"},
+//                             { "Corvette", "Camaro", "Silverado"},
+//                             { "Corolla", "Camry", "Rav4"}
+//     };
+
+//     parkingLot[0, 2] = "Fusion";
+//     parkingLot[2, 0] = "Tacoma";
+
+//     // foreach (string car in parkingLot)
+//     // {
+//     //     Console.WriteLine(car);
+//     // }
+
+//     for (int i = 0; i < parkingLot.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < parkingLot.GetLength(1); j++)
+//         {
+//             Console.Write(parkingLot[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+
+//     Console.ReadKey();
+// }
+
 namespace MyFirstProgram
 {
     class Program
     {
     }
-
 }
+
+
 
