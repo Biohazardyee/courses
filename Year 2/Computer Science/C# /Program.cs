@@ -312,10 +312,91 @@
 //     Console.ReadKey();
 // }
 
+// Introduction to classes
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Messages.Hello();
+//         Messages.Waiting();
+//         Messages.Bye();
+
+//         Console.ReadKey();
+//     }
+// }
+
+// Objects
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Human human1 = new Human("Enzo", 19);
+//         Human human2 = new Human("evan", 19);
+
+//         human1.Eat();
+//         human1.Sleep();
+
+//         human2.Sleep();
+//         human2.Eat();
+
+//     }
+// }
+// class Human
+// {
+//     public string name;
+//     public int age;
+
+
+//     public Human(string name, int age)
+//     {
+//         this.name = name;
+//         this.age = age; 
+//     }
+
+//     public void Eat()
+//     {
+//         Console.WriteLine(name + " is eating");
+//     }
+//     public void Sleep()
+//     {
+//         Console.WriteLine(name + " is sleeping");
+//     }
+// }
+
 namespace MyFirstProgram
 {
     class Program
     {
+        static void Main(string[] args)
+        {
+            Car car1 = new Car("Toyota", "Corolla", 1989, "Red");
+
+
+            car1.PrintModel();
+
+            Console.ReadKey();
+        }
+    }
+    
+    class Car
+    {
+        public string brand;
+        public string model;
+        public int year;
+        public string color;
+
+        public Car(string brand, string model, int year, string color)
+        {
+            this.brand = brand;
+            this.model = model;
+            this.year = year;
+            this.color = color; 
+        }
+        
+        public void PrintModel()
+        {
+            Console.WriteLine($"This car is a {color} {brand} {model} from {year}");
+        }
     }
 }
 
