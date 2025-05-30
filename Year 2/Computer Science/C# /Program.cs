@@ -363,42 +363,262 @@
 //     }
 // }
 
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Car car1 = new Car("Toyota", "Corolla", 1989, "Red");
+
+
+//         car1.PrintModel();
+
+//         Console.ReadKey();
+//     }
+// }
+
+// class Car
+// {
+//     public string brand;
+//     public string model;
+//     public int year;
+//     public string color;
+
+//     public Car(string brand, string model, int year, string color)
+//     {
+//         this.brand = brand;
+//         this.model = model;
+//         this.year = year;
+//         this.color = color; 
+//     }
+
+//     public void PrintModel()
+//     {
+//         Console.WriteLine($"This car is a {color} {brand} {model} from {year}");
+//     }
+// }
+
+//Static
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Car car1 = new Car("Mustang");
+//         Car car2 = new Car("Corvette");
+
+//         Console.WriteLine(Car.numberOfCars);
+//         Car.StartRace(); 
+
+//         Console.ReadKey();
+//     }
+// }
+// class Car
+// {
+//     string model;
+//     public static int numberOfCars;
+
+//     public Car(string model)
+//     {
+//         this.model = model;
+//         numberOfCars++;
+//     }
+//     public void PrintCar()
+//     {
+//         Console.WriteLine($"this car is a {model}");
+//     }
+
+//     public static void StartRace()
+//     {
+//         Console.WriteLine("The race has begun"); 
+//     }
+// }
+
+// Class overloading
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Pizza pizza = new Pizza("Stuffed crust", "red sauce", "mozzarella", "pepperoni");
+
+//         Console.ReadKey();
+
+//     }
+// }
+// class Pizza
+// {
+//     string bread;
+//     string sauce;
+//     string cheese;
+//     string topping;
+
+//     public Pizza(string bread, string sauce, string cheese, string topping)
+//     {
+//         this.bread = bread;
+//         this.sauce = sauce;
+//         this.cheese = cheese;
+//         this.topping = topping;
+//     }
+//     public Pizza(string bread, string sauce, string cheese)
+//     {
+//         this.bread = bread;
+//         this.sauce = sauce;
+//         this.cheese = cheese;
+//     }
+// }
+
+// inheritance
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Car car = new Car();
+//         Bicycle bicycle = new Bicycle();
+//         Boat boat = new Boat();
+
+//         Console.WriteLine(car.speed);
+//         Console.WriteLine(car.wheels);
+//         car.go();
+
+//         Console.WriteLine(bicycle.speed);
+//         Console.WriteLine(bicycle.wheels);
+//         bicycle.go();
+
+//         Console.WriteLine(boat.speed);
+//         Console.WriteLine(boat.wheels);
+//         boat.go();
+
+//         Console.ReadKey();
+
+//     }
+// }
+// class Vehicle
+// {
+//     public int speed = 0;
+
+//     public void go()
+//     {
+//         Console.WriteLine("This vehicle is moving");
+//     }
+// }
+// class Car : Vehicle
+// {
+//     public int wheels = 4;
+// }
+// class Bicycle : Vehicle
+// {
+//     public int wheels = 2;
+// }
+// class Boat : Vehicle
+// {
+//     public int wheels = 0;
+// }
+
+// List of objects
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Car[] garage = {
+//             new Car("Mustang"),
+//             new Car("Corvette"),
+//             new Car("Lambo"),
+//         };
+
+//         foreach (Car car in garage)
+//         {
+//             Console.WriteLine(car.model);
+//         }
+
+//         Console.ReadKey();
+//     }
+// }
+// class Car
+// {
+//     public string model;
+
+//     public Car(string model)
+//     {
+//         this.model = model;
+//     }
+// }
+
+//objects as arguments
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Car car1 = new Car("Mustang", "Red");
+
+//         Car car2 = Copy(car1);
+
+//         ChangeColor(car1, "Green");
+
+//         Console.WriteLine(car1.color + " " + car1.model);
+//         Console.WriteLine(car2.color + " " + car2.model);
+
+
+//         Console.ReadKey();
+
+//     }
+//     public static void ChangeColor(Car car, string color)
+//     {
+//         car.color = color;
+//     }
+//     public static Car Copy(Car car)
+//     {
+//         return new Car(car.model, car.color); 
+//     }
+// }
+// class Car
+// {
+//     public string model;
+//     public string color;
+
+//     public Car(string model, string color)
+//     {
+//         this.color = color;
+//         this.model = model;
+//     }
+// }
+
+
 namespace MyFirstProgram
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Car car1 = new Car("Toyota", "Corolla", 1989, "Red");
+            Dog dog = new Dog();
+            Cat cat = new Cat();
 
-
-            car1.PrintModel();
+            dog.Speak();
+            cat.Speak();
 
             Console.ReadKey();
         }
     }
-    
-    class Car
+    class Animal
     {
-        public string brand;
-        public string model;
-        public int year;
-        public string color;
-
-        public Car(string brand, string model, int year, string color)
+        public virtual void Speak()
         {
-            this.brand = brand;
-            this.model = model;
-            this.year = year;
-            this.color = color; 
+            Console.WriteLine("The animal goes *brr*");
         }
-        
-        public void PrintModel()
+    }
+    class Dog : Animal
+    {
+        public override void Speak()
         {
-            Console.WriteLine($"This car is a {color} {brand} {model} from {year}");
+            Console.WriteLine("The dog goes waouf");
+        }
+    }
+    class Cat : Animal
+    { 
+        public override void Speak()
+        {
+            Console.WriteLine("The dog goes meow");
         }
     }
 }
+
 
 
 
