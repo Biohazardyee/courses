@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading;
 
 // namespace MyFirstProgram
 // {
@@ -363,14 +365,14 @@
 //     }
 // }
 
+// ToString method
 // class Program
 // {
 //     static void Main(string[] args)
 //     {
-//         Car car1 = new Car("Toyota", "Corolla", 1989, "Red");
+//         Car car = new Car("Chevy", "Corvette", 2022, "Blue");
 
-
-//         car1.PrintModel();
+//         Console.WriteLine(car.ToString());
 
 //         Console.ReadKey();
 //     }
@@ -378,94 +380,27 @@
 
 // class Car
 // {
-//     public string brand;
-//     public string model;
-//     public int year;
-//     public string color;
+//     string brand;
+//     string model;
+//     int year;
+//     string color;
 
 //     public Car(string brand, string model, int year, string color)
 //     {
 //         this.brand = brand;
 //         this.model = model;
 //         this.year = year;
-//         this.color = color; 
+//         this.color = color;
 //     }
 
-//     public void PrintModel()
+//     public override string ToString()
 //     {
-//         Console.WriteLine($"This car is a {color} {brand} {model} from {year}");
+//         string message = $"This is a {color} {brand} {model} from {year}";
+//         return message;
 //     }
 // }
 
-//Static
-// class Program
-// {
-//     static void Main(string[] args)
-//     {
-//         Car car1 = new Car("Mustang");
-//         Car car2 = new Car("Corvette");
-
-//         Console.WriteLine(Car.numberOfCars);
-//         Car.StartRace(); 
-
-//         Console.ReadKey();
-//     }
-// }
-// class Car
-// {
-//     string model;
-//     public static int numberOfCars;
-
-//     public Car(string model)
-//     {
-//         this.model = model;
-//         numberOfCars++;
-//     }
-//     public void PrintCar()
-//     {
-//         Console.WriteLine($"this car is a {model}");
-//     }
-
-//     public static void StartRace()
-//     {
-//         Console.WriteLine("The race has begun"); 
-//     }
-// }
-
-// Class overloading
-// class Program
-// {
-//     static void Main(string[] args)
-//     {
-//         Pizza pizza = new Pizza("Stuffed crust", "red sauce", "mozzarella", "pepperoni");
-
-//         Console.ReadKey();
-
-//     }
-// }
-// class Pizza
-// {
-//     string bread;
-//     string sauce;
-//     string cheese;
-//     string topping;
-
-//     public Pizza(string bread, string sauce, string cheese, string topping)
-//     {
-//         this.bread = bread;
-//         this.sauce = sauce;
-//         this.cheese = cheese;
-//         this.topping = topping;
-//     }
-//     public Pizza(string bread, string sauce, string cheese)
-//     {
-//         this.bread = bread;
-//         this.sauce = sauce;
-//         this.cheese = cheese;
-//     }
-// }
-
-// inheritance
+// polymorphism
 // class Program
 // {
 //     static void Main(string[] args)
@@ -474,42 +409,130 @@
 //         Bicycle bicycle = new Bicycle();
 //         Boat boat = new Boat();
 
-//         Console.WriteLine(car.speed);
-//         Console.WriteLine(car.wheels);
-//         car.go();
+//         Vehicle[] vehicles = { car, bicycle, boat };
 
-//         Console.WriteLine(bicycle.speed);
-//         Console.WriteLine(bicycle.wheels);
-//         bicycle.go();
-
-//         Console.WriteLine(boat.speed);
-//         Console.WriteLine(boat.wheels);
-//         boat.go();
+//         foreach (Vehicle vehicle in vehicles)
+//         {
+//             vehicle.Go();
+//         }
 
 //         Console.ReadKey();
-
 //     }
 // }
 // class Vehicle
 // {
-//     public int speed = 0;
-
-//     public void go()
-//     {
-//         Console.WriteLine("This vehicle is moving");
+//     public virtual void Go()
+//      {
+//         Console.WriteLine("The vehicule is going!");
 //     }
 // }
 // class Car : Vehicle
 // {
-//     public int wheels = 4;
+//     public override void Go()
+//     {
+//         Console.WriteLine("The car is going!");
+//     }
 // }
 // class Bicycle : Vehicle
 // {
-//     public int wheels = 2;
+//     public override void Go()
+//     {
+//         Console.WriteLine("The bicycle is going!");
+//     }
 // }
 // class Boat : Vehicle
 // {
-//     public int wheels = 0;
+//     public override void Go()
+//     {
+//         Console.WriteLine("The boat is going!");
+//     }
+// } 
+
+// interfaces
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Rabbit rabbit = new Rabbit();
+//         Hawk hawk = new Hawk();
+//         Fish fish = new Fish();
+
+//         hawk.Hunt();
+
+//         rabbit.Flee();
+
+//         fish.Hunt();
+//         fish.Flee(); 
+
+//         Console.ReadKey();
+//     }
+// }
+// interface IPrey
+// {
+//     void Flee();
+// }
+// interface IPredator
+// {
+//     void Hunt();
+// }
+// class Rabbit : IPrey
+// {
+//     public void Flee()
+//     {
+//         Console.WriteLine("The rabbit runs away");
+//     }
+// }
+// class Hawk : IPredator
+// {
+//     public void Hunt()
+//     {
+//         Console.WriteLine("The hawk is hunting");
+//     }
+// }
+// class Fish : IPredator, IPrey
+// {
+//     public void Flee()
+//     {
+//         Console.WriteLine("The fish swims away");
+//     }
+//     public void Hunt()
+//     {
+//         Console.WriteLine("The fish is hunting");
+//     }
+// }
+
+// must be using "using System.Collections.Generic;"
+// lists
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         List<string> food = new List<string>();
+
+//         food.Add("Pizza");
+//         food.Add("Hamburger");
+//         food.Add("Hotdog");
+//         food.Add("Fries");
+
+//         // food.Remove("Fries");
+
+//         food.Insert(0, "Sushi");
+
+//         Console.WriteLine(food.Count); 
+//         Console.WriteLine(food.IndexOf("Pizza"));
+//         food.Sort();
+//         // food.Reverse();
+//         // food.Clear();
+
+//         foreach (string item in food)
+//         {
+//             Console.WriteLine(item);
+//         }
+
+//         Console.WriteLine(food[0]);
+
+//         Console.ReadKey();
+//     }
 // }
 
 // List of objects
@@ -517,69 +540,182 @@
 // {
 //     static void Main(string[] args)
 //     {
-//         Car[] garage = {
-//             new Car("Mustang"),
-//             new Car("Corvette"),
-//             new Car("Lambo"),
-//         };
+//         List<Player> PlayerList = new List<Player>();
 
-//         foreach (Car car in garage)
+//         // Player player1 = new Player("Chad");
+//         // Player player2 = new Player("Steve");
+//         // Player player3 = new Player("Bio");
+
+//         PlayerList.Add(new Player("Chad"));
+//         PlayerList.Add(new Player("Steve"));
+//         PlayerList.Add(new Player("Bio"));
+
+//         foreach (Player player in PlayerList)
 //         {
-//             Console.WriteLine(car.model);
+//             Console.WriteLine(player);
 //         }
 
 //         Console.ReadKey();
 //     }
 // }
-// class Car
+// class Player
 // {
-//     public string model;
-
-//     public Car(string model)
+//     public string username;
+//     public Player(string username)
 //     {
-//         this.model = model;
+//         this.username = username;
+//     }
+//     public override string ToString()
+//     {
+//         return username;
 //     }
 // }
 
-//objects as arguments
+// setters and getters
 // class Program
 // {
 //     static void Main(string[] args)
 //     {
-//         Car car1 = new Car("Mustang", "Red");
+//         Car car = new Car(400);
 
-//         Car car2 = Copy(car1);
+//         Console.WriteLine(car.Speed);
 
-//         ChangeColor(car1, "Green");
-
-//         Console.WriteLine(car1.color + " " + car1.model);
-//         Console.WriteLine(car2.color + " " + car2.model);
+//         car.Speed = 1000000;
+//         Console.WriteLine(car.Speed);
 
 
 //         Console.ReadKey();
 
 //     }
-//     public static void ChangeColor(Car car, string color)
+// }
+// class Car
+// {
+//     public int speed;
+
+//     public Car(int speed)
 //     {
-//         car.color = color;
+//         Speed = speed;
 //     }
-//     public static Car Copy(Car car)
+//     public int Speed
 //     {
-//         return new Car(car.model, car.color); 
+//         get { return speed; } // read
+//         set
+//         {
+//             if (value > 500)
+//             {
+//                 speed = 500;
+//             }
+//             else
+//             {
+//                 speed = value;
+//             }
+//         }
+//     }
+// }
+
+
+// auto implemented properties
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Car car = new Car("Porsche");
+
+//         Console.WriteLine(car.Model);
+
+//         Console.ReadKey();
 //     }
 // }
 // class Car
 // {
-//     public string model;
-//     public string color;
+//     public string Model { get; set; }
 
-//     public Car(string model, string color)
+//     public Car(string model)
 //     {
-//         this.color = color;
-//         this.model = model;
+//         this.Model = model; 
 //     }
 // }
 
+
+// enums 
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Console.WriteLine(Planets.Pluto + " is as planet");
+
+//         Console.WriteLine(Planets.Mercury + " is planet #" + (int)Planets.Mercury);
+
+//         Console.WriteLine(Planets.Pluto + " is planet #" + (int)Planets.Pluto);
+
+//         string name = PlanetRadius.Earth.ToString();
+//         int radius = (int)PlanetRadius.Earth;
+//         double volume = Volume(PlanetRadius.Earth);
+//         Console.WriteLine("planet: " + name);
+//         Console.WriteLine("radius: " + radius + " kms");
+//         Console.WriteLine("Volume: " + volume + " km^3");
+
+
+//         Console.ReadKey();
+//     }
+//     public static double Volume(PlanetRadius radius)
+//     {
+//         double volume = (4.0 / 3.0) * Math.PI * Math.Pow((int)radius, 3);
+//         return volume;
+//     }
+// }
+// enum Planets
+// {
+//     Mercury = 1,
+//     Venus = 2,
+//     Earth = 3,
+//     Mars = 4,
+//     Jupiter = 5,
+//     Saturn = 6,
+//     Uranus = 7,
+//     Neptune = 8,
+//     Pluto = 9
+// }
+// enum PlanetRadius
+// {
+//     Mercury = 2439,
+//     Venus = 6051,
+//     Earth = 6371,
+//     Mars = 3389,
+//     Jupiter = 69911,
+//     Saturn = 58232,
+//     Uranus = 25362,
+//     Neptune = 24622,
+//     Pluto = 1188
+
+// }
+
+
+// generic
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         int[] intArray = { 1, 2, 3 };
+//         double[] doubleArray = { 1.0, 2.0, 3.0 };
+//         string[] strArray = { "1", "2", "3" };
+
+//         displayElements(intArray);
+//         displayElements(doubleArray);
+//         displayElements(strArray);
+
+
+//         Console.ReadKey();
+//     }
+//     public static void displayElements<Thing>(Thing[] array)
+//     {
+//         foreach (Thing item in array)
+//         {
+//             Console.Write(item + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
 namespace MyFirstProgram
 {
@@ -587,38 +723,40 @@ namespace MyFirstProgram
     {
         static void Main(string[] args)
         {
-            Dog dog = new Dog();
-            Cat cat = new Cat();
+            Thread mainThread = Thread.CurrentThread;
+            mainThread.Name = "Main Thread";
 
-            dog.Speak();
-            cat.Speak();
+            Thread thread1 = new Thread(() => CountDown("Timer #1"));
+            Thread thread2 = new Thread(() => CountUp("Timer #2"));
 
+            thread1.Start();
+            thread2.Start();
+
+            Console.WriteLine($"Main thread: {mainThread.Name} is complete!");
             Console.ReadKey();
         }
-    }
-    class Animal
-    {
-        public virtual void Speak()
+
+        public static void CountDown(string name)
         {
-            Console.WriteLine("The animal goes *brr*");
+            for (int i = 10; i >= 0; i--)
+            {
+                Console.WriteLine("Timer #1: " + i + " seconds");
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("Timer #1 is complete!");
         }
-    }
-    class Dog : Animal
-    {
-        public override void Speak()
+
+        public static void CountUp(string name)
         {
-            Console.WriteLine("The dog goes waouf");
-        }
-    }
-    class Cat : Animal
-    { 
-        public override void Speak()
-        {
-            Console.WriteLine("The dog goes meow");
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("Timer #2: " + i + " seconds");
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("Timer #2 is complete!");
         }
     }
 }
-
 
 
 
