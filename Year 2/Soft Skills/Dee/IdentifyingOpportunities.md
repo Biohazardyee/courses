@@ -133,9 +133,81 @@ In the future, I want to be known as a kind, gentle, trustworthy, and hardworkin
   - Won't learn a thing
   - doesn't admit any weakness or fault
   - Refuse to change
-  - "I'm doing all possible" 
+  - "I'm doing all possible"
 - Confusion
   - questioning
-  - 
+  -
 - Renewal
   - growth
+
+## Discovering Opportunities
+
+Effectuation - [Link explanation](https://blog.hubspot.fr/sales/effectuation#:~:text=L%27effectuation%20est%20une%20logique,avec%20exactitude%20dès%20ses%20débuts.)
+
+- Start with what's available now
+- Invest whant you can afford to lose
+
+Process of exploration
+
+- Who I am / What I know
+- WHat I can do → goals
+- Who I know
+- stakeholders / commitment
+  - no commitment → dead end (dump bad idea)
+  - new means → how will I do this
+  - new goals
+-
+
+A change in environment changes what you know (eg. lessons) and loops back to the beginning
+
+This whole loop leads to new firms, products or markets
+
+5 principles:
+
+1. bird in hand
+  - start with what you have
+  - ask yourself what should I know
+  - who I know
+  - use the available resources
+  - zero
+
+2. Affordable loss
+  - make a commitment
+  - find what you can lose
+  - focus on downside
+  - limit risks
+
+3. Crazy quilt
+  - patchwork quilt
+  - partnership and networks
+  - seek funding
+  - co-create new markets with interested others
+  - build hive with bees
+
+4. Lemonade
+  - sense and seize opportunities 
+  - don't use what if
+  - transform problems into chances for growth
+  - more lemon, more lemonade
+
+5. Pilot in the plane
+  - control vs predict
+  - focus on activities within control
+  - action result in desired outcomes
+  - don't predict the future: make your own
+
+- designed for older people experiencing reduced mobility
+- enable coordination and motricity
+- increase autonomy
+- amount of obstacles they might face avoided
+- reaction time
+- stability regarding long distance → balance
+
+## Today's Conclusion
+
+- When you are given the task to task somebody, don't do it yourself.
+- Sometimes they do even better than what you've imagined
+- trust your colleague, you will get sometimes surprised
+- even if they don't deliver as you expected them to, it opens new possibilities
+- sometime the best solution is the combination of ideas
+- sometimes you have to build up and not build down
