@@ -257,7 +257,7 @@ Things don't have to be said the way you think or say them.
 
 - Know yourself
 
-  - you need to know yourself for others to trust you, it's at the center.
+  - You need to know yourself for others to trust you, it's at the center.
 
 - Risk
 
@@ -287,8 +287,8 @@ Lots of talking doesn't matter, the doing does, and the doing improves your cred
    1. verbal/non-verbal communication
    2. a smile can be enough (beware of cultural differences)
 4. Understand feelings
-  
-### Trust creation process
+
+### Trust creation process - ELFEC
 
 1. Engage
    1. Offer something of value in an open discussion about issues important to the other: "Let's talk about..."
@@ -302,3 +302,85 @@ Lots of talking doesn't matter, the doing does, and the doing improves your cred
    1. Define an alternate reality including win-win descriptions of outcomes and results "Let's imagine..."
 5. Commit
    1. Jointly articulate actionable next steps to signify commitment and movement on the part of each party "I suggest we do..."
+
+### Emotional Intelligence
+
+The ability, capacity, or skill to perceive, assess, and manage your emotions and those of others.
+
+It is the core of the art of handling relationships of any kind.
+
+1. Recognition
+   1. SELF
+      1. Self awareness
+         1. Self-Confidence
+            1. Emotional self-awareness
+            2. Accurate self assessment
+   2. SOCIAL
+   3. Social Awareness
+      1. Empathy
+         1. Organizational Awareness
+         2. Service Orientation
+2. Regulation
+   1. SELF
+      1. Self management
+         1. Self control
+         2. Trustworthiness
+         3. Conscientiousness
+         4. Adaptability
+         5. Achievement
+         6. Drive to succeed
+         7. Initiative
+   2. SOCIAL
+      1. Relationship Management
+         1. Influence
+         2. Inspirational Leadership
+         3. Developing others
+         4. Building Bonds
+         5. Teamwork & Collaboration
+
+![alt text](./images/emotional_intelligence.png)
+
+### Trust-Ownership Model
+
+![alt text](./images/trust_ownership_model.png)
+
+## Structuring Problem-Solving
+
+### Rational Problem-Solving
+
+- Identify the problem
+  - Define the situation
+  - Analyze the situation
+  - Diagnose the cause of the problem
+  - Specify decision objectives
+- Problem-Solving
+  - Searching for alternatives
+- Decision-Making
+  - Evaluating alternatives
+  - Selecting the best alternatives
+- Implementing the decision
+  - Testing
+  - Monitoring
+  - Reviewing
+
+### Eisenhower Urgent-Important Matrix
+
+Purpose: prioritize actions, tasks or projects. 
+
+![alt text](./images/eisenhower_matrix.png)
+
+### Role Plays
+
+Lucas: 
+- Fluid
+- fast at the beginning
+- clean
+- not all questions were asked
+
+Camille: 
+- had a great feeling about the interview
+
+Thibaud: 
+- had a great feeling as well
+
+Would hire Camille for the junior web developer job, on a common decision, Camille wasn't expecting for the senior job, and from what he said, the interviewer was aiming for the same. 
