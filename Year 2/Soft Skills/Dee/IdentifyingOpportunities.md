@@ -145,7 +145,7 @@ In the future, I want to be known as a kind, gentle, trustworthy, and hardworkin
 Effectuation - [Link explanation](https://blog.hubspot.fr/sales/effectuation#:~:text=L%27effectuation%20est%20une%20logique,avec%20exactitude%20dès%20ses%20débuts.)
 
 - Start with what's available now
-- Invest whant you can afford to lose
+- Invest want you can afford to lose
 
 Process of exploration
 
@@ -158,46 +158,51 @@ Process of exploration
   - new goals
 -
 
-A change in environment changes what you know (eg. lessons) and loops back to the beginning
+A change in environment changes what you know (e.g. lessons) and loops back to the beginning
 
 This whole loop leads to new firms, products or markets
 
 5 principles:
 
 1. bird in hand
-  - start with what you have
-  - ask yourself what should I know
-  - who I know
-  - use the available resources
-  - zero
+
+- start with what you have
+- asked yourself what should I know
+- who I know
+- use the available resources
+- zero
 
 2. Affordable loss
-  - make a commitment
-  - find what you can lose
-  - focus on downside
-  - limit risks
+
+- make a commitment
+- find what you can lose
+- focus on downside
+- limit risks
 
 3. Crazy quilt
-  - patchwork quilt
-  - partnership and networks
-  - seek funding
-  - co-create new markets with interested others
-  - build hive with bees
+
+- patchwork quilt
+- partnership and networks
+- seek funding
+- co-create new markets with interested others
+- build hive with bees
 
 4. Lemonade
-  - sense and seize opportunities 
-  - don't use what if
-  - transform problems into chances for growth
-  - more lemon, more lemonade
+
+- sense and seize opportunities
+- don't use what if
+- transform problems into chances for growth
+- more lemon, more lemonade
 
 5. Pilot in the plane
-  - control vs predict
-  - focus on activities within control
-  - action result in desired outcomes
-  - don't predict the future: make your own
+
+- control vs predict
+- focus on activities within control
+- action result in desired outcomes
+- don't predict the future: make your own
 
 - designed for older people experiencing reduced mobility
-- enable coordination and motricity
+- enable coordination and mobility
 - increase autonomy
 - amount of obstacles they might face avoided
 - reaction time
@@ -211,3 +216,89 @@ This whole loop leads to new firms, products or markets
 - even if they don't deliver as you expected them to, it opens new possibilities
 - sometime the best solution is the combination of ideas
 - sometimes you have to build up and not build down
+
+## Building Relationships
+
+"The best way to find out if you can trust somebody is to trust them" - Hemingway
+
+Trust holds relationship together. No matter the source of the relationship (love, friendship, colleague)
+
+Do you directly trust someone, or do you not ?
+
+1. People are open directly, until they get hit on the head
+2. People won't trust you and will test you all along
+
+If you always search for mistakes, it communicates no trust.
+Rather, search for good things and mistakes. And feedback will be more appreciated.
+
+TRUST = (Credibility + Reliability + Intimacy) / Perceived Self Orientation
+
+Credibility = perceived competence \
+Reliability = Perceived consistency and dependability: delivering promises \
+Intimacy = Perceived closeness and understanding
+
+Perceived Self Orientation = Perceived personal gain motive
+
+Sometimes people say the same thing as you with other words, you have to understand that they have the same pov as you. \
+Things don't have to be said the way you think or say them.
+
+### The 5 trust skills
+
+- Listen
+
+  - Do not argue or apply a fixed mindset
+  - Empathetic, earning the right to be heard
+
+- Partner
+
+  - do not compete over ideas, maybe other people can add value to your idea, sometimes they are trying to improve it (keep in kind that sometimes they try to shoot you down, in that case, refuse it, but conquer your mind)
+  - Give and take
+  - Being in 'tune', know their needs, understand them
+
+- Know yourself
+
+  - you need to know yourself for others to trust you, it's at the center.
+
+- Risk
+
+  - Risks of trusting, the more you defend, the more people throw stones, they will stop eventually if you don't defend. WHen someone argues with you, they give you weapon to fight back with, so don't give them weapons in return.
+  - Willingness to take risks because there's a solid relationship to fall back on
+  - When the relationship is strong, you forgive more, so you are willing to take more risks and when it comes to conflicts, you know it can be fixed, because the relationship is strong
+  - Negotiation doesn't have to take a lot of time when you trust each other
+
+- Improvise
+  - Flexibility (according to the needs of the people we are working with)
+  - Thinking and responding quickly when the situation is not familiar
+  - Some things you cannot control or predict will happen
+  - Practice improvisation, your instinct will get better
+
+You have to be like water, be flexible and hard to be trapped, be like bamboo, be strong and flexible at the same time. In Asia, they say that
+bamboo (fiber) can be stronger than steel.
+
+Lots of talking doesn't matter, the doing does, and the doing improves your credibility
+
+### 4 elements of empathy
+
+1. See their world
+   1. put yourself in their shoes
+2. Appreciate them as human beings
+   1. don't judge them they are human after all
+3. Communicate understanding
+   1. verbal/non-verbal communication
+   2. a smile can be enough (beware of cultural differences)
+4. Understand feelings
+  
+### Trust creation process
+
+1. Engage
+   1. Offer something of value in an open discussion about issues important to the other: "Let's talk about..."
+2. Listen
+   1. Take note of what's important to the other and earn the right to offer solutions: "Tell me more..."
+3. Frame
+   1. State the root issue in terms of what is acceptable to both
+   2. state problems and hypotheses
+   3. Take personal risks to explore sensitive issue in depth "So the issue is..."
+4. Envision
+   1. Define an alternate reality including win-win descriptions of outcomes and results "Let's imagine..."
+5. Commit
+   1. Jointly articulate actionable next steps to signify commitment and movement on the part of each party "I suggest we do..."
