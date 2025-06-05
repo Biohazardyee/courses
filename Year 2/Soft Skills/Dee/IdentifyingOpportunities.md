@@ -365,22 +365,164 @@ It is the core of the art of handling relationships of any kind.
 
 ### Eisenhower Urgent-Important Matrix
 
-Purpose: prioritize actions, tasks or projects. 
+Purpose: prioritize actions, tasks or projects.
 
 ![alt text](./images/eisenhower_matrix.png)
 
 ### Role Plays
 
-Lucas: 
+Lucas:
+
 - Fluid
 - fast at the beginning
 - clean
 - not all questions were asked
 
-Camille: 
+Camille:
+
 - had a great feeling about the interview
 
-Thibaud: 
+Thibaud:
+
 - had a great feeling as well
 
-Would hire Camille for the junior web developer job, on a common decision, Camille wasn't expecting for the senior job, and from what he said, the interviewer was aiming for the same. 
+Would hire Camille for the junior web developer job, on a common decision, Camille wasn't expecting for the senior job, and from what he said, the interviewer was aiming for the same.
+
+## Continuous Learning
+
+Everything around us is interconnected and that every decision or action we take has consequences for ourselves and others.
+
+### Critical thinking DSRP
+
+Distinctions: We make distinctions between ideas, objects, things...
+
+Systems: We organize things into part-whole groupings...
+
+Relationships: We make connections between and among things...
+
+Perspectives: We take different perspectives on and from things...
+
+Learning and resilience begin with mindset, with a growth mindset, you'll find a solution faster, you'll get out of the situation in an easier way.
+
+### Ignorance Management
+
+If there's something you don't know try not to cover it up, thrive to know it as soon as possible. Get things done basically.
+
+When you're angry, count up to 20 before opening your mouth, keep control of yourself and understand that your answer will have consequences.
+
+You need to bring it out and up, systemic response. Don't throw stones back.
+
+Steve Jobs, despite having a fairly rude and disrespectful question, kept composure by taking his time, cooling down and applying a systemic response.
+
+We have to learn on our feet, and not being blinded by angriness is a must-do but being agile in the way we learn is as important.
+
+### Learning Agility
+
+- Individual attributes related to Learning Agility:
+  - Goal orientation
+  - Cognitive ability - the ability of making connections, apply the programming approach when it comes to relationships, what goes with what
+  - Openness to experience - not be defensive, you shouldn't be to be told twice
+
+When people offer to help us, we have to be grateful. And not feel as if it is competition
+
+- Learning Agility
+
+  - Speed
+  - Flexibility
+
+- Outcomes
+  - Fast learning across situations
+  - Positive performances changes over time
+
+## Exercise: Marvella District Council
+
+Clem ; edu department
+
+3 objectives:
+
+1. A Primary school downtown horrible state, no bathroom, dining hall, no staff room, old school, 250 students, a lot of staff.
+   1. Build a new school
+      1. 720,000
+      2. 18 month
+2. Illiterate students
+   1. Employ new teachers that will work with these students
+   2. 72000/year
+3. School circuit
+   1. 320.000 + 60.000
+   2.
+
+Lucas; Finance and Admin department
+
+25% of the budget, but went decreasing
+Asks for more than 25%
+
+1. Local authorities to be aware of the housing stock
+   1. The last planning was made 8 years ago
+   2. 1,000,000 euro
+   3. Make new housing survey
+2. Chief Executive worried
+   1. Employ a management consultant to suggest improvement
+   2. 300,000 euros
+   3. upgrade housing in the city
+
+Robin; Public services
+
+1. Lights have been smashed by vandals
+   1. replace with costless lights + fix lights
+   2. 600,000 euros
+   3. save 60,000 euros / year but we need to wait for 2 years
+   4. Mugging in dark streets are going on
+2. Cleaning the city
+   1. 3 workers currently → not enough
+   2. buy 10 machines / 20,000 / machines
+   3. 60,000 to pay driving licenses
+   4. Increase salary of employees → 84,000 / year
+
+Emilien; housing department
+
+1. Families need to move from house to house
+
+   1. research a project for flexible houses to change the size of the house dynamically (modular houses)
+   2. 1,800,000 but save 600,000 euros a year **if** this works
+   3. needs to be done now
+
+2. Elderly people that dont have mobility and offices to pay rent are far away they need to move to get there
+   1. Vans that bring elderly there
+   2. Collect complaints of people
+   3. 180,000 euros
+   4. Solution to make an app that allows people to make their rent
+
+Report:
+
+Total: 1,692M€ → 108K€ spare
+
+2 mains pb: Housing + Education (all the others are related or due to them)
+
+1st of all: Focus education, but the propositions weren't good enough, except the new teachers, we also considered reducing crimes by changing lights (but due to the fact it won't be done this year, we decided to postponed it, then, if extra budget it will be spared for them next year)
+
+2nd: Housing, we realized that some actions might be better if paired (the manager and the housing survey)
+So we decided to take those 2 (1M€ + 300K€)
+
+To help elder people and reduce everyone's need to move from A to B, we added the vans moving across the city to pay rent (+180K€)
+
+And finally, to help women victim of domestic violence, we're adding the center helping the victims (+140K)
+
+The consultant wasn't a good idea as the consultant wouldn't bring a thing, those that know things are those that been working on the project for 10 years.
+
+The decision you take reflects your values. 
+
+We realized that all the problems in the city stem from education and homelessness, so our decisions focused mostly on fixing this issue
+We tried focusing on education, but most of the solutions didn't work. Building a new primary school was not a good idea in a town with already 64 primary schools, even if one of them is bad. We also thought that it was stupid to invest in a television channel, as most young people are on social media and don't watch tv, and it's useless to teach stuff to the elderly, who are the main TV watchers.  But we did think that it was worth it to hire the new teachers to help with illiteracy, as it is not very expensive and helps treat the problem at the source for only 72,000€.
+After that, we focused on housing. we couldn't afford to take the risk of spending the 1,800,000€ on a research and development project since we need to fix this town's issues soon, and housing is not the only one.
+Also, the solution of one center in the center of the district is not viable, as we know that it's already difficult for people to move around, and there are 232,000 homeless people; if we add the battered women, it is not enough to only have one building. However, this town has a lot of elderly people, and a lack of education usually leads to mothers with a lot of children so doing the truck to help them pay rent was a good idea, it also helps with risking going out in a town with lots of vandals and lack of lights to see them coming since old people and children don't run fast enough to escape them.
+At first, we thought the survey for housing stock was not a good idea, however, we realized that if we combined it with the manager, it would help a lot with the housing problem, as we would be able to allocate existing housing a lot more efficiently and figure out more solutions to make new housing since the solutions we had weren't viable. Digitising all the rent was a good idea, but it is far too expensive, and once again, it takes the whole budget and there is more than one issue to solve.
+All of the proposition of the public services department were ignored as, the streets will be dirty as long as their are homeless people and drug addicts, the lights were a good idea but it takes too long and if we do nothing people will leave and the garbage disposal plant is too expensive and would be a lot more useful if we had more housing.
+Creating two buildings for 1,700,000€ was not a good idea since it is too expensive and is only a bandage on the homelessness problem. and the drug rehabilitation center is not that useful unless kids are educated or have a job, so until this is a lot better, the drug rehab is not worthwhile. However, helping battered women was a good idea since they need help quickly, and it also makes good publicity.
+In the end, all of our ideas combined are:
+1,000,000€ for the survey,
+300,000€ for the consultant,
+140,000€ for the battered women,
+180,000€ for the van helping to pay rent,
+72,000€ for extra teachers,
+1,692,000€ in total.
+The rest will be allocated for new lighting for the next year.
