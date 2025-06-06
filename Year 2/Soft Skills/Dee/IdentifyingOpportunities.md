@@ -98,6 +98,8 @@ In the future, I want to be known as a kind, gentle, trustworthy, and hardworkin
 
 "Everybody thinks of changing humanity - hardly anyone thinks of changing himself." - Bayazid al-Bastami
 
+This resonates in me, it is way easier to see others' issues rather than ourselves. Sometime changing ourselves will resolve issues.
+
 ## What attitudes and behaviors do I need to change in order to realize my personal vision?
 
 - "I'll do it tomorrow"
@@ -616,7 +618,57 @@ What to do:
 
 What to do:
 
-- Review your progress every 3 months
+- Review progress every 3 months
 - Apply the process of exploration and focus on what I know and what I can do, my resources...
 - Adapt to new missions or technologies by learning fast
 - Be motivated for what's next
+
+## Practical Actions 
+
+- I want to seek technics and ways to challenge people when I'm listening to them
+
+Make the flywheel spinning by:
+
+- Learning C# technology language with .MAUI framework to create applications
+- Work on my moonshot project that is for the French army, start documenting the project
+
+- Keep in mind the learning agility part, be goal oriented and open to new experiences.
+- My goals are defined in my personal vision part. 
+
+- What was mentioned in the Flywheel analogy part
+
+### Key Takeaways
+
+- Continuous learning is the main element I will take away from this course, we learn all our life long and everything is linked one way or another. Learning is an infinite rabbit hole. I should thrive to learn new things when I don't know them. When it comes to being angry, I sometime open my mouth to fast and throw stones to the other person. I should keep calm, take time, breath, calm down and just don't give weapon to the person in front of me. Understand that my response will have impact and the goal isn't to hurt the person, and sometimes understand that I can be in the wrong.
+
+### Curious to explore
+
+- I will dig into the Gibbs reflective cycle, especially for the conclusion and action plan part, learn ways to challenge others and myself.
+
+### Team notes
+
+Lucas: - core values, questions to ask ourselves, look at the future, the way to know himself, understand how to make new opportunities, knowledge management SECI, it's not because you have technical skills that you are an expert in leadership and social skills, danger area.
+
+Camille: - Separate humor and work more, be more balanced, Camille wants to stop throwing stones to other person when he is angry, he should take a step back. 
+
+Vivien: - He has a fixed mindset, make too many decisions based on gut-feelings rather than rational and well-thought decisions
+
+Robin: - He feels not legitimate sometime to talk, sometimes he is shy with those that he doesn't know, he needs to be confident and accept the fact of making mistakes. 
+
+Emilien: - Be more confident, he is "not that dumb that he though", has to incorporate what others say deeply whatever the feeling he has. Think before he acts. He should keep calm when people are mean to him, learn how to love himself first. 
+
+Clementine: - When she is stressed she will have an extremely fixed mindset, but she doesn't really know how to fix it. Her solution is to talk about it with people she knows to find solution. She doesn't feel legitimate when she is stressed. Sometimes she wants to let others take the lead because she often does it and want to give the chance to others, but that doesn't mean she needs to put herself aside, she still can help others. 
+
+### Curious to explore (a team)
+
+Clem: - explore the fact of being more of a mentor rather than a watcher when she lets someone lead.
+
+Lucas: - He wants to learn ways to challenge others, and invite others to join the conversation with him. 
+
+Camille: - stay calm and don't throw stones, do not give weapons, control himself
+
+Vivien: - how to manipulate people to gain loads of money, challenge others he's avoiding challenges way too much. And challenge himself too. 
+
+Robin: - Take more initiatives, gain in self-confidence
+
+Emilien: - "Change the world by changing me", do not get angry when people are mean to him
