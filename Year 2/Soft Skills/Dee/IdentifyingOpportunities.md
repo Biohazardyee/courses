@@ -448,7 +448,7 @@ Clem ; edu department
    1. Employ new teachers that will work with these students
    2. 72000/year
 3. School circuit
-   1. 320.000 + 60.000
+   1. 320,000 + 60,000
    2.
 
 Lucas; Finance and Admin department
@@ -470,7 +470,7 @@ Robin; Public services
 1. Lights have been smashed by vandals
    1. replace with costless lights + fix lights
    2. 600,000 euros
-   3. save 60,000 euros / year but we need to wait for 2 years
+   3. save 60,000 euros / year, but we need to wait for 2 years
    4. Mugging in dark streets are going on
 2. Cleaning the city
    1. 3 workers currently → not enough
@@ -486,7 +486,7 @@ Emilien; housing department
    2. 1,800,000 but save 600,000 euros a year **if** this works
    3. needs to be done now
 
-2. Elderly people that dont have mobility and offices to pay rent are far away they need to move to get there
+2. Elderly people that don't have mobility and offices to pay rent are far away they need to move to get there
    1. Vans that bring elderly there
    2. Collect complaints of people
    3. 180,000 euros
@@ -509,20 +509,114 @@ And finally, to help women victim of domestic violence, we're adding the center 
 
 The consultant wasn't a good idea as the consultant wouldn't bring a thing, those that know things are those that been working on the project for 10 years.
 
-The decision you take reflects your values. 
+The decision you take reflects your values.
 
 We realized that all the problems in the city stem from education and homelessness, so our decisions focused mostly on fixing this issue
-We tried focusing on education, but most of the solutions didn't work. Building a new primary school was not a good idea in a town with already 64 primary schools, even if one of them is bad. We also thought that it was stupid to invest in a television channel, as most young people are on social media and don't watch tv, and it's useless to teach stuff to the elderly, who are the main TV watchers.  But we did think that it was worth it to hire the new teachers to help with illiteracy, as it is not very expensive and helps treat the problem at the source for only 72,000€.
-After that, we focused on housing. we couldn't afford to take the risk of spending the 1,800,000€ on a research and development project since we need to fix this town's issues soon, and housing is not the only one.
+We tried focusing on education, but most of the solutions didn't work. Building a new primary school was not a good idea in a town with already 64 primary schools, even if one of them is bad. We also thought that it was stupid to invest in a television channel, as most young people are on social media and don't watch tv, and it's useless to teach stuff to the elderly, who are the main TV watchers. But we did think that it was worth it to hire the new teachers to help with illiteracy, as it is not very expensive and helps treat the problem at the source for only €72,000.
+After that, we focused on housing. We couldn't afford to take the risk of spending the €1,800,000 on a research and development project since we need to fix this town's issues soon, and housing is not the only one.
 Also, the solution of one center in the center of the district is not viable, as we know that it's already difficult for people to move around, and there are 232,000 homeless people; if we add the battered women, it is not enough to only have one building. However, this town has a lot of elderly people, and a lack of education usually leads to mothers with a lot of children so doing the truck to help them pay rent was a good idea, it also helps with risking going out in a town with lots of vandals and lack of lights to see them coming since old people and children don't run fast enough to escape them.
-At first, we thought the survey for housing stock was not a good idea, however, we realized that if we combined it with the manager, it would help a lot with the housing problem, as we would be able to allocate existing housing a lot more efficiently and figure out more solutions to make new housing since the solutions we had weren't viable. Digitising all the rent was a good idea, but it is far too expensive, and once again, it takes the whole budget and there is more than one issue to solve.
-All of the proposition of the public services department were ignored as, the streets will be dirty as long as their are homeless people and drug addicts, the lights were a good idea but it takes too long and if we do nothing people will leave and the garbage disposal plant is too expensive and would be a lot more useful if we had more housing.
-Creating two buildings for 1,700,000€ was not a good idea since it is too expensive and is only a bandage on the homelessness problem. and the drug rehabilitation center is not that useful unless kids are educated or have a job, so until this is a lot better, the drug rehab is not worthwhile. However, helping battered women was a good idea since they need help quickly, and it also makes good publicity.
+At first, we thought the survey for housing stock was not a good idea, however, we realized that if we combined it with the manager, it would help a lot with the housing problem, as we would be able to allocate existing housing a lot more efficiently and figure out more solutions to make new housing since the solutions we had weren't viable. Digitizing all the rent was a good idea, but it is far too expensive, and once again, it takes the whole budget and there is more than one issue to solve.
+All the proposition of the public services department were ignored as, the streets will be dirty as long as there are homeless people and drug addicts, the lights were a good idea, but it takes too long and if we do nothing people will leave and the garbage disposal plant is too expensive and would be a lot more useful if we had more housing.
+Creating two buildings for €1,700,000 was not a good idea since it is too expensive and is only a bandage on the homelessness problem. And the drug rehabilitation center is not that useful unless kids are educated or have a job, so until this is a lot better, the drug rehab is not worthwhile. However, helping battered women was a good idea since they need help quickly, and it also makes good publicity.
 In the end, all of our ideas combined are:
-1,000,000€ for the survey,
-300,000€ for the consultant,
-140,000€ for the battered women,
-180,000€ for the van helping to pay rent,
-72,000€ for extra teachers,
-1,692,000€ in total.
+€1,000,000 for the survey,
+€300,000 for the consultant,
+€140,000 for the battered women,
+€180,000 for the van helping to pay rent,
+€72,000 for extra teachers,
+€1,692,000 in total.
 The rest will be allocated for new lighting for the next year.
+
+## Gibbs reflective Learning Cycle
+
+![alt text](image.png)
+
+## SELF-REFLECTION
+
+1. When during the week have I listened, changed my mind and acted upon the ideas of others?
+
+When we have done the game exercise, a lot of ideas came from within the team, from the client as well, and from the end user. All those ideas needed to be condensed into one big idea. Dumping bad ones, and keeping those that would add value.
+I felt kind of in control during this exercise, and was leading the team, I'd say. I had an idea of creating a gym exercise based game at the beginning. Though from what the team mentioned, the client's expectation and the end user wills. Such an idea was suboptimal and was the bare minimum the client was waiting for. I then decided to change my approach to apply the feedback I had received. This lead to a final game idea that was above expectation.
+
+The thing I had forgotten about: Refer to question 4 :)
+
+The fact that I've gone to the final user directly (Dee) to listen that what were her recommendation her need and what she would like to have was when I think I listened to the best during the week. This was a turning point in how the team tackled the project and the issue we had. This lead to a game that fitted the need of elderly people.
+
+2. When during the week have I failed others by not giving them sufficient support?
+
+During the Marvella game, as we wre playing the role of a municipal council, we picked the idea as a team to take the management consultant. This idea ruled out to be a terrible one as those that know the better about a project are those that work on it, right. Robin had mentioned that this could have been a terrible idea, and we noticed it a bit too late to remove it. This late-time realization, lead to a bit of confusion on wether to keep it or not. Even tho we had a bad feeling about it, we still went for it. It turned out to have been bad.
+We should have kept calm and reconsider the idea when we found out that it was maybe a bad idea. And maybe should have listened to and trusted Robin more when he stood out to mention that the idea wasn't in the right direction.
+
+3. When during the week would new opportunities have opened up if I had effectively challenged the views of others?
+
+At the beginning of the game creation exercise, when we had to present our idea to others, we had the hieroglyph idea that was mixed up with the other idea we had. The hieroglyph idea had never been really challenged and removed from the white board, it wasn't dumped effectively. I should have stood out to maybe remove the idea right away from the white board. And shouldn't have tried to include it when presentation went badly, I contributed to the spiral downing presentation by trying my hardest to include the idea. I should just have dumped it even if it had meant to restart the presentation, I should have mentioned it to my team members correctly that this idea was not the one we had decided to keep and that it was deprecated.
+Next time, such idea should be dumped directly to not lead confusion, and if confusion takes in, I should simply dump the idea rather than sinking into it.
+
+I should have challenged my teammate respectfully when he started presenting the hieroglyph idea, simply and kindly explaining that this idea wasn't part of the project anymore, this simple thing would have made us not look like complete idiots as a team and such an event in a company could make us lose a market, a project, or even a job..
+
+The opportunity that we could have had if we apply it to a real world application is that we could have gotten the job, we could have not look stupid, and maybe we could have given a better and less confusing description of what we wanted to the other team.
+
+4. Share your thoughts with your team and invite their comment.
+
+General feedback: they do agree with what I've written, and have no idea what I should add (im either perfect (no), or im missing something (second though: I was indeed missing something)).
+
+I need to develop my challenging skills in a respectful way as I tend to listen to others too much, we need to maintain a balance in this.
+
+## Flywheel Analogy
+
+What I'm good at: communicating, observing, listening, empathic, presenting, improvising, management
+
+What im passionate about: la gendarmerie, software development, computer science, video games, cybersecurity, defense industry, guitar (metal music)
+
+What I could make money out of: working in computer science field, for defense industry companies or for the gendarmerie
+
+```mermaid
+flowchart LR
+    A[Master Tactical Tech Skills] --> B[Design and Execute Real-World Projects]
+    B --> C[Communicate, Present, and Lead]
+    C --> D[Engage with Mission-Driven Institutions]
+    D --> E[Continuously Reinforce and Adapt]
+    E --> A
+```
+
+![alt text](image-1.png)
+
+1. Master Tactical Tech Skills
+
+What to do:
+
+- Learn new technologies, adapted to what I want to do, full-stack development
+- Train in cybersecurity tools and penetration testing
+
+2. Design and Execute Real-World Projects
+
+What to do:
+
+- Create applications for secure communication or drone interface systems
+- Build prototypes that simulate defense/military scenarios
+- Work on side projects that reflect gendarmerie missions or tools
+
+3. Communicate, Present, and Lead
+
+What to do:
+
+- Practice explaining technical ideas to non-technical people
+- Lead a small dev or cybersecurity project (even solo or open-source)
+- Present demos, project pitches, or cyber briefings
+
+4. Engage with Mission-Driven Institutions
+
+What to do:
+
+- Seek internships, shadowing, or civilian tech roles with the French Gendarmerie or defense firms (Thales, Nexter, etc.)
+- Follow military ethics, discipline, and teamwork culture
+- Stay informed about military doctrines, technologies, and regulations
+
+5. Continuously Reinforce and Adapt
+
+What to do:
+
+- Review your progress every 3 months
+- Apply the process of exploration and focus on what I know and what I can do, my resources...
+- Adapt to new missions or technologies by learning fast
+- Be motivated for what's next
