@@ -1,0 +1,33 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonshotTestApp.Pages.LoginPage"
+             Title="Login">
+    <VerticalStackLayout Spacing="25" 
+                        Padding="30,50"
+                        VerticalOptions="Start">
+
+        <Label Text="Login" 
+               FontSize="32" 
+               HorizontalOptions="Center"
+               Margin="0,0,0,20"/>
+
+        <Entry x:Name="EmailEntry"
+               Placeholder="Email" 
+               Keyboard="Email"
+               Margin="0,20"/>
+
+        <Entry x:Name="PasswordEntry"
+               Placeholder="Password" 
+               IsPassword="True"
+               Margin="0,20"/>
+
+        <Button x:Name="btnLogin"
+                Text="Login"
+                Clicked="btnLogin_Clicked"
+                Margin="0,20"/>
+                
+        <Button x:Name="btnToPageRegister"
+                Text="Don't have an account? Register here"
+                Clicked="btnToPageRegister_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

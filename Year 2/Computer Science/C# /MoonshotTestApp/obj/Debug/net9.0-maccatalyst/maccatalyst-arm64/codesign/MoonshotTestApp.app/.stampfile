@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /MoonshotTestApp/obj/Debug/net9.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /MoonshotTestApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/MoonshotTestApp.app
