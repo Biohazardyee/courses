@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /ToDoListApp/ToDoListApp.csproj": {}
+    "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /CalculatorApp/CalculatorApp.csproj": {}
   },
   "projects": {
-    "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /ToDoListApp/ToDoListApp.csproj": {
+    "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /CalculatorApp/CalculatorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /ToDoListApp/ToDoListApp.csproj",
-        "projectName": "ToDoListApp",
-        "projectPath": "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /ToDoListApp/ToDoListApp.csproj",
+        "projectUniqueName": "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /CalculatorApp/CalculatorApp.csproj",
+        "projectName": "CalculatorApp",
+        "projectPath": "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /CalculatorApp/CalculatorApp.csproj",
         "packagesPath": "/Users/thibaud/.nuget/packages/",
-        "outputPath": "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /ToDoListApp/obj/",
+        "outputPath": "/Users/thibaud/Documents/GitHub/algosup_courses/Year 2/Computer Science/C# /CalculatorApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/thibaud/.nuget/NuGet/NuGet.Config"
