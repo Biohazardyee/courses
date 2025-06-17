@@ -32,7 +32,6 @@ namespace PasswordVaultProgram
 
             while (true)
             {
-
                 Console.WriteLine("Enter your password");
                 string? newPasswordInput = Console.ReadLine();
 
