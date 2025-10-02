@@ -37,6 +37,13 @@ const server = createServer(async (req, res) => {
                 
                 res.writeHead(200, { 'Content-Type': 'application/javascript' });
                 res.end(jsContent);
+            }
+
+            else if (url === '/todos/getAll') {
+                GET: (req, res) => {
+                    const todos = readTodos(todoFile);
+
+            }
                 
             } else {
                 
