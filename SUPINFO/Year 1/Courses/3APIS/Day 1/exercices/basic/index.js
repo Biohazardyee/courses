@@ -7,8 +7,6 @@ export function Fibonacci(n) {
     return Fibonacci(n - 1) + Fibonacci(n - 2);
 }
 
-// module.exports = Fibonacci;
-
 export function Addition(x, y){
     return x + y;
 }
