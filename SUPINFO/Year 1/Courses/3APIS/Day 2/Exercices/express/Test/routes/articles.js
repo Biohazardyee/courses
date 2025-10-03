@@ -5,6 +5,22 @@ var path = require('path');
 
 const PRODUCTS_FILE = path.join(__dirname, '../data/products.json');
 
+const securityMiddleware = (req, res, next) => {
+    if (req.headers['value'] === 'user') {
+        next();
+    } else {
+        res.status(403).json({ success: false, error: 'Forbidden' });
+    }
+};
+
+const adminMiddleware = (req, res, next) => {
+    if (req.headers['value'] === 'admin') {
+        next();
+    } else {
+        res.status(403).json({ success: false, error: 'Forbidden' });
+    }
+}
+
 // Helper function to read products
 const readProducts = () => {
     try {
@@ -29,20 +45,20 @@ const generateId = (products) => {
 // Helper function to validate product data
 const validateProduct = (product) => {
     const errors = [];
-    
+
     if (!product.name || typeof product.name !== 'string' || product.name.trim() === '') {
         errors.push('Name is required and must be a non-empty string');
     }
-    
+
     if (!product.price || typeof product.price !== 'number' || product.price <= 0) {
         errors.push('Price is required and must be a positive number');
     }
-    
+
     return errors;
 };
 
 // GET /products - Get all products
-router.get('/', function(req, res, next) {
+router.get('/', securityMiddleware, function (req, res, next) {
     try {
         const products = readProducts();
         res.json({
@@ -61,27 +77,27 @@ router.get('/', function(req, res, next) {
 });
 
 // GET /products/:id - Get single product by ID
-router.get('/:id', function(req, res, next) {
+router.get('/:id', securityMiddleware, function (req, res, next) {
     try {
         const products = readProducts();
         const productId = parseInt(req.params.id);
-        
+
         if (isNaN(productId)) {
             return res.status(400).json({
                 success: false,
                 error: 'Invalid product ID. Must be a number.'
             });
         }
-        
+
         const product = products.find(p => p.id === productId);
-        
+
         if (!product) {
             return res.status(404).json({
                 success: false,
                 error: 'Product not found'
             });
         }
-        
+
         res.json({
             success: true,
             data: product
@@ -97,10 +113,10 @@ router.get('/:id', function(req, res, next) {
 });
 
 // POST /products - Create new product
-router.post('/', function(req, res, next) {
+router.post('/', adminMiddleware, function (req, res, next) {
     try {
         const { name, price } = req.body;
-        
+
         // Validate input
         const validationErrors = validateProduct({ name, price });
         if (validationErrors.length > 0) {
@@ -110,9 +126,9 @@ router.post('/', function(req, res, next) {
                 details: validationErrors
             });
         }
-        
+
         const products = readProducts();
-        
+
         // Create new product
         const newProduct = {
             id: generateId(products),
@@ -120,10 +136,10 @@ router.post('/', function(req, res, next) {
             price: parseFloat(price),
             createdAt: new Date().toISOString()
         };
-        
+
         products.push(newProduct);
         writeProducts(products);
-        
+
         res.status(201).json({
             success: true,
             message: 'Product created successfully',
@@ -140,18 +156,18 @@ router.post('/', function(req, res, next) {
 });
 
 // PUT /products/:id - Update product by ID
-router.put('/:id', function(req, res, next) {
+router.put('/:id', securityMiddleware, function (req, res, next) {
     try {
         const productId = parseInt(req.params.id);
         const { name, price } = req.body;
-        
+
         if (isNaN(productId)) {
             return res.status(400).json({
                 success: false,
                 error: 'Invalid product ID. Must be a number.'
             });
         }
-        
+
         // Validate input
         const validationErrors = validateProduct({ name, price });
         if (validationErrors.length > 0) {
@@ -161,17 +177,17 @@ router.put('/:id', function(req, res, next) {
                 details: validationErrors
             });
         }
-        
+
         const products = readProducts();
         const productIndex = products.findIndex(p => p.id === productId);
-        
+
         if (productIndex === -1) {
             return res.status(404).json({
                 success: false,
                 error: 'Product not found'
             });
         }
-        
+
         // Update product
         products[productIndex] = {
             ...products[productIndex],
@@ -179,9 +195,9 @@ router.put('/:id', function(req, res, next) {
             price: parseFloat(price),
             updatedAt: new Date().toISOString()
         };
-        
+
         writeProducts(products);
-        
+
         res.json({
             success: true,
             message: 'Product updated successfully',
@@ -198,30 +214,30 @@ router.put('/:id', function(req, res, next) {
 });
 
 // DELETE /products/:id - Delete product by ID
-router.delete('/:id', function(req, res, next) {
+router.delete('/:id', adminMiddleware, function (req, res, next) {
     try {
         const productId = parseInt(req.params.id);
-        
+
         if (isNaN(productId)) {
             return res.status(400).json({
                 success: false,
                 error: 'Invalid product ID. Must be a number.'
             });
         }
-        
+
         const products = readProducts();
         const productIndex = products.findIndex(p => p.id === productId);
-        
+
         if (productIndex === -1) {
             return res.status(404).json({
                 success: false,
                 error: 'Product not found'
             });
         }
-        
+
         const deletedProduct = products.splice(productIndex, 1)[0];
         writeProducts(products);
-        
+
         res.json({
             success: true,
             message: 'Product deleted successfully',
@@ -238,10 +254,10 @@ router.delete('/:id', function(req, res, next) {
 });
 
 // DELETE /products - Delete all products
-router.delete('/', function(req, res, next) {
+router.delete('/', adminMiddleware, function (req, res, next) {
     try {
         writeProducts([]);
-        
+
         res.json({
             success: true,
             message: 'All products deleted successfully'

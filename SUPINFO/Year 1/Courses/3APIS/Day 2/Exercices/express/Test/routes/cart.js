@@ -6,6 +6,15 @@ var path = require('path');
 const CART_FILE = path.join(__dirname, '../data/cart.json');
 const PRODUCTS_FILE = path.join(__dirname, '../data/products.json');
 
+const securityMiddleware = (req, res, next) => {
+    if (req.headers['value'] === 'user') {
+        next();
+    } else {
+        res.status(403).json({ success: false, error: 'Forbidden' });
+    }
+};
+
+
 // Helper function to read cart
 const readCart = () => {
     try {
@@ -66,7 +75,7 @@ const getCartWithDetails = () => {
 };
 
 // GET /cart - Get cart with product details and balance
-router.get('/', function (req, res, next) {
+router.get('/', securityMiddleware, function (req, res, next) {
     try {
         const cartData = getCartWithDetails();
         
@@ -85,7 +94,7 @@ router.get('/', function (req, res, next) {
 });
 
 // POST /cart - Add product to cart
-router.post('/', function(req, res, next) {
+router.post('/', securityMiddleware, function(req, res, next) {
     try {
         const { productId, quantity = 1 } = req.body;
         
@@ -151,7 +160,7 @@ router.post('/', function(req, res, next) {
 });
 
 // PUT /cart/:id - Update quantity of item in cart
-router.put('/:id', function(req, res, next) {
+router.put('/:id', securityMiddleware, function(req, res, next) {
     try {
         const cartItemId = parseInt(req.params.id);
         const { quantity } = req.body;
@@ -202,7 +211,7 @@ router.put('/:id', function(req, res, next) {
 });
 
 // DELETE /cart/:id - Remove item from cart
-router.delete('/:id', function(req, res, next) {
+router.delete('/:id', securityMiddleware, function(req, res, next) {
     try {
         const cartItemId = parseInt(req.params.id);
         
@@ -244,7 +253,7 @@ router.delete('/:id', function(req, res, next) {
 });
 
 // DELETE /cart - Clear entire cart
-router.delete('/', function(req, res, next) {
+router.delete('/', securityMiddleware, function(req, res, next) {
     try {
         writeCart([]);
         
@@ -266,5 +275,8 @@ router.delete('/', function(req, res, next) {
         });
     }
 });
+
+
+
 
 module.exports = router;

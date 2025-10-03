@@ -12,5 +12,11 @@
     "quantity": 5,
     "addedAt": "2025-10-03T12:29:52.945Z",
     "updatedAt": "2025-10-03T12:30:13.671Z"
+  },
+  {
+    "id": 3,
+    "productId": 7,
+    "quantity": 1,
+    "addedAt": "2025-10-03T12:33:16.164Z"
   }
 ]
