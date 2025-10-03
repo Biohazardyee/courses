@@ -18,5 +18,11 @@
     "productId": 7,
     "quantity": 1,
     "addedAt": "2025-10-03T12:33:16.164Z"
+  },
+  {
+    "id": 4,
+    "productId": 8,
+    "quantity": 1,
+    "addedAt": "2025-10-03T14:24:17.795Z"
   }
 ]

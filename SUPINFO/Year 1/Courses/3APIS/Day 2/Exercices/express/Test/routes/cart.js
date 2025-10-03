@@ -7,7 +7,7 @@ const CART_FILE = path.join(__dirname, '../data/cart.json');
 const PRODUCTS_FILE = path.join(__dirname, '../data/products.json');
 
 const securityMiddleware = (req, res, next) => {
-    if (req.headers['value'] === 'user') {
+    if (req.headers['value'] === 'user' || req.headers['value'] === 'admin') {
         next();
     } else {
         res.status(403).json({ success: false, error: 'Forbidden' });

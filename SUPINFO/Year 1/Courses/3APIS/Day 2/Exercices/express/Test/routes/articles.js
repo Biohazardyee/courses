@@ -6,7 +6,7 @@ var path = require('path');
 const PRODUCTS_FILE = path.join(__dirname, '../data/products.json');
 
 const securityMiddleware = (req, res, next) => {
-    if (req.headers['value'] === 'user') {
+    if (req.headers['value'] === 'user' || req.headers['value'] === 'admin') {
         next();
     } else {
         res.status(403).json({ success: false, error: 'Forbidden' });
@@ -156,7 +156,7 @@ router.post('/', adminMiddleware, function (req, res, next) {
 });
 
 // PUT /products/:id - Update product by ID
-router.put('/:id', securityMiddleware, function (req, res, next) {
+router.put('/:id', adminMiddleware, function (req, res, next) {
     try {
         const productId = parseInt(req.params.id);
         const { name, price } = req.body;

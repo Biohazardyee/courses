@@ -13,12 +13,9 @@ Server: `http://localhost:3000`
 
 ## 🔒 Authentication
 
-**Required Header for ALL requests:**
-```
-value: user
-```
-
-**Note:** Some endpoints may require admin privileges. If you receive a 403 Forbidden response with proper authentication, you may need admin access.
+**Required Headers:**
+- **User access:** `value: user`
+- **Admin access:** `value: admin` (can do everything users can + admin operations)
 
 ---
 
@@ -26,37 +23,38 @@ value: user
 
 | Method | URL             | Body                                   | Description         | Access Level |
 | ------ | --------------- | -------------------------------------- | ------------------- | ------------ |
-| GET    | `/articles`     | -                                      | Get all products    | User         |
-| GET    | `/articles/:id` | -                                      | Get single product  | User         |
-| POST   | `/articles`     | `{"name": "Product", "price": 99.99}`  | Create product      | Admin*       |
-| PUT    | `/articles/:id` | `{"name": "Updated", "price": 129.99}` | Update product      | Admin*       |
-| DELETE | `/articles/:id` | -                                      | Delete product      | Admin*       |
-| DELETE | `/articles`     | -                                      | Delete all products | Admin*       |
+| GET    | `/articles`     | -                                      | Get all products    | User/Admin   |
+| GET    | `/articles/:id` | -                                      | Get single product  | User/Admin   |
+| POST   | `/articles`     | `{"name": "Product", "price": 99.99}`  | Create product      | Admin only   |
+| PUT    | `/articles/:id` | `{"name": "Updated", "price": 129.99}` | Update product      | Admin only   |
+| DELETE | `/articles/:id` | -                                      | Delete product      | Admin only   |
+| DELETE | `/articles`     | -                                      | Delete all products | Admin only   |
 
 ## 🛒 Cart (`/cart`)
 
 | Method | URL         | Body                              | Description            | Access Level |
 | ------ | ----------- | --------------------------------- | ---------------------- | ------------ |
-| GET    | `/cart`     | -                                 | View cart with balance | User         |
-| POST   | `/cart`     | `{"productId": 1, "quantity": 2}` | Add to cart            | User         |
-| PUT    | `/cart/:id` | `{"quantity": 5}`                 | Update cart item       | User         |
-| DELETE | `/cart/:id` | -                                 | Remove cart item       | User         |
-| DELETE | `/cart`     | -                                 | Clear cart             | User         |
-
-**\*Admin endpoints:** These operations modify product data and may require additional admin privileges depending on security middleware configuration.
+| GET    | `/cart`     | -                                 | View cart with balance | User/Admin   |
+| POST   | `/cart`     | `{"productId": 1, "quantity": 2}` | Add to cart            | User/Admin   |
+| PUT    | `/cart/:id` | `{"quantity": 5}`                 | Update cart item       | User/Admin   |
+| DELETE | `/cart/:id` | -                                 | Remove cart item       | User/Admin   |
+| DELETE | `/cart`     | -                                 | Clear cart             | User/Admin   |
 
 ---
 
 ## Postman Headers
 
-**For all requests:**
-
+**For user requests:**
 ```
 value: user
 ```
 
-**For POST/PUT requests, also add:**
+**For admin requests:**
+```
+value: admin
+```
 
+**For POST/PUT requests, also add:**
 ```
 Content-Type: application/json
 ```
@@ -70,8 +68,8 @@ Content-Type: application/json
 
 ## Error Responses
 
-- `403`: Missing `value: user` header or insufficient admin privileges
+- `403`: Missing authentication header or insufficient privileges
+  - Use `value: user` for basic access
+  - Use `value: admin` for product management
 - `400`: Invalid data
 - `404`: Product/item not found
-
-**Note:** Product creation, modification, and deletion operations (marked with *) may require admin access beyond the basic user authentication.
