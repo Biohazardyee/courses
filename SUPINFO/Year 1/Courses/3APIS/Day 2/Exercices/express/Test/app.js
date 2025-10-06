@@ -6,6 +6,7 @@ var logger = require('morgan');
 require('dotenv').config();
 
 var loginRouter = require('./routes/login');
+var registerRouter = require('./routes/register')
 var articlesRouter = require('./routes/articles');
 var cartRouter = require('./routes/cart');
 const authMiddleware = require('./middleware/auth');
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Public routes (no authentication required)
 app.use('/login', loginRouter);
+app.use('/register', registerRouter);
 
 // Apply auth middleware to protect all routes below this point
 app.use(authMiddleware);
