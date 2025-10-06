@@ -3,7 +3,6 @@ var express = require('express')
 var router = express.Router()
 var fs = require('fs')
 var path = require('path');
-const { json } = require('stream/consumers');
 
 const DATA_FILE = path.join(__dirname, '../data/data.json');
 

@@ -1,6 +1,6 @@
-# E-Commerce API Documentation
+# E-Commerce API with JWT Authentication
 
-Express.js API for managing products and shopping cart with security middleware.
+Express.js API for managing products and shopping cart with JWT-based authentication and bcrypt password hashing.
 
 ## Setup
 
@@ -11,65 +11,146 @@ npm start
 
 Server: `http://localhost:3000`
 
-## 🔒 Authentication
+## � Authentication System
 
-**Required Headers:**
-- **User access:** `value: user`
-- **Admin access:** `value: admin` (can do everything users can + admin operations)
+This API uses **JWT (JSON Web Tokens)** for authentication with bcrypt password hashing.
 
----
+### Test Users
 
-## 📦 Products (`/articles`)
-
-| Method | URL             | Body                                   | Description         | Access Level |
-| ------ | --------------- | -------------------------------------- | ------------------- | ------------ |
-| GET    | `/articles`     | -                                      | Get all products    | User/Admin   |
-| GET    | `/articles/:id` | -                                      | Get single product  | User/Admin   |
-| POST   | `/articles`     | `{"name": "Product", "price": 99.99}`  | Create product      | Admin only   |
-| PUT    | `/articles/:id` | `{"name": "Updated", "price": 129.99}` | Update product      | Admin only   |
-| DELETE | `/articles/:id` | -                                      | Delete product      | Admin only   |
-| DELETE | `/articles`     | -                                      | Delete all products | Admin only   |
-
-## 🛒 Cart (`/cart`)
-
-| Method | URL         | Body                              | Description            | Access Level |
-| ------ | ----------- | --------------------------------- | ---------------------- | ------------ |
-| GET    | `/cart`     | -                                 | View cart with balance | User/Admin   |
-| POST   | `/cart`     | `{"productId": 1, "quantity": 2}` | Add to cart            | User/Admin   |
-| PUT    | `/cart/:id` | `{"quantity": 5}`                 | Update cart item       | User/Admin   |
-| DELETE | `/cart/:id` | -                                 | Remove cart item       | User/Admin   |
-| DELETE | `/cart`     | -                                 | Clear cart             | User/Admin   |
+| Email               | Password      | Roles       |
+| ------------------- | ------------- | ----------- |
+| `admin@example.com` | `password123` | admin, user |
+| `user@example.com`  | `password123` | user        |
 
 ---
 
-## Postman Headers
+## 🔑 Authentication Flow
 
-**For user requests:**
-```
-value: user
-```
+### Step 1: Login to get JWT Token
 
-**For admin requests:**
-```
-value: admin
-```
+**POST** `/login`
 
-**For POST/PUT requests, also add:**
+**Headers:**
+
 ```
 Content-Type: application/json
 ```
 
-## Quick Test Flow
+**Body:**
 
-1. `POST /articles` - Create a product
-2. `GET /articles` - Verify product exists
-3. `POST /cart` - Add product to cart (use productId from step 1)
-4. `GET /cart` - View cart with calculated balance
+```json
+{
+  "email": "admin@example.com",
+  "password": "password123"
+}
+```
 
-## Error Responses
+**Success Response:**
 
-- `403`: Missing authentication header or insufficient privileges
-  - Use `value: user` for basic access
-  - Use `value: admin` for product management
-- `400`: Invalid data
-- `404`: Product/item not found
+```json
+{
+  "success": true,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "user": {
+    "id": 1,
+    "email": "admin@example.com",
+    "roles": ["admin", "user"]
+  }
+}
+```
+
+### Step 2: Use JWT Token for Protected Routes
+
+**Headers for all protected routes:**
+
+```
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+Content-Type: application/json
+```
+
+⚠️ **Important:** Include "Bearer " before your token with a space!
+
+---
+
+## 📦 Products (`/articles`) - Protected Routes
+
+| Method | URL             | Body                                   | Description         | Required Role |
+| ------ | --------------- | -------------------------------------- | ------------------- | ------------- |
+| GET    | `/articles`     | -                                      | Get all products    | user          |
+| GET    | `/articles/:id` | -                                      | Get single product  | user          |
+| POST   | `/articles`     | `{"name": "Product", "price": 99.99}`  | Create product      | admin         |
+| PUT    | `/articles/:id` | `{"name": "Updated", "price": 129.99}` | Update product      | admin         |
+| DELETE | `/articles/:id` | -                                      | Delete product      | admin         |
+| DELETE | `/articles`     | -                                      | Delete all products | admin         |
+
+## 🛒 Cart (`/cart`) - Protected Routes
+
+| Method | URL         | Body                              | Description            | Required Role |
+| ------ | ----------- | --------------------------------- | ---------------------- | ------------- |
+| GET    | `/cart`     | -                                 | View cart with balance | user          |
+| POST   | `/cart`     | `{"productId": 1, "quantity": 2}` | Add to cart            | user          |
+| PUT    | `/cart/:id` | `{"quantity": 5}`                 | Update cart item       | user          |
+| DELETE | `/cart/:id` | -                                 | Remove cart item       | user          |
+| DELETE | `/cart`     | -                                 | Clear cart             | user          |
+
+---
+
+## 🧪 Testing with Postman
+
+### Complete Test Flow
+
+1. **Login as Admin**
+
+   - POST `/login` with admin credentials
+   - Copy the JWT token from response
+
+2. **Create a Product** (Admin only)
+
+   - POST `/articles`
+   - Headers: `Authorization: Bearer YOUR_TOKEN`, `Content-Type: application/json`
+   - Body: `{"name": "Test Product", "price": 29.99}`
+
+3. **View All Products**
+
+   - GET `/articles`
+   - Headers: `Authorization: Bearer YOUR_TOKEN`
+
+4. **Add Product to Cart**
+
+   - POST `/cart`
+   - Headers: `Authorization: Bearer YOUR_TOKEN`, `Content-Type: application/json`
+   - Body: `{"productId": 1, "quantity": 2}`
+
+5. **View Cart with Balance**
+   - GET `/cart`
+   - Headers: `Authorization: Bearer YOUR_TOKEN`
+
+### Testing Authentication Errors
+
+- **No token:** Access any protected route without Authorization header
+- **Invalid token:** Use malformed or expired token
+- **Wrong format:** Use token without "Bearer " prefix
+- **Wrong credentials:** Login with incorrect email/password
+
+---
+
+## 🚨 Error Responses
+
+| Status | Error                                       | Cause                                  |
+| ------ | ------------------------------------------- | -------------------------------------- |
+| 401    | `Authorization header missing or malformed` | Missing token or wrong format          |
+| 401    | `Invalid email or password`                 | Wrong login credentials                |
+| 403    | `Invalid password or email credentials`     | Password doesn't match                 |
+| 403    | `Insufficient privileges`                   | User role can't access admin endpoints |
+| 404    | Product/item not found                      | Invalid ID in URL                      |
+| 500    | Server error                                | Internal server error                  |
+
+---
+
+## 🔧 Development Notes
+
+- **Environment Variables:** JWT secret stored in `.env` file
+- **Password Security:** Bcrypt with salt rounds = 10
+- **Token Format:** Bearer token in Authorization header
+- **Route Protection:** Middleware applied after login route
+- **User Storage:** File-based JSON storage (`data/users.json`)
