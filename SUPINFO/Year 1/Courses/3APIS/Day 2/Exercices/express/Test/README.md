@@ -1,8 +1,16 @@
 # E-Commerce API with JWT Authentication
 
-Express.js API for managing products and shopping cart with JWT-based authentication and bcrypt password hashing.
+Express.js API for managing products and shopping cart with JWT-based authentication, bcrypt password hashing, and MongoDB Atlas database.
 
-## Setup
+## 🚀 Setup
+
+### Prerequisites
+
+- Node.js installed
+- MongoDB Atlas account
+- Environment variables configured
+
+### Installation
 
 ```bash
 npm install
@@ -10,6 +18,24 @@ npm start
 ```
 
 Server: `http://localhost:3000`
+
+### Environment Configuration
+
+Create a `.env` file in the project root:
+
+```env
+JWT_SECRET=your_jwt_secret_here
+MongoDBConnection=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/databasename
+```
+
+**MongoDB Atlas Setup:**
+
+1. Create a free MongoDB Atlas account at [mongodb.com/atlas](https://mongodb.com/atlas)
+2. Create a new cluster (M0 tier is free)
+3. Create a database user with read/write permissions
+4. Get your connection string from "Connect" → "Connect your application"
+5. Replace `<username>`, `<password>`, and `<databasename>` in your connection string
+6. Add the connection string to your `.env` file
 
 ## � Authentication System
 
@@ -24,9 +50,52 @@ This API uses **JWT (JSON Web Tokens)** for authentication with bcrypt password 
 
 ---
 
+## � User Registration
+
+### Register New User
+
+**POST** `/register`
+
+**Headers:**
+
+```
+Content-Type: application/json
+```
+
+**Body:**
+
+```json
+{
+  "email": "newuser@example.com",
+  "password": "securepassword123"
+}
+```
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Added user",
+  "data": "User n°507f1f77bcf86cd799439011, email: newuser@example.com with roles: user was created"
+}
+```
+
+**Validation Requirements:**
+
+- Email must be unique and valid format
+- Password must be at least 8 characters long
+- Both fields are required
+
+---
+
 ## 🔑 Authentication Flow
 
-### Step 1: Login to get JWT Token
+### Step 1: Register a New User (Optional)
+
+**POST** `/register` with user details (see User Registration section above)
+
+### Step 2: Login to get JWT Token
 
 **POST** `/login`
 
@@ -52,14 +121,14 @@ Content-Type: application/json
   "success": true,
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
   "user": {
-    "id": 1,
+    "id": "507f1f77bcf86cd799439011",
     "email": "admin@example.com",
     "roles": ["admin", "user"]
   }
 }
 ```
 
-### Step 2: Use JWT Token for Protected Routes
+### Step 3: Use JWT Token for Protected Routes
 
 **Headers for all protected routes:**
 
@@ -99,29 +168,35 @@ Content-Type: application/json
 
 ### Complete Test Flow
 
-1. **Login as Admin**
+1. **Register a New User** (Optional)
 
-   - POST `/login` with admin credentials
+   - POST `/register`
+   - Headers: `Content-Type: application/json`
+   - Body: `{"email": "testuser@example.com", "password": "password123"}`
+
+2. **Login as Admin (or your new user)**
+
+   - POST `/login` with admin credentials or your new user
    - Copy the JWT token from response
 
-2. **Create a Product** (Admin only)
+3. **Create a Product** (Admin only)
 
    - POST `/articles`
    - Headers: `Authorization: Bearer YOUR_TOKEN`, `Content-Type: application/json`
    - Body: `{"name": "Test Product", "price": 29.99}`
 
-3. **View All Products**
+4. **View All Products**
 
    - GET `/articles`
    - Headers: `Authorization: Bearer YOUR_TOKEN`
 
-4. **Add Product to Cart**
+5. **Add Product to Cart**
 
    - POST `/cart`
    - Headers: `Authorization: Bearer YOUR_TOKEN`, `Content-Type: application/json`
    - Body: `{"productId": 1, "quantity": 2}`
 
-5. **View Cart with Balance**
+6. **View Cart with Balance**
    - GET `/cart`
    - Headers: `Authorization: Bearer YOUR_TOKEN`
 
@@ -149,8 +224,15 @@ Content-Type: application/json
 
 ## 🔧 Development Notes
 
-- **Environment Variables:** JWT secret stored in `.env` file
+- **Database:** MongoDB Atlas cloud database with Mongoose ODM
+- **Environment Variables:** JWT secret and MongoDB connection string stored in `.env` file
 - **Password Security:** Bcrypt with salt rounds = 10
 - **Token Format:** Bearer token in Authorization header
-- **Route Protection:** Middleware applied after login route
-- **User Storage:** File-based JSON storage (`data/users.json`)
+- **Route Protection:** Middleware applied after login/register routes
+- **User Storage:** MongoDB Atlas with mongoose schema validation
+- **Schema Validation:**
+  - Email: required, unique, lowercase, valid format
+  - Password: required, minimum 8 characters, bcrypt hashed
+  - Roles: array with default value ['user']
+  - Timestamps: automatic createdAt/updatedAt fields
+- **Database Connection:** Automatic connection on app startup with success/error logging

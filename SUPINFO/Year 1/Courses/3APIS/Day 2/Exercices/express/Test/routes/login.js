@@ -1,19 +1,15 @@
 var express = require('express');
 var router = express.Router();
-const fs = require('fs')
-const path = require('path')
 const bcrypt = require('bcrypt')
 const jsonwebtoken = require('jsonwebtoken')
-
-const USER_FILE = path.join(__dirname, '../data/users.json')
+const User = require('../config/database');
 
 router.post('/', async function (req, res, next) {
     try {
-        const users = JSON.parse(fs.readFileSync(USER_FILE, 'utf-8'))
 
         const { email, password } = req.body;
 
-        const user = users.find(u => u.email === email);
+        const user = await User.findOne({ email })
 
         if (!user) {
             return res.status(401).json({
@@ -26,7 +22,7 @@ router.post('/', async function (req, res, next) {
 
         if (isValidPassword) {
             const token = jsonwebtoken.sign({
-                userId: user.id,
+                userId: user._id,
                 email: user.email,
                 roles: user.roles
             },
@@ -36,20 +32,18 @@ router.post('/', async function (req, res, next) {
                 success: true,
                 token: token,
                 user: {
-                    id: user.id,
+                    id: user._id,
                     email: user.email,
                     roles: user.roles
                 }
             })
         }
         else {
-            return res.status(403).json({
+            return res.status(401).json({
                 success: false,
                 message: "Invalid password or email credentials"
             })
         }
-
-
     }
     catch (error) {
         return res.status(500).json({

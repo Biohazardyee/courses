@@ -22,7 +22,7 @@ function JWTmiddleware(req, res, next) {
             next();
         }
         else {
-            res.status(403).json({
+            res.status(401).json({
                 success: false,
                 error: "Token doesn't match"
             })

@@ -5,10 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 require('dotenv').config();
 
+require('./config/database'); 
+
 var loginRouter = require('./routes/login');
 var registerRouter = require('./routes/register')
 var articlesRouter = require('./routes/articles');
 var cartRouter = require('./routes/cart');
+
 const authMiddleware = require('./middleware/auth');
 
 var app = express();
