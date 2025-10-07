@@ -148,3 +148,108 @@ And with that multiple libraries that can be used to assert of use another way t
     - Jest, as a test framework, comes with its own set of matchers for making assertions. These matchers are built-in and cover a wide range of scenarios, simplifying the testing process.
 - Sinon
     - While primarily known as a mocking library, Sinon also provides a set of assertion functions that work well with other testing libraries. It is often used for creating spies, stubs, and mocks in tests.
+
+### API Testing 
+
+Testing APIs involves a different set of considerations compared to unit testing. 
+
+API testing ensures that the exposed endpoints of your web service or application work as expected, handle various inputs correctly, and return the intended results. 
+
+There are different types of API tests, and you can use various tools and libraries to perform them.
+
+Supertest is a popular library for testing HTTP assertions in JavaScript applications, particularly in the context of Node.js. 
+
+Its primary use case lies in simplifying the testing of HTTP requests and responses, especially when working with web servers or APIs. 
+
+### API Endpoints Testing
+
+Supertest is commonly used to test API endpoints. 
+
+It allows developers to make HTTP requests (GET, POST, PUT, DELETE, etc.) to specific API routes and assert the responses. 
+
+This ensures that the API endpoints behave as expected under different scenarios.
+
+### Express.js Testing
+
+When working with Express.js, Supertest integrates seamlessly with Express applications. 
+
+It simplifies the process of sending requests to your Express server and validating the responses. 
+
+This is particularly useful for testing route handlers and middleware.
+
+### Integration Testing
+
+Supertest facilitates integration testing by allowing you to make actual HTTP requests to your application, providing a more realistic testing scenario. 
+
+It's valuable for ensuring that different components of your application work together as expected.
+
+### Asynchronous Testing
+
+Since HTTP requests are inherently asynchronous, Supertest works well with asynchronous testing frameworks like Mocha, Jest, or Ava. 
+
+It supports asynchronous assertions and provides mechanisms for handling the completion of requests.
+
+### Response Validation
+
+Supertest enables thorough validation of HTTP responses. You can assert on status codes, headers, and response bodies. 
+
+This is crucial for ensuring that your API adheres to the specified contract and returns the expected data.
+
+### Chaining Requests
+
+Supertest allows you to chain multiple requests together, making it easy to simulate complex scenarios or user workflows that involve sequential HTTP requests. 
+
+This is particularly beneficial for testing APIs with authentication or multi-step processes.
+
+### Testing Error Handling
+
+Supertest can be used to test error handling in your application. 
+
+By intentionally triggering error responses from your API, you can verify that the error-handling mechanisms are working correctly and that appropriate status codes and error messages are returned.
+
+Let’s install supertest ! As always, and you should know the drill now
+
+```bash
+npm install supertest --save-dev
+```
+
+The setup is almost the same in your test files
+
+```javascript
+const assert = require('assert');
+const supertest = require('supertest');
+const app = require('./app'); // Your Express app
+
+describe('Router', () => {
+    it('GET /users', async () => {
+        await supertest(app)
+            .get('/users')
+            .expect(200)
+            .expect('Content-Type', /json/)
+            .expect((res) => {
+                assert(Array.isArray(res.body), 'Response should be an array');
+            });
+    });
+})
+```
+
+Let's explain the few lines above
+
+- First we pass the app to supertest then ask for the users endpoint.
+- Then we expect to have an http status code 200 (so a success)
+- We get the data from the response inside a promise
+- We validate the content of the response
+
+Same as before try to think of some tests you want to handle with your API
+
+- a 200/success case: everything work as expected
+- a 404 case: the endpoint does not exist
+- a 400 case: you are missing some parameters or bad validation
+- a 500 case: your call is crashing the server
+
+Working with complexes responses can be quite tedious if you rely only on the pure assert solution provided by Node.js. You can also use
+
+- chai.js
+- sinon.js
+- or others libs
+
