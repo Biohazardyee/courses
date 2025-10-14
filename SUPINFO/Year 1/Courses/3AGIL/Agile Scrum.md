@@ -172,3 +172,63 @@ A company that works in waterfall is a construction company. Their process would
 8. Validation/recette: The company conducts a final inspection of the building to ensure it meets all requirements and regulations.
 9. Maintenance: The company provides maintenance and repairs for the building as needed.
 
+## Scrum Framework
+
+### Introduction to Scrum
+
+Framework: set of guidelines or a structure that helps to organize and guide the work of a particular system or process.
+
+Defined in The Scrum Guide by Ken Schwaber and Jeff Sutherland.
+
+Better way of team collaboration for solving complex problems.
+
+Scrum is defined by its Roles, Events and Artifacts within a bounded framework.
+
+As well as its three pillars: Transparency, Inspection and Adaptation. and five values: Commitment, Courage, Focus, Openness and Respect.
+
+### Scrum Roles
+
+- Scrum Master: 
+    - Facilitates the scrum process
+    - Ensure that the scrum process is followed
+    - Helps the team to stay focused on their goals and on track
+    - Removes obstacles that may be preventing the team from making progress
+    - Ensure that the team is following the scrum values and principles
+
+- Product Owner:
+    - Represents the interests of the stakeholders
+    - Define the goals and priorities of the project
+    - Create and maintain the product backlog
+    - Communicates the vision and goals of the project to the team
+    - Ensures that the team is working on the most important tasks
+
+
+- Development Team:
+    - Delivers working software at the end of each sprint
+    - Self-organizing and self-managing
+    - Made up of cross-functional members with the skills and expertise needed to complete the work
+    - Responsible for completing all of the tasks required to deliver a working product
+
+    ### Scrum Ceremonies
+
+- Sprint Planning:
+    - What will we do
+- Daily Scrum:
+    - What are we doing
+- Sprint Review:
+    - What did we do
+- Sprint Retrospective: 
+    - How can we improve, how did we do
+
+### Scrum Artifacts
+
+- Product Backlog
+    - Product Goal - the target the team aims to achieve
+- Sprint Backlog
+    - Sprint Goal - the target for the sprint
+- Increments
+    - Definition of Done - the description of waht it takes for an increment to be consdidered "done"
+
+![alt text](imgs/overview_scrum.png)
+
+
