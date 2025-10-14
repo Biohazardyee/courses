@@ -109,13 +109,15 @@ For each Agile Principle, take some time to reflect on thme and explain its adva
    - Client: produit final de qualité, happy happy happy ![alt text](imgs/funny-jump.gif)
 
 10. Simplicity—the art of maximizing the amount of work not done—is essential.
+
     - Company: moins de travail, moins de besoin humain, mois de frais + de profit
     - Team: moins de travail a faire, travail plus efficace
     - Individual: sensation d'avoir moins de charge, plus d'efficacité
     - Client: Solution simple, vie simple
 
 11. Best architectures, requirements, and designs emerge from self-organizing teams.
-    - Company: moins de sous-traitances car pas de sous-traitance 
+
+    - Company: moins de sous-traitances car pas de sous-traitance
     - Team: equipe soudée, reste dans un "cercle fermé"
     - Individual: veux rester en poste et restera meme apres la fin du dev
     - Client: fini avec un produit cool :thumbs-up:, plus de trust, meilleure communication aussi
@@ -125,3 +127,48 @@ For each Agile Principle, take some time to reflect on thme and explain its adva
     - Team: permet de recuperer feedback constant et repondre aux besoins
     - Individual: devenir meilleur, etre plus confiant se sentir ecouter
     - Client: aura un produit encore meilleur
+
+### Mayden Case Study
+
+What challenges did the company face? What impact did it have on their business?
+
+- The company faced challenges because they had to adapt to their client needs, which were changing frequently, and they were using a waterfall envrionment, which was not flexible enough to accommodate these changes. "Our best-laid plans were continually hijacked for short-priority developments. The end result was that we reached a ppint where we had started lots of things but finished very little."
+
+There was an illusion of progress. Projects were assigned to only one person, thus taking month to finish. There was no team environment and each individual was expert in their own field, some had large backlogs of work, while other had insuficient work. In general, teams were bored, wxith low morale and motivation, created by these individual silos.
+
+What opportunity presented itself to the company? How was it embraced?
+
+The company had a new project with a brand new technology. The higher ups saw this as an opportunity to try a new approach, and they decided to use Agile Scrum for this project. The company has fully commited to it, giving the team training and coaching, and allowing them to self-organize.
+
+What was the team reaction?
+
+Some team members already had experience with Agile and were the first to introduce it to their colleagues. They all saw the benefits of Agile and were excited to try it out.
+
+What are the key elements to success in this transition?
+
+1. The whole company has to commit to the change, from the top to the bottom.
+2. The team has to be trained and coached in Agile.
+3. Avoid falling into bad habits early on
+
+Can you identify 3 types of companies for which Scrum wouldn't apply as easily?
+
+1. Construction companies, they can't change the design of a building once it's been started.
+2. Companies with regulated environment (Boeing, Lockheed Martin, etc.), they have to follow strict guidelines and regulations.
+3. Companies with very large teams, it can be difficult to coordinate and communicate effectively.
+
+What would be agood definition of "Waterfall" according to you ? Pick a company that you belive works in waterfall and try to outline and design their processes.
+
+Waterfall is a linear and sequential approach to project management and software development, where each phase must be completed before the next begins. It is often inflexible and can lead to challenges if requirements change.
+
+A company that works in waterfall is a construction company. Their process would be:
+
+1. Expression des besoins: The client expresses their needs and requirements for the building.
+2. Specification: The company creates a detailed specification of the building, including design, materials, and budget.
+3. Conception générale: The company creates a general design of the building, including floor plans and elevations.
+4. Conception détaillée: The company creates a detailed design of the building, including structural engineerings.
+5. Réalisation: The company begins construction of the building.
+6. Tests unitaires: The company tests individual components of the building, such as electrical systems and plumbing.
+7. Tests d'intégration: The company tests the integration of all components of the building.
+8. Validation/recette: The company conducts a final inspection of the building to ensure it meets all requirements and regulations.
+9. Maintenance: The company provides maintenance and repairs for the building as needed.
+
