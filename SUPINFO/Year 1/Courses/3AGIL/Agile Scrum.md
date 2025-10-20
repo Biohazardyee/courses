@@ -188,47 +188,159 @@ As well as its three pillars: Transparency, Inspection and Adaptation. and five 
 
 ### Scrum Roles
 
-- Scrum Master: 
-    - Facilitates the scrum process
-    - Ensure that the scrum process is followed
-    - Helps the team to stay focused on their goals and on track
-    - Removes obstacles that may be preventing the team from making progress
-    - Ensure that the team is following the scrum values and principles
+- Scrum Master:
+
+  - Facilitates the scrum process
+  - Ensure that the scrum process is followed
+  - Helps the team to stay focused on their goals and on track
+  - Removes obstacles that may be preventing the team from making progress
+  - Ensure that the team is following the scrum values and principles
 
 - Product Owner:
-    - Represents the interests of the stakeholders
-    - Define the goals and priorities of the project
-    - Create and maintain the product backlog
-    - Communicates the vision and goals of the project to the team
-    - Ensures that the team is working on the most important tasks
 
+  - Represents the interests of the stakeholders
+  - Define the goals and priorities of the project
+  - Create and maintain the product backlog
+  - Communicates the vision and goals of the project to the team
+  - Ensures that the team is working on the most important tasks
 
 - Development Team:
-    - Delivers working software at the end of each sprint
-    - Self-organizing and self-managing
-    - Made up of cross-functional members with the skills and expertise needed to complete the work
-    - Responsible for completing all of the tasks required to deliver a working product
 
-    ### Scrum Ceremonies
+  - Delivers working software at the end of each sprint
+  - Self-organizing and self-managing
+  - Made up of cross-functional members with the skills and expertise needed to complete the work
+  - Responsible for completing all of the tasks required to deliver a working product
+
+  ### Scrum Ceremonies
 
 - Sprint Planning:
-    - What will we do
+  - What will we do
 - Daily Scrum:
-    - What are we doing
+  - What are we doing
 - Sprint Review:
-    - What did we do
-- Sprint Retrospective: 
-    - How can we improve, how did we do
+  - What did we do
+- Sprint Retrospective:
+  - How can we improve, how did we do
 
 ### Scrum Artifacts
 
 - Product Backlog
-    - Product Goal - the target the team aims to achieve
+  - Product Goal - the target the team aims to achieve
 - Sprint Backlog
-    - Sprint Goal - the target for the sprint
+  - Sprint Goal - the target for the sprint
 - Increments
-    - Definition of Done - the description of waht it takes for an increment to be consdidered "done"
+  - Definition of Done - the description of waht it takes for an increment to be consdidered "done"
 
 ![alt text](imgs/overview_scrum.png)
 
+## Product & Planning
+
+### Product Ownership
+
+“Defining, prioritizing, and communicating the features and capabilities of a product to ensure that it meets the needs and expectations of customers and stakeholders.”
+
+Critical in agile development methodologies because it helps to ensure that the product is delivered on time, to a high quality, and with maximum value to the customer.
+
+### Role of a Product Owner
+
+The product owner is responsible for representing the interests of the customer and setting the strategic direction for the product.
+This includes :
+
+- defining the product vision, roadmap, and release plan,
+- prioritizing the product backlog to ensure that the most valuable features are delivered first.
+
+### Responsibilities of a Product Owner
+
+- Define and communicate the product vision
+- Prioritize and manage the product backlog
+- Collaborate with cross-functional teams
+- Communicate progress and updates to stakeholders
+
+### Product Owner vs Project Manager
+
+- Product owners are responsible for defining the product vision and strategy, and for prioritizing and managing the product backlog.
+- Project managers are responsible for planning and executing projects, and for managing resources and budgets to ensure that projects are completed on time and within scope.
+- Both product owners and project managers need strong leadership, communication, and problem-solving skills, but they have different areas of focus and responsibility.
+
+## Product vision & Strategy
+
+### Defining the Product Vision
+
+“A product vision provides a long-term direction for the product and helps to align stakeholders and cross-functional teams around a common goal.”
+
+- Steps for defining the product vision:
+- Identify the target market and customer needs
+- Determine the value proposition
+- Define the product vision statement
+
+### Product Roadmap
+
+A product roadmap is a high-level overview of the features and capabilities that will be included in the product over time. It helps to align stakeholders and cross-functional teams around a common vision and provides a clear direction for development.
+
+Steps for developing a product roadmap:
+
+- Define the long-term goals and objectives for the product: What do you want to achieve with the product, and how will it benefit the customer and the business?
+- Break down the goals into smaller, more manageable chunks: Divide the long-term goals into smaller, more achievable objectives that can be accomplished over shorter time periods.
+- Prioritize the objectives: Determine which objectives are most important and should be tackled first, and which can wait for future releases.
+
+### Priorisation
+
+Prioritization is critical in product development because it helps to ensure that the most valuable features are delivered first and that resources are used efficiently.
+Techniques for prioritizing the product backlog:
+
+- Value vs. effort matrix: Plot each feature on a matrix based on its value to the customer and the effort required to implement it. This can help to prioritize features based on their potential impact and feasibility.
+- Kano analysis: This technique involves grouping features into categories based on how they affect customer satisfaction. High-impact features (such as "delighters") should be prioritized over lower-impact features (such as "must-haves").
+- MoSCoW method: This method involves prioritizing features as "must-haves," "should-haves," "could-haves," or "won't-haves" based on their importance and feasibility.
+
+## User Stories & Priorisation
+
+### What are User Stories?
+
+User stories are short, simple descriptions of a feature or capability from the perspective of the user. They are used in agile development methodologies to capture the requirements for a product and to help guide development efforts.
+
+Usual format : As a [user], I want [feature or capability], so that [benefit].
+
+Acceptance criteria: A set of specific, measurable criteria that must be met in order for the user story to be considered complete.
+
+### Benefits of User Stories
+
+- User stories help to focus on the needs and goals of the user, rather than on technical details.
+- User stories facilitate collaboration and communication between product owners, developers, and other stakeholders.
+- User stories provide a flexible and adaptable way to capture and prioritize requirements.
+
+### Tips of writing User Stories
+
+- Make sure the user story is clear and concise.
+- Make sure the user story has a clear value proposition for the user.
+- Make sure the acceptance criteria are specific and measurable.
+- Use examples and scenarios to illustrate the user story.
+- Collaborate with cross-functional teams to ensure that the user story is feasible and can be implemented in the given time frame.
+
+### Definition of Done
+
+Set of specific criteria that must be met in order for a user story or product feature to be considered complete.
+
+List of key components that may be included in the definition of done:
+
+- Code has been reviewed and is of high quality.
+- Unit tests and automated tests have been created and run successfully.
+- User documentation has been created and reviewed.
+- Feature has been tested by the QA team and any issues have been resolved.
+- Feature has been reviewed by the product owner and stakeholders and has received approval for release.
+
+## Minimum Viable Product (MVP)
+
+- The MVP is a product with just enough features to satisfy early customers and provide valuable feedback for future development.
+- It is a way to test a product hypothesis with the least amount of effort and resources.
+- The MVP allows for rapid prototyping and iteration based on customer feedback.
+- The MVP helps to minimize risk by allowing the team to gather valuable data and insights before committing significant resources to a full product.
+- The MVP can help to focus development efforts on the most valuable and necessary features, rather than trying to build everything at once.
+
+### What to include
+
+- Identify the core value proposition
+- Prioritize based on customer needs
+- Consider feasibility
+- Balance risk and reward
+- Gather feedback
 
