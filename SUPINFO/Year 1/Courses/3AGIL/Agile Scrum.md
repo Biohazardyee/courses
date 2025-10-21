@@ -344,3 +344,81 @@ List of key components that may be included in the definition of done:
 - Balance risk and reward
 - Gather feedback
 
+## Kanban & General Considerations
+
+### Kanban
+
+Kanban is a method for managing and improving workflows that was developed by Toyota in the 1950s.
+It is based on the principles of just-in-time (JIT) production
+Aims to increase efficiency and reduce waste by :
+
+- visualizing work
+- limiting work-in-progress
+- continuously improving processes.
+
+### Visualizing Work
+
+Kanban board: A visual representation of the work process, showing the status of each task or item as it moves through the workflow.
+
+- Work-in-progress (WIP) limits: Maximum number of tasks that can be in progress at each stage of the workflow, to prevent overloading and bottlenecking.
+- Pull system: A system in which work is only started when there is capacity to complete it, rather than pushing work through the process regardless of capacity.
+- Continuous improvement: Regular review and optimization of the workflow to identify and address bottlenecks, improve efficiency, and reduce waste.
+
+All in all : Agile best practices
+
+## Lean
+
+Lean is a business philosophy that focuses on maximizing customer value while minimizing waste. It is based on the principles of continuous improvement, respect for people, and a focus on delivering value to the customer.
+
+### Key Components of Lean
+
+- Value stream mapping: Identifying and analyzing the flow of value from the customer's perspective, in order to identify and eliminate waste.
+- Continuous improvement: Regularly identifying and addressing opportunities for improvement in order to increase efficiency and reduce waste.
+- Respect for people: Recognizing the value and potential of all team members and creating an environment that empowers and enables them to contribute.
+- Customer focus: Focusing on delivering value to the customer, and using customer feedback to guide decision-making and improvement efforts.
+
+### Lean Principles
+
+- Define value from the customer's perspective
+- Identify and eliminate waste
+- Create flow in the value stream
+- Use pull systems to trigger production
+- Strive for perfection
+
+### Lean Tools and Techniques
+
+- Value stream mapping
+- Six Sigma
+- Kanban
+- 5S
+- Standardized work
+- Visual management
+- Root cause analysis
+- Kaizen events
+
+| Aspect     | Scrum                                            | Nexus                                 |
+| ---------- | ------------------------------------------------ | ------------------------------------- |
+| Objectif   | Gérer une seule équipe Scrum                     | Coordonner plusieurs équipes Scrum    |
+| Valeurs    | Identiques                                       | Identiques                            |
+| Rôles      | PO, SM, Devs                                     | PO, SM, Devs + Nexus Integration Team |
+| Événements | 5 événements Scrum                               | 5 événements Scrum + variantes Nexus  |
+| Artefacts  | Product Backlog, Sprint Backlog, Increment       | Les mêmes, mais à l’échelle Nexus     |
+| Principe   | Empirisme (Inspection, Adaptation, Transparence) | Idem                                  |
+| Incrément  | Produit livrable d’une équipe                    | Produit intégré de plusieurs équipes  |
+
+## eXtrem Programming
+
+Key component :
+
+- Pair Programming
+- Test-driven development (TDD)
+- Continuous integration
+- Continuous delivery
+- Collective ownership
+- Customer collaboration
+
+### Test-Driven Development (TDD)
+
+- TDD is a software development methodology in which developers write automated tests for new code before writing the code itself.
+- The tests are used to define the desired behavior and requirements for the code, and are run after the code is written to ensure that it is working as expected.
+- To practice TDD, developers follow a specific process called the "test-driven development cycle," which consists of writing a test, running the test and confirming that it fails, writing the code to make the test pass, running the test again to ensure that it passes with the new code, and refactoring the code as needed.
