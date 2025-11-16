@@ -10,9 +10,9 @@ Ludovic
 
 Waterfall: A linear and sequential approach where each phase must be completed before the next begins. It is often inflexible and can lead to challenges if requirements change.
 
-Expression des besoins -> specification -> conception générale -> conception détaillée -> réalisation -> tests unitaires -> tests d'intégration -> validation/recette -> maintenance
+Expression des besoins -> spécification -> conception générale -> conception détaillée -> réalisation -> tests unitaires -> tests d'intégration -> validation/recette -> maintenance
 
-Agile: An iterative and incremental approach that emphasizes flexibility and customer collaboration. Agile allows for changes to be made throughout the development process, accommodating evolving requirements.
+Agile: An iterative and incremental approach that emphasizes flexibility and customer collaboration. Agile allows changes to be made throughout the development process, accommodating evolving requirements.
 
 ## Agile Methodologies
 
@@ -36,9 +36,9 @@ Agile: An iterative and incremental approach that emphasizes flexibility and cus
 9. Continuous attention to technical excellence and good design.
 10. Simplicity—the art of maximizing the amount of work not done—is essential.
 11. Best architectures, requirements, and designs emerge from self-organizing teams.
-12. Regularly, the team reflects on how to become more effective, and adjusts accordingly.
+12. Regularly, the team reflects on how to become more effective and adjusts accordingly.
 
-For each Agile Principle, take some time to reflect on thme and explain its advantages:
+For each Agile principle, take some time to reflect on them and explain their advantages:
 
 - For the company
 - For the team
@@ -47,189 +47,187 @@ For each Agile Principle, take some time to reflect on thme and explain its adva
 
 1. Customer satisfaction by early and continuous delivery of valuable software.
 
-   - Company: gives value to the company, by giving a valuable software fast, gives a good image
-   - Team: their work is valuable, sentiment du travail accompli rapidement
-   - Individual: lié a l'équipe, small tasks, dopamine shots
-   - Customer: a un deliverable rapidement et fonctionnel
+  - Company: Delivers value quickly and improves the company's image.
+  - Team: Feels their work is valuable; sense of accomplishment.
+  - Individual: Works on smaller tasks; frequent wins boost motivation.
+  - Customer: Receives a functional deliverable quickly.
 
-2. Welcome changing requirements, even late in development
+2. Welcome changing requirements, even late in development.
 
-   - Company: Adapatabilité aux demandes de client
-   - Team: Simplifie l'adaptabilité et les changements
-   - Individual: Hassoul le travail il a compté
-   - Client: permet d'adapter ses besoins continuellement en changement
+  - Company: Greater adaptability to customer demands.
+  - Team: Easier to handle changes and pivot when needed.
+  - Individual: Feels their work is meaningful and counted.
+  - Client: Can continuously adapt their needs.
 
 3. Deliver working software frequently (weeks rather than months).
 
-   - Company: Reactivity de la compagnie, + profit + de contrat
-   - Team: Cut down the project in pieces, less stressfull, less discouraging
-   - Individual: Less probe to being late
-   - Client: suivre l'avancé, a un produit rapidement, peut itérer rapidement
+  - Company: Increased responsiveness, more business opportunities.
+  - Team: Breaks the project into smaller pieces; less stress and discouragement.
+  - Individual: Lower risk of falling behind.
+  - Client: Can follow progress and iterate quickly.
 
 4. Close, daily cooperation between business people and developers.
 
-   - Company: comprendre les besoins du client + equipe et avoir une overview
-   - Team: Verifier qu'on est sur la bonne voie
-   - Individual: Retour direct sur son taff
-   - Client: avoir un retour direct sur sa solution, proposer des changements, s'assurer qu'on va dans la bonne voie
+  - Company: Better understanding of customer needs and an overall overview.
+  - Team: Ensures the team is on the right track.
+  - Individual: Direct feedback on their work.
+  - Client: Direct input on the solution, can propose changes, and ensure alignment.
 
 5. Projects are built around motivated individuals, who should be trusted.
 
-   - Company: plus de productivité, pas besoin d'etre derriere les equipes h24, moins d'effort demandé
-   - Team: cohesion d'equipe, motivation, productivité accrue, moins de retard
-   - Individual: bonne ambiance, productivité accrue
-   - Client: client peut faire confiance a l'équipe + companie, cette confiance se reflette sur le client
+  - Company: Greater productivity; less need to micromanage.
+  - Team: Better cohesion, higher motivation, increased productivity, fewer delays.
+  - Individual: Better work atmosphere and higher productivity.
+  - Client: Can trust the team and company, which increases client confidence.
 
 6. Face-to-face conversation is the best form of communication (co-location).
 
-   - Company: contact direct avec les personnels, cohesion entre les manageriales et les equipes de development
-   - Team: communication accrue entre les membres d'equipe, cohesion entre les membres d'equipe
-   - Individual: communication accrue avec les autres, se sent plus important et ecouté
-   - Client: commincation meilleure avec la compagnoe, on s'assure qu'ils ont compris nos besoins, se sent important et ecouté
+  - Company: Direct contact with staff; improved cohesion between management and development teams.
+  - Team: Improved communication and team cohesion.
+  - Individual: Better communication with others; feels valued and heard.
+  - Client: Better communication with the company; clients feel important and heard.
 
 7. Working software is the primary measure of progress.
 
-   - Company: s'assure que ca fonctionne
-   - Team: s'assure que ca marche
-   - Individual: moins de pression
-   - Client: a un produit qui marche a terme
+  - Company: Ensures the product functions.
+  - Team: Verifies that work actually produces value.
+  - Individual: Reduced pressure from unnecessary artifacts.
+  - Client: Receives a functioning product.
 
 8. Sustainable development, able to maintain a constant pace.
 
-   - Company: maintenir et respecter les deadlines, pas de delai, confiance accrue du client, pas d'heure supp a payer, pas de perte d'argent
-   - Team: eviter les crunch meetings, respecter les deadlines
-   - Individual: eviter les sur-menages et un mental breakdown a terme, garder la motivation
-   - Client: avoir un produit fonctionnel a temps
+  - Company: Maintains deadlines, reduces overtime costs, increases client trust.
+  - Team: Avoids crunch periods and respects deadlines.
+  - Individual: Prevents burnout and preserves long-term motivation.
+  - Client: Receives a functional product on time.
 
 9. Continuous attention to technical excellence and good design.
 
-   - Company: renommé pour avoir un produit de qualité, connu pour son savoir faire
-   - Team: lien facile entre membre d'équipe
-   - Individual: happy happy happy, moins de perte de temps, travail propre et bien fait ![alt text](imgs/funny-jump.gif)
-   - Client: produit final de qualité, happy happy happy ![alt text](imgs/funny-jump.gif)
+  - Company: Reputation for high-quality products and expertise.
+  - Team: Easier collaboration between team members.
+  - Individual: Cleaner work, less wasted time, greater satisfaction. ![alt text](imgs/funny-jump.gif)
+  - Client: High-quality final product. ![alt text](imgs/funny-jump.gif)
 
 10. Simplicity—the art of maximizing the amount of work not done—is essential.
 
-    - Company: moins de travail, moins de besoin humain, mois de frais + de profit
-    - Team: moins de travail a faire, travail plus efficace
-    - Individual: sensation d'avoir moins de charge, plus d'efficacité
-    - Client: Solution simple, vie simple
+   - Company: Less work, lower personnel needs, reduced costs, higher profit.
+   - Team: More effective and focused work.
+   - Individual: Lower workload and higher efficiency.
+   - Client: A simple and effective solution.
 
 11. Best architectures, requirements, and designs emerge from self-organizing teams.
 
-    - Company: moins de sous-traitances car pas de sous-traitance
-    - Team: equipe soudée, reste dans un "cercle fermé"
-    - Individual: veux rester en poste et restera meme apres la fin du dev
-    - Client: fini avec un produit cool :thumbs-up:, plus de trust, meilleure communication aussi
+   - Company: Less need for subcontracting.
+   - Team: A cohesive team that stays in a "closed loop".
+   - Individual: More desire to remain in the role, possibly beyond development.
+   - Client: Ends up with a well-designed product, increased trust, and better communication. :thumbs-up:
 
-12. Regularly, the team reflects on how to become more effective, and adjusts accordingly.
-    - Company: + de thune, - de temps perdu, permet de recuperer un feedback constant, et repondre aux besoins
-    - Team: permet de recuperer feedback constant et repondre aux besoins
-    - Individual: devenir meilleur, etre plus confiant se sentir ecouter
-    - Client: aura un produit encore meilleur
+12. Regularly, the team reflects on how to become more effective and adjusts accordingly.
+   - Company: Saves time and money, collects constant feedback, and responds to needs.
+   - Team: Gains continuous feedback and improves processes.
+   - Individual: Becomes better, more confident, and feels heard.
+   - Client: Receives an increasingly better product.
 
 ### Mayden Case Study
 
 What challenges did the company face? What impact did it have on their business?
 
-- The company faced challenges because they had to adapt to their client needs, which were changing frequently, and they were using a waterfall envrionment, which was not flexible enough to accommodate these changes. "Our best-laid plans were continually hijacked for short-priority developments. The end result was that we reached a ppint where we had started lots of things but finished very little."
+- The company faced challenges adapting to frequently changing client needs while using a Waterfall environment, which was not flexible enough. "Our best-laid plans were continually hijacked for short-priority developments. The end result was that we reached a point where we had started lots of things but finished very little."
 
-There was an illusion of progress. Projects were assigned to only one person, thus taking month to finish. There was no team environment and each individual was expert in their own field, some had large backlogs of work, while other had insuficient work. In general, teams were bored, wxith low morale and motivation, created by these individual silos.
+There was an illusion of progress. Projects were assigned to individual contributors, taking months to finish. There was no team environment; each person was an expert in their own field. Some had large backlogs while others had insufficient work. In general, teams were bored, with low morale and motivation created by these individual silos.
 
 What opportunity presented itself to the company? How was it embraced?
 
-The company had a new project with a brand new technology. The higher ups saw this as an opportunity to try a new approach, and they decided to use Agile Scrum for this project. The company has fully commited to it, giving the team training and coaching, and allowing them to self-organize.
+- The company had a new project with a brand-new technology. Management saw this as an opportunity to try a new approach and decided to use Agile Scrum. The company fully committed, providing training and coaching and allowing the team to self-organize.
 
 What was the team reaction?
 
-Some team members already had experience with Agile and were the first to introduce it to their colleagues. They all saw the benefits of Agile and were excited to try it out.
+- Some team members already had Agile experience and introduced it to colleagues. They saw the benefits and were excited to try it.
 
 What are the key elements to success in this transition?
 
-1. The whole company has to commit to the change, from the top to the bottom.
-2. The team has to be trained and coached in Agile.
-3. Avoid falling into bad habits early on
+1. The whole company must commit to the change, from top to bottom.
+2. The team should be trained and coached in Agile.
+3. Avoid falling into bad habits early on.
 
 Can you identify 3 types of companies for which Scrum wouldn't apply as easily?
 
-1. Construction companies, they can't change the design of a building once it's been started.
-2. Companies with regulated environment (Boeing, Lockheed Martin, etc.), they have to follow strict guidelines and regulations.
-3. Companies with very large teams, it can be difficult to coordinate and communicate effectively.
+1. Construction companies, where designs cannot be changed once construction has started.
+2. Companies in highly regulated environments (e.g., aerospace contractors) that must follow strict guidelines.
+3. Organizations with extremely large teams where coordination and communication are difficult.
 
-What would be agood definition of "Waterfall" according to you ? Pick a company that you belive works in waterfall and try to outline and design their processes.
+What would be a good definition of "Waterfall" according to you? Pick a company that you believe works in Waterfall and try to outline and design their processes.
 
-Waterfall is a linear and sequential approach to project management and software development, where each phase must be completed before the next begins. It is often inflexible and can lead to challenges if requirements change.
+- Waterfall is a linear and sequential approach to project management and software development, where each phase must be completed before the next begins. It is often inflexible and can lead to challenges if requirements change.
 
-A company that works in waterfall is a construction company. Their process would be:
+A company that works in Waterfall is a construction company. Their process would be:
 
-1. Expression des besoins: The client expresses their needs and requirements for the building.
-2. Specification: The company creates a detailed specification of the building, including design, materials, and budget.
-3. Conception générale: The company creates a general design of the building, including floor plans and elevations.
-4. Conception détaillée: The company creates a detailed design of the building, including structural engineerings.
-5. Réalisation: The company begins construction of the building.
-6. Tests unitaires: The company tests individual components of the building, such as electrical systems and plumbing.
-7. Tests d'intégration: The company tests the integration of all components of the building.
-8. Validation/recette: The company conducts a final inspection of the building to ensure it meets all requirements and regulations.
-9. Maintenance: The company provides maintenance and repairs for the building as needed.
+1. Expression des besoins: The client expresses needs and requirements.
+2. Spécification: Create a detailed specification, including design, materials, and budget.
+3. Conception générale: Create general design, floor plans, elevations.
+4. Conception détaillée: Create detailed structural and technical designs.
+5. Réalisation: Begin construction.
+6. Tests unitaires: Test individual building components (e.g., electrical systems, plumbing).
+7. Tests d'intégration: Test integration of all components.
+8. Validation/recette: Final inspection to ensure requirements and regulations are met.
+9. Maintenance: Provide maintenance and repairs as needed.
 
 ## Scrum Framework
 
 ### Introduction to Scrum
 
-Framework: set of guidelines or a structure that helps to organize and guide the work of a particular system or process.
+Framework: A set of guidelines or a structure that helps organize and guide the work of a particular system or process.
 
 Defined in The Scrum Guide by Ken Schwaber and Jeff Sutherland.
 
-Better way of team collaboration for solving complex problems.
+A better way for teams to collaborate when solving complex problems.
 
-Scrum is defined by its Roles, Events and Artifacts within a bounded framework.
-
-As well as its three pillars: Transparency, Inspection and Adaptation. and five values: Commitment, Courage, Focus, Openness and Respect.
+Scrum is defined by its Roles, Events, and Artifacts within a bounded framework, as well as its three pillars: Transparency, Inspection, and Adaptation; and five values: Commitment, Courage, Focus, Openness, and Respect.
 
 ### Scrum Roles
 
 - Scrum Master:
 
-  - Facilitates the scrum process
-  - Ensure that the scrum process is followed
-  - Helps the team to stay focused on their goals and on track
-  - Removes obstacles that may be preventing the team from making progress
-  - Ensure that the team is following the scrum values and principles
+  - Facilitates the Scrum process.
+  - Ensures that the Scrum process is followed.
+  - Helps the team stay focused on their goals.
+  - Removes obstacles that prevent progress.
+  - Ensures the team follows Scrum values and principles.
 
 - Product Owner:
 
-  - Represents the interests of the stakeholders
-  - Define the goals and priorities of the project
-  - Create and maintain the product backlog
-  - Communicates the vision and goals of the project to the team
-  - Ensures that the team is working on the most important tasks
+  - Represents the interests of stakeholders.
+  - Defines the goals and priorities of the project.
+  - Creates and maintains the product backlog.
+  - Communicates the vision and goals of the project to the team.
+  - Ensures the team is working on the most important tasks.
 
 - Development Team:
 
-  - Delivers working software at the end of each sprint
-  - Self-organizing and self-managing
-  - Made up of cross-functional members with the skills and expertise needed to complete the work
-  - Responsible for completing all of the tasks required to deliver a working product
+  - Delivers working software at the end of each sprint.
+  - Self-organizing and self-managing.
+  - Cross-functional members with the skills needed to complete the work.
+  - Responsible for completing all tasks required to deliver a working product.
 
-  ### Scrum Ceremonies
+### Scrum Ceremonies
 
 - Sprint Planning:
-  - What will we do
+  - What will we do?
 - Daily Scrum:
-  - What are we doing
+  - What are we doing?
 - Sprint Review:
-  - What did we do
+  - What did we do?
 - Sprint Retrospective:
-  - How can we improve, how did we do
+  - How can we improve? How did we do?
 
 ### Scrum Artifacts
 
 - Product Backlog
-  - Product Goal - the target the team aims to achieve
+  - Product Goal — the target the team aims to achieve
 - Sprint Backlog
-  - Sprint Goal - the target for the sprint
-- Increments
-  - Definition of Done - the description of waht it takes for an increment to be consdidered "done"
+  - Sprint Goal — the target for the sprint
+- Increment
+  - Definition of Done — the description of what it takes for an increment to be considered "done"
 
 ![alt text](imgs/overview_scrum.png)
 
@@ -237,153 +235,152 @@ As well as its three pillars: Transparency, Inspection and Adaptation. and five 
 
 ### Product Ownership
 
-“Defining, prioritizing, and communicating the features and capabilities of a product to ensure that it meets the needs and expectations of customers and stakeholders.”
+"Defining, prioritizing, and communicating the features and capabilities of a product to ensure that it meets the needs and expectations of customers and stakeholders."
 
-Critical in agile development methodologies because it helps to ensure that the product is delivered on time, to a high quality, and with maximum value to the customer.
+Critical in agile development because it helps ensure the product is delivered on time, to high quality, and with maximum value to the customer.
 
 ### Role of a Product Owner
 
-The product owner is responsible for representing the interests of the customer and setting the strategic direction for the product.
-This includes :
+The Product Owner is responsible for representing the customer's interests and setting the strategic direction for the product. This includes:
 
 - defining the product vision, roadmap, and release plan,
-- prioritizing the product backlog to ensure that the most valuable features are delivered first.
+- prioritizing the product backlog to ensure the most valuable features are delivered first.
 
 ### Responsibilities of a Product Owner
 
-- Define and communicate the product vision
-- Prioritize and manage the product backlog
-- Collaborate with cross-functional teams
-- Communicate progress and updates to stakeholders
+- Define and communicate the product vision.
+- Prioritize and manage the product backlog.
+- Collaborate with cross-functional teams.
+- Communicate progress and updates to stakeholders.
 
 ### Product Owner vs Project Manager
 
-- Product owners are responsible for defining the product vision and strategy, and for prioritizing and managing the product backlog.
-- Project managers are responsible for planning and executing projects, and for managing resources and budgets to ensure that projects are completed on time and within scope.
-- Both product owners and project managers need strong leadership, communication, and problem-solving skills, but they have different areas of focus and responsibility.
+- Product Owners define product vision and strategy, and prioritize the product backlog.
+- Project Managers plan and execute projects, manage resources and budgets to ensure delivery on time and within scope.
+- Both roles require leadership, communication, and problem-solving skills, but they focus on different responsibilities.
 
-## Product vision & Strategy
+## Product Vision & Strategy
 
 ### Defining the Product Vision
 
-“A product vision provides a long-term direction for the product and helps to align stakeholders and cross-functional teams around a common goal.”
+"A product vision provides a long-term direction for the product and helps align stakeholders and cross-functional teams around a common goal."
 
 - Steps for defining the product vision:
-- Identify the target market and customer needs
-- Determine the value proposition
-- Define the product vision statement
+  - Identify the target market and customer needs.
+  - Determine the value proposition.
+  - Define the product vision statement.
 
 ### Product Roadmap
 
-A product roadmap is a high-level overview of the features and capabilities that will be included in the product over time. It helps to align stakeholders and cross-functional teams around a common vision and provides a clear direction for development.
+A product roadmap is a high-level overview of the features and capabilities that will be included in the product over time. It aligns stakeholders and teams around a common vision and provides direction for development.
 
 Steps for developing a product roadmap:
 
-- Define the long-term goals and objectives for the product: What do you want to achieve with the product, and how will it benefit the customer and the business?
-- Break down the goals into smaller, more manageable chunks: Divide the long-term goals into smaller, more achievable objectives that can be accomplished over shorter time periods.
-- Prioritize the objectives: Determine which objectives are most important and should be tackled first, and which can wait for future releases.
+- Define the long-term goals and objectives for the product: What do you want to achieve, and how will it benefit customers and the business?
+- Break down the goals into smaller, manageable chunks that can be accomplished over shorter time periods.
+- Prioritize the objectives: determine which objectives are most important and should be tackled first.
 
-### Priorisation
+### Prioritization
 
-Prioritization is critical in product development because it helps to ensure that the most valuable features are delivered first and that resources are used efficiently.
+Prioritization is critical because it ensures the most valuable features are delivered first and resources are used efficiently.
 Techniques for prioritizing the product backlog:
 
-- Value vs. effort matrix: Plot each feature on a matrix based on its value to the customer and the effort required to implement it. This can help to prioritize features based on their potential impact and feasibility.
-- Kano analysis: This technique involves grouping features into categories based on how they affect customer satisfaction. High-impact features (such as "delighters") should be prioritized over lower-impact features (such as "must-haves").
-- MoSCoW method: This method involves prioritizing features as "must-haves," "should-haves," "could-haves," or "won't-haves" based on their importance and feasibility.
+- Value vs. effort matrix: Plot each feature based on its value to the customer and the effort required.
+- Kano analysis: Group features by how they affect customer satisfaction; prioritize high-impact features.
+- MoSCoW method: Categorize features as "Must have," "Should have," "Could have," or "Won't have."
 
-## User Stories & Priorisation
+## User Stories & Prioritization
 
 ### What are User Stories?
 
-User stories are short, simple descriptions of a feature or capability from the perspective of the user. They are used in agile development methodologies to capture the requirements for a product and to help guide development efforts.
+User stories are short, simple descriptions of a feature from the user's perspective. They are used in agile to capture requirements and guide development.
 
-Usual format : As a [user], I want [feature or capability], so that [benefit].
+Usual format: As a [user], I want [feature], so that [benefit].
 
-Acceptance criteria: A set of specific, measurable criteria that must be met in order for the user story to be considered complete.
+Acceptance criteria: Specific, measurable criteria that must be met for the user story to be complete.
 
 ### Benefits of User Stories
 
-- User stories help to focus on the needs and goals of the user, rather than on technical details.
-- User stories facilitate collaboration and communication between product owners, developers, and other stakeholders.
-- User stories provide a flexible and adaptable way to capture and prioritize requirements.
+- Focus on user needs and goals rather than technical details.
+- Facilitate collaboration between product owners, developers, and stakeholders.
+- Provide a flexible way to capture and prioritize requirements.
 
-### Tips of writing User Stories
+### Tips for writing User Stories
 
-- Make sure the user story is clear and concise.
-- Make sure the user story has a clear value proposition for the user.
-- Make sure the acceptance criteria are specific and measurable.
-- Use examples and scenarios to illustrate the user story.
-- Collaborate with cross-functional teams to ensure that the user story is feasible and can be implemented in the given time frame.
+- Make the user story clear and concise.
+- Ensure it has a clear value proposition for the user.
+- Make acceptance criteria specific and measurable.
+- Use examples and scenarios to illustrate the story.
+- Collaborate with cross-functional teams to ensure feasibility.
 
 ### Definition of Done
 
-Set of specific criteria that must be met in order for a user story or product feature to be considered complete.
+A set of specific criteria that must be met for a user story or feature to be considered complete.
 
-List of key components that may be included in the definition of done:
+Key components that may be included in the Definition of Done:
 
 - Code has been reviewed and is of high quality.
 - Unit tests and automated tests have been created and run successfully.
 - User documentation has been created and reviewed.
-- Feature has been tested by the QA team and any issues have been resolved.
-- Feature has been reviewed by the product owner and stakeholders and has received approval for release.
+- Feature has been tested by QA and issues resolved.
+- Feature has been reviewed by the Product Owner and stakeholders and approved for release.
 
 ## Minimum Viable Product (MVP)
 
-- The MVP is a product with just enough features to satisfy early customers and provide valuable feedback for future development.
-- It is a way to test a product hypothesis with the least amount of effort and resources.
-- The MVP allows for rapid prototyping and iteration based on customer feedback.
-- The MVP helps to minimize risk by allowing the team to gather valuable data and insights before committing significant resources to a full product.
-- The MVP can help to focus development efforts on the most valuable and necessary features, rather than trying to build everything at once.
+- The MVP is a product with just enough features to satisfy early customers and gather feedback for future development.
+- It is a way to test a product hypothesis with minimal effort and resources.
+- The MVP allows rapid prototyping and iteration based on customer feedback.
+- It minimizes risk by gathering data before committing significant resources.
+- The MVP focuses development on the most necessary features instead of building everything at once.
 
 ### What to include
 
-- Identify the core value proposition
-- Prioritize based on customer needs
-- Consider feasibility
-- Balance risk and reward
-- Gather feedback
+- Identify the core value proposition.
+- Prioritize based on customer needs.
+- Consider feasibility.
+- Balance risk and reward.
+- Gather feedback.
 
 ## Kanban & General Considerations
 
 ### Kanban
 
-Kanban is a method for managing and improving workflows that was developed by Toyota in the 1950s.
-It is based on the principles of just-in-time (JIT) production
-Aims to increase efficiency and reduce waste by :
+Kanban is a method for managing and improving workflows, developed by Toyota in the 1950s. It is based on just-in-time (JIT) production principles.
 
-- visualizing work
-- limiting work-in-progress
-- continuously improving processes.
+Aims to increase efficiency and reduce waste by:
+
+- Visualizing work.
+- Limiting work-in-progress (WIP).
+- Continuously improving processes.
 
 ### Visualizing Work
 
-Kanban board: A visual representation of the work process, showing the status of each task or item as it moves through the workflow.
+Kanban board: A visual representation of the work process, showing the status of each task as it moves through the workflow.
 
-- Work-in-progress (WIP) limits: Maximum number of tasks that can be in progress at each stage of the workflow, to prevent overloading and bottlenecking.
-- Pull system: A system in which work is only started when there is capacity to complete it, rather than pushing work through the process regardless of capacity.
-- Continuous improvement: Regular review and optimization of the workflow to identify and address bottlenecks, improve efficiency, and reduce waste.
+- Work-in-progress (WIP) limits: Maximum number of tasks allowed in each stage to prevent overload and bottlenecks.
+- Pull system: Start work only when there is capacity to complete it.
+- Continuous improvement: Regularly review and optimize the workflow to identify and address bottlenecks.
 
-All in all : Agile best practices
+All in all: Agile best practices
 
 ## Lean
 
-Lean is a business philosophy that focuses on maximizing customer value while minimizing waste. It is based on the principles of continuous improvement, respect for people, and a focus on delivering value to the customer.
+Lean is a business philosophy that focuses on maximizing customer value while minimizing waste. It emphasizes continuous improvement, respect for people, and delivering customer value.
 
 ### Key Components of Lean
 
-- Value stream mapping: Identifying and analyzing the flow of value from the customer's perspective, in order to identify and eliminate waste.
-- Continuous improvement: Regularly identifying and addressing opportunities for improvement in order to increase efficiency and reduce waste.
-- Respect for people: Recognizing the value and potential of all team members and creating an environment that empowers and enables them to contribute.
-- Customer focus: Focusing on delivering value to the customer, and using customer feedback to guide decision-making and improvement efforts.
+- Value stream mapping: Identify and analyze the flow of value from the customer's perspective to eliminate waste.
+- Continuous improvement: Regularly identify and address opportunities to increase efficiency.
+- Respect for people: Empower team members and recognize their value.
+- Customer focus: Use customer feedback to guide decisions and improvements.
 
 ### Lean Principles
 
-- Define value from the customer's perspective
-- Identify and eliminate waste
-- Create flow in the value stream
-- Use pull systems to trigger production
-- Strive for perfection
+- Define value from the customer's perspective.
+- Identify and eliminate waste.
+- Create flow in the value stream.
+- Use pull systems to trigger production.
+- Strive for perfection.
 
 ### Lean Tools and Techniques
 
@@ -406,11 +403,11 @@ Lean is a business philosophy that focuses on maximizing customer value while mi
 | Principe   | Empirisme (Inspection, Adaptation, Transparence) | Idem                                  |
 | Incrément  | Produit livrable d’une équipe                    | Produit intégré de plusieurs équipes  |
 
-## eXtrem Programming
+## Extreme Programming (XP)
 
-Key component :
+Key components:
 
-- Pair Programming
+- Pair programming
 - Test-driven development (TDD)
 - Continuous integration
 - Continuous delivery
@@ -419,6 +416,7 @@ Key component :
 
 ### Test-Driven Development (TDD)
 
-- TDD is a software development methodology in which developers write automated tests for new code before writing the code itself.
-- The tests are used to define the desired behavior and requirements for the code, and are run after the code is written to ensure that it is working as expected.
-- To practice TDD, developers follow a specific process called the "test-driven development cycle," which consists of writing a test, running the test and confirming that it fails, writing the code to make the test pass, running the test again to ensure that it passes with the new code, and refactoring the code as needed.
+- TDD is a development methodology in which developers write automated tests for new code before writing the code itself.
+- Tests define desired behavior and requirements and are run after the code is written to ensure it works as expected.
+- The TDD cycle: write a test, run the test and confirm it fails, write code to make the test pass, run tests again to ensure they pass, and refactor as needed.
+- TDD encourages better design, fewer bugs, and a reliable test suite.
